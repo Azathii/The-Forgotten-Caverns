@@ -1,0 +1,81 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Azathii_LBGravestone",
+      "FromFile": "assets/Loose/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}/RobinsRefusal": "{{i18n:Mail_RobinsRefusal}}",
+        "{{ModId}}/CarlRecycling": "{{i18n:Mail_CarlRecycling}}",
+        "{{ModId}}_BobsRepairsLetter": "{{i18n:Mail_BobsRepairs}}",
+        "{{ModId}}_SidsThanks": "{{i18n:Mail_SidsThanks}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",   
+      "Entries": {
+        "{{ModId}}_RobinsRefusal": {
+          "Id": "{{ModId}}_RobinsRefusal",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModId}}_EventRobinsRefusal",
+          "HostOnly": true,
+          "Action": "AddMail Host {{ModId}}/RobinsRefusal",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_CarlRecycling": {
+          "Id": "{{ModId}}_CarlRecycling",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}/SpokenToCarl",
+          "HostOnly": true,
+          "Action": "AddMail Host {{ModId}}/CarlRecycling",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_SidsThanks": {
+          "Id": "{{ModId}}_SidsThanks",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModId}}_EventBobHeart4",
+          "HostOnly": true,
+          "Action": "AddMail Host {{ModId}}_SidsThanks",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_PauseCarl": {
+          "Id": "{{ModId}}_PauseCarl",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}/SpokenToCarl",
+          "HostOnly": true,
+          "Action": "AddMail Host {{ModId}}_PauseCarl received",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_PauseCottage": {
+          "Id": "{{ModId}}_PauseCottage",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}/CottageRepairPurchased",
+          "HostOnly": true,
+          "Action": "AddMail Host {{ModId}}_PauseCottage received",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_BobsRepairsLetter": {
+          "Id": "{{ModId}}_BobsRepairsLetter",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}/BobsRepairs",
+          "HostOnly": true,
+          "Action": "AddMail Host {{ModId}}_BobsRepairsLetter",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_BobHomeComplete": {
+          "Id": "{{ModId}}_BobHomeComplete",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}/BobsRepairs",
+          "HostOnly": true,
+          "Action": "AddMail Host {{ModId}}_BobHomeComplete received",
+          "MarkActionApplied": true
+        }
+      }
+    }
+  ]
+}

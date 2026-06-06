@@ -1,0 +1,712 @@
+{
+  "Changes": [
+    { 
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Azathii_ForgottenFurniture, Mods/{{ModId}}/Azathii_ForgottenFurnitureFront, Mods/{{ModId}}/Azathii_GraveFurniture",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/Azathii_ForgottenFurniture",
+      "FromFile": "assets/Tilesheets/ForgottenFurniture_WinterL.png",
+      "ToArea": {"X": 0, "Y": 352, "Width": 80, "Height": 80},
+      "PatchMode": "Replace",
+      "When": {"Season": "Winter"},
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/Azathii_ForgottenFurniture",
+      "FromFile": "assets/Tilesheets/ForgottenFurniture_WinterR.png",
+      "ToArea": {"X": 144, "Y": 352, "Width": 80, "Height": 80},
+      "PatchMode": "Replace",
+      "When": {"Season": "Winter"},
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/Azathii_ForgottenFurniture",
+      "FromFile": "assets/Tilesheets/Furniture_WinterOverlay_{{Recolour}}.png",
+      "ToArea": {"X": 0, "Y": 352, "Width": 224, "Height": 32},
+      "PatchMode": "Overlay",
+      "When": {
+        "Season": "Winter"
+      },
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "{{ModId}}_AncientChair1": "AncientChair1/chair/-1/-1/4/800/-1/{{i18n:Furniture_AncientChair1}}/0/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientChair2": "AncientChair2/chair/-1/-1/4/1000/-1/{{i18n:Furniture_AncientChair2}}/3/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientChair3": "AncientChair3/chair/-1/-1/4/800/-1/{{i18n:Furniture_AncientChair3}}/6/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientChair4": "AncientChair4/chair/-1/-1/4/1000/-1/{{i18n:Furniture_AncientChair4}}/9/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientStool1": "AncientStool1/chair/1 1/1 1/1/500/-1/{{i18n:Furniture_AncientStool1}}/12/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientStool2": "AncientStool2/chair/1 1/1 1/1/500/-1/{{i18n:Furniture_AncientStool2}}/33/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientEndTable1": "AncientEndTable1/table/1 2/1 1/2/800/-1/{{i18n:Furniture_AncientEndTable1}}/13/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientEndTable2": "AncientEndTable2/table/1 2/1 1/2/800/-1/{{i18n:Furniture_AncientEndTable2}}/15/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_ForgottenCatalogue": "ForgottenCatalogue/decor/1 2/1 1/1/50000/2/{{i18n:Furniture_ForgottenCatalogue}}/17/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true",
+        "{{ModId}}_AncientRoundEndTable1": "AncientRoundEndTable1/table/1 2/1 1/1/800/-1/{{i18n:Furniture_AncientRoundEndTable1}}/18/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientRoundEndTable2": "AncientRoundEndTable2/table/1 2/1 1/1/800/-1/{{i18n:Furniture_AncientRoundEndTable2}}/19/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientDiningTable1": "AncientDiningTable1/long table/-1/-1/2/4000/-1/{{i18n:Furniture_AncientDiningTable1}}/42/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientDiningTable2": "AncientDiningTable2/long table/-1/-1/2/5000/-1/{{i18n:Furniture_AncientDiningTable2}}/49/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientDiningTable3": "AncientDiningTable3/long table/-1/-1/2/4500/-1/{{i18n:Furniture_AncientDiningTable3}}/56/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientTable1": "AncientTable1/table/-1/-1/1/2000/-1/{{i18n:Furniture_AncientTable1}}/147/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientTable2": "AncientTable2/table/-1/-1/1/2000/-1/{{i18n:Furniture_AncientTable2}}/149/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientDesk1": "AncientDesk1/decor/2 3/2 1/1/1500/0/{{i18n:Furniture_AncientDesk1}}/151/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientDesk2": "AncientDesk2/decor/2 2/2 1/1/1500/0/{{i18n:Furniture_AncientDesk2}}/174/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientSideboard1": "AncientSideboard1/decor/2 3/2 1/1/1500/0/{{i18n:Furniture_AncientSideboard1}}/155/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientSideboard2": "AncientSideboard2/decor/2 3/2 1/1/1500/0/{{i18n:Furniture_AncientSideboard2}}/157/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientDresser": "AncientDresser/dresser/-1/-1/4/4500/-1/{{i18n:Furniture_AncientDresser}}/159/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientWardrobe1": "AncientWardrobe1/dresser/2 3/2 1/1/5000/-1/{{i18n:Furniture_AncientWardrobe1}}/164/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_AncientWardrobe2": "AncientWardrobe2/dresser/2 3/2 1/1/5000/-1/{{i18n:Furniture_AncientWardrobe2}}/166/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseColumn1": "RoseColumn1/decor/1 4/1 1/1/800/2/{{i18n:Furniture_RoseColumn1}}/210/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseColumn2": "RoseColumn2/decor/1 4/1 1/1/800/2/{{i18n:Furniture_RoseColumn2}}/211/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseColumn3": "RoseColumn3/decor/1 4/1 1/1/800/2/{{i18n:Furniture_RoseColumn3}}/212/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_ApothecaryDesk1": "ApothecaryDesk1/decor/5 2/5 1/1/5500/0/{{i18n:Furniture_ApothecaryDesk1}}/213/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_ApothecaryDesk2": "ApothecaryDesk2/decor/5 2/5 1/1/5500/0/{{i18n:Furniture_ApothecaryDesk2}}/255/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Bar1": "Bar1/decor/4 4/4 1/1/6000/0/{{i18n:Furniture_Bar1}}/218/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Bar2": "Bar2/decor/8 4/8 1/1/8000/0/{{i18n:Furniture_Bar2}}/222/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Bookcase1": "Bookcase1/bookcase/-1/-1/1/1500/-1/{{i18n:Furniture_Bookcase1}}/294/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Bookcase2": "Bookcase2/bookcase/-1/-1/1/1500/-1/{{i18n:Furniture_Bookcase2}}/296/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Terrarium": "Terrarium/decor/3 3/3 1/1/8000/0/{{i18n:Furniture_Terrarium}}/298/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_GemDisplay1": "GemDisplay1/decor/3 3/3 1/1/10000/0/{{i18n:Furniture_GemDisplay1}}/301/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_GemDisplay2": "GemDisplay2/decor/3 3/3 1/1/10000/0/{{i18n:Furniture_GemDisplay2}}/304/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_WeaponDisplay1": "WeaponDisplay1/decor/2 3/2 1/1/8000/0/{{i18n:Furniture_WeaponDisplay1}}/307/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_WeaponDisplay2": "WeaponDisplay2/decor/2 3/2 1/1/8000/0/{{i18n:Furniture_WeaponDisplay2}}/309/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_WeaponDisplay3": "WeaponDisplay3/decor/2 3/2 1/1/8000/0/{{i18n:Furniture_WeaponDisplay3}}/311/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_WisteriaIndoor": "WisteriaIndoor/decor/5 5/5 1/2/10000/0/{{i18n:Furniture_WisteriaIndoor}}/357/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_WisteriaOutdoor": "WisteriaOutdoor/decor/5 5/5 1/2/10000/1/{{i18n:Furniture_WisteriaOutdoor}}/462/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant1": "RoseHouseplant1/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant1}}/362/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant2": "RoseHouseplant2/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant2}}/364/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant3": "RoseHouseplant3/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant3}}/371/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant4": "RoseHouseplant4/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant4}}/373/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant5": "RoseHouseplant5/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant5}}/425/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant6": "RoseHouseplant6/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant6}}/427/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant7": "RoseHouseplant7/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant7}}/434/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_RoseHouseplant8": "RoseHouseplant8/decor/1 3/1 1/2/800/2/{{i18n:Furniture_RoseHouseplant8}}/436/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant1": "EemieHouseplant1/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant1}}/334/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant2": "EemieHouseplant2/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant2}}/396/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant3": "EemieHouseplant3/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant3}}/459/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant4": "EemieHouseplant4/decor/1 3/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant4}}/583/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant5": "EemieHouseplant5/decor/1 3/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant5}}/585/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant6": "EemieHouseplant6/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant6}}/646/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant7": "EemieHouseplant7/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant7}}/648/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant8": "EemieHouseplant8/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant8}}/688/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant9": "EemieHouseplant9/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant9}}/690/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant10": "EemieHouseplant10/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant10}}/730/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant11": "EemieHouseplant11/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant11}}/732/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant12": "EemieHouseplant12/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant12}}/779/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant13": "EemieHouseplant13/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant13}}/783/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant14": "EemieHouseplant14/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant14}}/785/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant15": "EemieHouseplant15/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant15}}/787/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant16": "EemieHouseplant16/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant16}}/789/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant17": "EemieHouseplant17/decor/1 3/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant17}}/770/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant18": "EemieHouseplant18/decor/1 3/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant18}}/772/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant19": "EemieHouseplant19/decor/1 2/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant19}}/795/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant20": "EemieHouseplant20/decor/1 3/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant20}}/834/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant21": "EemieHouseplant21/decor/1 3/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant21}}/836/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_EemieHouseplant22": "EemieHouseplant22/decor/1 3/1 1/2/800/2/{{i18n:Furniture_EemieHouseplant22}}/838/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PottedBush1": "PottedBush1/decor/2 3/2 1/2/1000/2/{{i18n:Furniture_PottedBush1}}/567/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PottedBush2": "PottedBush2/decor/2 3/2 1/2/1000/2/{{i18n:Furniture_PottedBush2}}/569/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PottedBush3": "PottedBush3/decor/2 3/2 1/2/1000/2/{{i18n:Furniture_PottedBush3}}/575/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PottedBush4": "PottedBush4/decor/2 3/2 1/2/1000/2/{{i18n:Furniture_PottedBush4}}/577/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PottedBush5": "PottedBush5/decor/2 3/2 1/2/1000/2/{{i18n:Furniture_PottedBush5}}/630/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PottedBush6": "PottedBush6/decor/2 3/2 1/2/1000/2/{{i18n:Furniture_PottedBush6}}/632/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PottedBush7": "PottedBush7/decor/2 3/2 1/2/1000/2/{{i18n:Furniture_PottedBush7}}/638/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_FlowerMix1": "FlowerMix1/decor/2 3/2 1/2/1500/2/{{i18n:Furniture_FlowerMix1}}/640/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_FlowerMix2": "FlowerMix2/decor/2 3/2 1/2/1500/2/{{i18n:Furniture_FlowerMix2}}/693/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_FlowerMix3": "FlowerMix3/decor/2 3/2 1/2/1500/2/{{i18n:Furniture_FlowerMix3}}/695/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_FlowerMix4": "FlowerMix4/decor/2 3/2 1/2/1500/2/{{i18n:Furniture_FlowerMix4}}/701/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_FlowerMix5": "FlowerMix5/decor/2 3/2 1/2/1500/2/{{i18n:Furniture_FlowerMix5}}/703/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_FlowerMix6": "FlowerMix6/decor/2 3/2 1/2/1500/2/{{i18n:Furniture_FlowerMix6}}/756/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Candelabra1": "Candelabra1/lamp/-1/-1/1/750/-1/{{i18n:Furniture_Candelabra1}}/509/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Candelabra2": "Candelabra2/lamp/-1/-1/1/750/-1/{{i18n:Furniture_Candelabra2}}/511/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Knight": "Knight/decor/1 2/1 1/1/500/2/{{i18n:Furniture_Knight}}/497/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Easel": "Easel/decor/1 2/1 1/1/450/2/{{i18n:Furniture_Easel}}/501/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Vase1": "Vase1/decor/1 2/1 1/1/450/2/{{i18n:Furniture_Vase1}}/498/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Vase2": "Vase2/decor/1 2/1 1/1/450/2/{{i18n:Furniture_Vase2}}/499/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Vase3": "Vase3/decor/1 2/1 1/1/450/2/{{i18n:Furniture_Vase3}}/500/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Potions1": "Potions1/decor/1 1/1 1/1/250/2/{{i18n:Furniture_Potions1}}/542/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Potions2": "Potions2/decor/1 1/1 1/1/250/2/{{i18n:Furniture_Potions2}}/543/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Potions3": "Potions3/decor/1 1/1 1/1/250/2/{{i18n:Furniture_Potions3}}/544/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Scales": "Scales/decor/1 1/1 1/1/100/2/{{i18n:Furniture_Scales}}/565/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Coins": "Coins/decor/1 1/1 1/1/100/2/{{i18n:Furniture_Coins}}/563/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_PlayingCards": "PlayingCards/decor/1 1/1 1/1/100/2/{{i18n:Furniture_PlayingCards}}/564/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Palette": "Palette/decor/1 1/1 1/1/100/2/{{i18n:Furniture_Palette}}/523/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_BookStack1": "BookStack1/decor/1 1/1 1/1/150/2/{{i18n:Furniture_BookStack1}}/539/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_BookStack2": "BookStack2/decor/1 1/1 1/1/150/2/{{i18n:Furniture_BookStack2}}/560/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Book1": "Book1/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Book1}}/540/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Book2": "Book2/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Book2}}/561/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Grimoire1": "Grimoire1/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Grimoire1}}/541/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Grimoire2": "Grimoire2/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Grimoire2}}/562/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_SmallRug1": "SmallRug1/rug/-1/-1/2/2000/-1/{{i18n:Furniture_SmallRug1}}/819/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_SmallRug2": "SmallRug2/rug/-1/-1/2/2000/-1/{{i18n:Furniture_SmallRug2}}/824/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_SmallRug3": "SmallRug3/rug/-1/-1/2/2000/-1/{{i18n:Furniture_SmallRug3}}/829/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_LargeRug1": "LargeRug1/rug/4 3/-1/2/4000/-1/{{i18n:Furniture_LargeRug1}}/882/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_LargeRug2": "LargeRug2/rug/4 3/-1/2/4000/-1/{{i18n:Furniture_LargeRug2}}/889/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_LargeRug3": "LargeRug3/rug/4 3/-1/2/4000/-1/{{i18n:Furniture_LargeRug3}}/896/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Shelf1": "Shelf1/painting/2 2/2 2/1/700/-1/{{i18n:Furniture_Shelf1}}/966/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Shelf2": "Shelf2/painting/3 2/3 2/1/900/-1/{{i18n:Furniture_Shelf2}}/968/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_HangingWisteria": "HangingWisteria/painting/3 2/3 2/2/1500/-1/{{i18n:Furniture_HangingWisteria}}/971/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_HangingRoses": "HangingRoses/painting/2 3/2 3/2/1500/-1/{{i18n:Furniture_HangingRoses}}/978/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_CaveVines1": "CaveVines1/painting/1 3/1 3/1/600/-1/{{i18n:Furniture_CaveVines1}}/980/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_CaveVines2": "CaveVines2/painting/1 3/1 3/1/500/-1/{{i18n:Furniture_CaveVines2}}/981/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_BookPanel1": "BookPanel1/painting/1 3/1 3/1/1000/-1/{{i18n:Furniture_BookPanel1}}/984/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_BookPanel2": "BookPanel2/painting/1 3/1 3/1/1000/-1/{{i18n:Furniture_BookPanel2}}/985/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_BookPanel3": "BookPanel3/painting/1 3/1 3/1/1000/-1/{{i18n:Furniture_BookPanel3}}/986/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Mirror": "Mirror/painting/1 2/1 2/1/800/-1/{{i18n:Furniture_Mirror}}/1008/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_SelfPortrait": "SelfPortrait/painting/2 2/2 2/1/1000/-1/{{i18n:Furniture_SelfPortrait}}/1009/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Bed1": "Bed1/bed double/3 4/3 3/1/5000/-1/{{i18n:Furniture_Bed1}}/1050/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Bed2": "Bed2/bed double/3 4/3 3/1/5000/-1/{{i18n:Furniture_Bed2}}/1056/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Bed3": "Bed3/bed double/3 4/3 3/1/5000/-1/{{i18n:Furniture_Bed3}}/1062/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Canopy1": "Canopy1/decor/3 6/3 1/1/5000/-1/{{i18n:Furniture_Canopy1}}/1134/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Canopy2": "Canopy2/decor/3 6/3 1/1/5000/-1/{{i18n:Furniture_Canopy2}}/1137/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Canopy3": "Canopy3/decor/3 6/3 1/1/5000/-1/{{i18n:Furniture_Canopy3}}/1140/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Canopy4": "Canopy4/decor/3 6/3 1/1/5000/-1/{{i18n:Furniture_Canopy4}}/1143/Mods\\{{ModId}}\\Azathii_ForgottenFurniture/true/collection_forgottenfurniture",
+        "{{ModId}}_Urn1": "Urn1/decor/1 2/1 1/1/500/2/{{i18n:Furniture_Urn}}/0/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Urn2": "Urn2/decor/1 2/1 1/1/500/2/{{i18n:Furniture_Urn}}/1/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Urn3": "Urn3/decor/1 2/1 1/1/500/2/{{i18n:Furniture_Urn}}/2/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Urn4": "Urn4/decor/1 1/1 1/1/500/2/{{i18n:Furniture_Urn}}/3/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_GraveRoses": "GraveRoses/decor/1 1/1 1/1/500/2/{{i18n:Furniture_GraveRoses}}/15/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Grave1": "Grave1/decor/1 2/1 1/1/750/2/{{i18n:Furniture_Grave1}}/4/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Grave2": "Grave2/decor/1 2/1 1/1/750/2/{{i18n:Furniture_Grave2}}/5/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Grave3": "Grave3/decor/2 2/2 1/1/1000/2/{{i18n:Furniture_Grave3}}/6/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Grave4": "Grave4/decor/2 3/2 1/1/1000/2/{{i18n:Furniture_Grave4}}/8/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Sarcophagus": "Sarcophagus/decor/2 5/2 4/1/5000/2/{{i18n:Furniture_Sarcophagus}}/10/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones1": "Bones1/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/24/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones2": "Bones2/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/25/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones3": "Bones3/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/26/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones4": "Bones4/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/27/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones5": "Bones5/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/28/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones6": "Bones6/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/29/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones7": "Bones7/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/30/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Bones8": "Bones8/decor/1 1/1 1/1/150/2/{{i18n:Furniture_Bones}}/31/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Catacomb1": "Catacomb1/painting/3 3/3 3/1/1000/-1/{{i18n:Furniture_CatacombLarge}}/36/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Catacomb2": "Catacomb2/painting/3 3/3 3/1/1000/-1/{{i18n:Furniture_CatacombLarge}}/39/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Catacomb3": "Catacomb3/painting/2 3/2 3/1/1000/-1/{{i18n:Furniture_CatacombSmall}}/42/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Catacomb4": "Catacomb4/painting/2 3/2 3/1/1000/-1/{{i18n:Furniture_CatacombSmall}}/44/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_Cauldron": "Cauldron/decor/1 2/1 1/1/1000/2/{{i18n:Furniture_Cauldron}}/156/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_FlickerCandle1": "FlickerCandle1/decor/1 2/1 1/1/1000/2/{{i18n:Furniture_FlickerCandle1}}/156/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_FlickerCandle2": "FlickerCandle2/decor/1 1/1 1/1/1000/2/{{i18n:Furniture_FlickerCandle2}}/156/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_SpiritSconce": "SpiritSconce/sconce/2 2/2 2/1/1000/-1/{{i18n:Furniture_SpiritSconce}}/156/Mods\\{{ModId}}\\Azathii_GraveFurniture/true",
+        "{{ModId}}_SpiritStatue": "SpiritStatue/decor/3 3/3 1/1/1000/-1/{{i18n:Furniture_SpiritStatue}}/156/Mods\\{{ModId}}\\Azathii_GraveFurniture/true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModId}}_ForgottenCatalogue": {
+          "PriceModifiers": null,
+          "PriceModifierMode": "Stack",
+          "Items": [
+            {
+              "ActionsOnPurchase": null,
+              "Price": 0,
+              "ApplyProfitMargins": null,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "AvoidRepeat": false,
+              "UseObjectDataPrice": false,
+              "IgnoreShopPriceModifiers": false,
+              "PriceModifiers": null,
+              "PriceModifierMode": "Stack",
+              "AvailableStockModifiers": null,
+              "AvailableStockModifierMode": "Stack",
+              "Condition": null,
+              "Id": "Default",
+              "ItemId": "ALL_ITEMS (F)",
+              "MaxItems": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_forgottenfurniture"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/FurnitureProperties",
+      "Entries": {
+        "{{ModId}}_ForgottenCatalogue": {
+          "Description": "{{i18n:Furniture_ForgottenCatalogue.Description}}",
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_ForgottenCatalogue",
+              "Name": "Action",
+              "Value": "OpenShop Azathii.TheForgottenCaverns_ForgottenCatalogue",
+              "Layer": "Buildings",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ]
+        },
+        "{{ModId}}_Terrarium": {
+          "Description": "{{i18n:Furniture_Terrarium.Description}}",
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_Terrarium",
+              "Name": "mushymato.MMAP_Light",
+              "Value": "1 White 4",
+              "Layer": "Front",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 3,
+                "Height": 1
+              }
+            }
+          ]
+        },
+        "{{ModId}}_ApothecaryDesk1": {
+          "Description": "{{i18n:Furniture_ApothecaryDesk.Description}}"
+        },
+        "{{ModId}}_ApothecaryDesk2": {
+          "Description": "{{i18n:Furniture_ApothecaryDesk.Description}}"
+        },
+        "{{ModId}}_GemDisplay1": {
+          "Description": "{{i18n:Furniture_GemDisplay.Description}}"
+        },
+        "{{ModId}}_GemDisplay2": {
+          "Description": "{{i18n:Furniture_GemDisplay.Description}}"
+        },
+        "{{ModId}}_WeaponDisplay1": {
+          "Description": "{{i18n:Furniture_WeaponDisplay.Description}}"
+        },
+        "{{ModId}}_WeaponDisplay2": {
+          "Description": "{{i18n:Furniture_WeaponDisplay.Description}}"
+        },
+        "{{ModId}}_WeaponDisplay3": {
+          "Description": "{{i18n:Furniture_WeaponDisplay.Description}}"
+        },
+        "{{ModId}}_WisteriaIndoor": {
+          "CollisionMap": "OXXXO",          
+          "Description": "{{i18n:Furniture_WisteriaIndoor.Description}}"
+        },
+        "{{ModId}}_WisteriaOutdoor": {
+          "CollisionMap": "OXXXO",
+          "Description": "{{i18n:Furniture_WisteriaOutdoor.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant1": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant2": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant3": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant4": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant5": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant6": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant7": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_RoseHouseplant8": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant1": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant2": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant3": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant4": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant5": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant6": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant7": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant8": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant9": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant10": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant11": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant12": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant13": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant14": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant15": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant16": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant17": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant18": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant19": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant20": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant21": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_EemieHouseplant22": {
+          "Description": "{{i18n:Furniture_Houseplant.Description}}"
+        },
+        "{{ModId}}_PottedBush1": {
+          "Description": "{{i18n:Furniture_Bush.Description}}"
+        },
+        "{{ModId}}_PottedBush2": {
+          "Description": "{{i18n:Furniture_Bush.Description}}"
+        },
+        "{{ModId}}_PottedBush3": {
+          "Description": "{{i18n:Furniture_Bush.Description}}"
+        },
+        "{{ModId}}_PottedBush4": {
+          "Description": "{{i18n:Furniture_Bush.Description}}"
+        },
+        "{{ModId}}_PottedBush5": {
+          "Description": "{{i18n:Furniture_Bush.Description}}"
+        },
+        "{{ModId}}_PottedBush6": {
+          "Description": "{{i18n:Furniture_Bush.Description}}"
+        },
+        "{{ModId}}_PottedBush7": {
+          "Description": "{{i18n:Furniture_Bush.Description}}"
+        },
+        "{{ModId}}_FlowerMix1": {
+          "Description": "{{i18n:Furniture_Mix.Description}}"
+        },
+        "{{ModId}}_FlowerMix2": {
+          "Description": "{{i18n:Furniture_Mix.Description}}"
+        },
+        "{{ModId}}_FlowerMix3": {
+          "Description": "{{i18n:Furniture_Mix.Description}}"
+        },
+        "{{ModId}}_FlowerMix4": {
+          "Description": "{{i18n:Furniture_Mix.Description}}"
+        },
+        "{{ModId}}_FlowerMix5": {
+          "Description": "{{i18n:Furniture_Mix.Description}}"
+        },
+        "{{ModId}}_FlowerMix6": {
+          "Description": "{{i18n:Furniture_Mix.Description}}"
+        },
+        "{{ModId}}_Candelabra1": {
+          "Description": "{{i18n:Furniture_Candelabra.Description}}"
+        },
+        "{{ModId}}_Candelabra2": {
+          "Description": "{{i18n:Furniture_Candelabra.Description}}"
+        },
+        "{{ModId}}_Scales": {
+          "Description": "{{i18n:Furniture_Scales.Description}}"
+        },
+        "{{ModId}}_Grimoire1": {
+          "Description": "{{i18n:Furniture_Grimoire.Description}}"
+        },
+        "{{ModId}}_Grimoire2": {
+          "Description": "{{i18n:Furniture_Grimoire.Description}}"
+        },
+        "{{ModId}}_Mirror": {
+          "Description": "{{i18n:Furniture_Mirror.Description}}"
+        },
+        "{{ModId}}_SelfPortrait": {
+          "Description": "{{i18n:Furniture_SelfPortrait.Description}}"
+        },
+        "{{ModId}}_Bed1": {
+          "Description": "{{i18n:Furniture_Bed.Description}}"
+        },
+        "{{ModId}}_Bed2": {
+          "Description": "{{i18n:Furniture_Bed.Description}}"
+        },
+        "{{ModId}}_Bed3": {
+          "Description": "{{i18n:Furniture_Bed.Description}}"
+        },
+        "{{ModId}}_Canopy1": {
+          "Description": "{{i18n:Furniture_Canopy.Description}}",
+          "CollisionMap": "XOX" 
+        },
+        "{{ModId}}_Canopy2": {
+          "Description": "{{i18n:Furniture_Canopy.Description}}",
+          "CollisionMap": "XOX"
+        },
+        "{{ModId}}_Canopy3": {
+          "Description": "{{i18n:Furniture_Canopy.Description}}",
+          "CollisionMap": "XOX"
+        },
+        "{{ModId}}_Canopy4": {
+          "Description": "{{i18n:Furniture_Canopy.Description}}",
+          "CollisionMap": "XOX"
+        },
+        "{{ModId}}_Urn1": {
+          "Description": "{{i18n:Furniture_Urn.Description}}"
+        },
+        "{{ModId}}_Urn2": {
+          "Description": "{{i18n:Furniture_Urn.Description}}"
+        },
+        "{{ModId}}_Urn3": {
+          "Description": "{{i18n:Furniture_Urn.Description}}"
+        },
+        "{{ModId}}_Urn4": {
+          "Description": "{{i18n:Furniture_Urn.Description}}"
+        },
+        "{{ModId}}_GraveRoses": {
+          "Description": "{{i18n:Furniture_GraveRoses.Description}}"
+        },
+        "{{ModId}}_Grave1": {
+          "Description": "{{i18n:Furniture_Grave.Description}}"
+        },
+        "{{ModId}}_Grave2": {
+          "Description": "{{i18n:Furniture_Grave.Description}}"
+        },
+        "{{ModId}}_Grave3": {
+          "Description": "{{i18n:Furniture_Grave.Description}}"
+        },
+        "{{ModId}}_Grave4": {
+          "Description": "{{i18n:Furniture_Grave.Description}}"
+        },
+        "{{ModId}}_Sarcophagus": {
+          "Description": "{{i18n:Furniture_Sarcophagus.Description}}"
+        },
+        "{{ModId}}_Catacomb1": {
+          "Description": "{{i18n:Furniture_Catacomb.Description}}"
+        },
+        "{{ModId}}_Catacomb2": {
+          "Description": "{{i18n:Furniture_Catacomb.Description}}"
+        },
+        "{{ModId}}_Catacomb3": {
+          "Description": "{{i18n:Furniture_Catacomb.Description}}"
+        },
+        "{{ModId}}_Catacomb4": {
+          "Description": "{{i18n:Furniture_Catacomb.Description}}"
+        },
+        "{{ModId}}_Bones1": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Bones2": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Bones3": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Bones4": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Bones5": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Bones6": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Bones7": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Bones8": {
+          "Description": "{{i18n:Furniture_Bones.Description}}"
+        },
+        "{{ModId}}_Cauldron": {
+          "Description": "{{i18n:Furniture_Cauldron.Description}}",
+          "DrawLayers": [
+            {
+              "Id": "{{ModId}}_Cauldron",
+              "Texture": "Mods/{{ModId}}/Azathii_GraveFurniture",
+              "SourceRect": {
+                "X": 0,
+                "Y": 96,
+                "Width": 16,
+                "Height": 32
+            },
+            "DrawPosition": "0, 0",
+            "DrawInBackground": false,
+            "FrameDuration": 165,
+            "FrameCount": 6,
+            "FramesPerRow": 6
+            }
+          ],
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_Cauldron",
+              "Name": "mushymato.MMAP_Light",
+              "Value": "1 White 4",
+              "Layer": "Front",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ]
+        },
+        "{{ModId}}_FlickerCandle1": {
+          "Description": "{{i18n:Furniture_FlickerCandle.Description}}",
+          "DrawLayers": [
+            {
+              "Id": "{{ModId}}_FlickerCandle1",
+              "Texture": "Mods/{{ModId}}/Azathii_GraveFurniture",
+              "SourceRect": {
+                "X": 96,
+                "Y": 96,
+                "Width": 16,
+                "Height": 32
+              },
+              "DrawPosition": "0, 0",
+              "DrawInBackground": false,
+              "FrameDuration": 150,
+              "FrameCount": 4,
+              "FramesPerRow": 4
+            }
+          ],
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_FlickerCandle1",
+              "Name": "mushymato.MMAP_Light",
+              "Value": "1 White 4",
+              "Layer": "Front",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ]
+        },
+        "{{ModId}}_FlickerCandle2": {
+          "Description": "{{i18n:Furniture_FlickerCandle.Description}}",
+          "DrawLayers": [
+            {
+              "Id": "{{ModId}}_FlickerCandle2",
+              "Texture": "Mods/{{ModId}}/Azathii_GraveFurniture",
+              "SourceRect": {
+                "X": 128,
+                "Y": 128,
+                "Width": 16,
+                "Height": 16
+              },
+              "DrawPosition": "0, 0",
+              "DrawInBackground": false,
+              "FrameDuration": 150,
+              "FrameCount": 4,
+              "FramesPerRow": 4
+            }
+          ],
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_FlickerCandle2",
+              "Name": "mushymato.MMAP_Light",
+              "Value": "1 White 4",
+              "Layer": "Front",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ]
+        },
+        "{{ModId}}_SpiritSconce": {
+          "Description": "{{i18n:Furniture_SpiritSconce.Description}}",
+          "DrawLayers": [
+            {
+              "Id": "{{ModId}}_SpiritSconce",
+              "Texture": "Mods/{{ModId}}/Azathii_GraveFurniture",
+              "SourceRect": {
+                "X": 0,
+                "Y": 128,
+                "Width": 32,
+                "Height": 32
+              },
+              "DrawPosition": "0, 0",
+              "DrawInBackground": false,
+              "FrameDuration": 165,
+              "FrameCount": 4,
+              "FramesPerRow": 4
+            }
+          ],
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_SpiritSconce",
+              "Name": "mushymato.MMAP_Light",
+              "Value": "1 White 4",
+              "Layer": "Front",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 2,
+                "Height": 1
+              }
+            }
+          ]
+        },
+        "{{ModId}}_SpiritStatue": {
+          "Description": "{{i18n:Furniture_SpiritStatue.Description}}",
+          "DrawLayers": [
+            {
+              "Id": "{{ModId}}_SpiritStatue",
+              "Texture": "Mods/{{ModId}}/Azathii_GraveFurniture",
+              "SourceRect": {
+                "X": 0,
+                "Y": 160,
+                "Width": 48,
+                "Height": 48
+              },
+              "DrawPosition": "0, 0",
+              "DrawInBackground": false,
+              "FrameDuration": 165,
+              "FrameCount": 4,
+              "FramesPerRow": 4
+            }
+          ],
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_SpiritStatue",
+              "Name": "mushymato.MMAP_Light",
+              "Value": "1 White 4",
+              "Layer": "Front",
+              "TileArea": {
+                "X": 1,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

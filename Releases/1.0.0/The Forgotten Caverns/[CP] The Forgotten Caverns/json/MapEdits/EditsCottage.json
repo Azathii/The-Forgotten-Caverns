@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "FromFile": "assets/Maps/EditExtCotRuin.tmx",
+      "ToArea": {
+        "X": 35,
+        "Y": 1,
+        "Width": 7,
+        "Height": 9
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCottage": false,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCarl": false
+      },
+      "Update": "OnDayStart"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "FromFile": "assets/Maps/EditExtCotRepair.tmx",
+      "ToArea": {
+        "X": 35,
+        "Y": 1,
+        "Width": 7,
+        "Height": 9
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCottage": true,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCarl": false
+      },
+      "Update": "OnDayStart"
+    }, 
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "FromFile": "assets/Maps/EditExtCotRestored.tmx",
+      "ToArea": {
+        "X": 35,
+        "Y": 1,
+        "Width": 7,
+        "Height": 9
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCottage": true,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCarl": true
+      },
+      "Update": "OnDayStart"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "FromFile": "assets/Maps/EditCotExtMail.tmx",
+      "ToArea": {
+        "X": 53,
+        "Y": 31,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "CottageMailbox": "Enabled",
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCottage": true,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCarl": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "FromFile": "assets/Maps/EditCotExtMail.tmx",
+      "ToArea": {
+        "X": 53,
+        "Y": 31,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "CottageMailbox": "Enabled",
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCottage": true,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}_PauseCarl": true
+      }
+    }
+  ]
+}

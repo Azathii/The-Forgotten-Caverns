@@ -1,0 +1,111 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_Bob",
+      "FromFile": "assets/Characters/Sprites/Bob.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}_Bob_Trenchcoat",
+      "FromFile": "assets/Characters/Sprites/Bob_Trenchcoat.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_Bob",
+      "FromFile": "assets/Characters/Portraits/Bob.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}_Bob_Trenchcoat",
+      "FromFile": "assets/Characters/Portraits/Bob_Trenchcoat.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{ModId}}_Bob": {
+          "DisplayName": "{{i18n:Bob.name}}", 
+          "BirthSeason": "Fall",
+          "BirthDay": 7,
+          "HomeRegion": "Other",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "CanSocialize": true,
+          "CanBeRomanced": false,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": null,
+          "PerfectionScore": true,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "EndSlideShow": "TrailingGroup",
+          "UnlockConditions": "PLAYER_HAS_MAIL Host ccCraftsRoom",
+          "Home": [
+            {
+              "Id": "{{ModId}}_ForgottenMine",
+              "Condition": "!PLAYER_HAS_MAIL Host {{ModId}}_BobHomeComplete",
+              "Location": "{{ModId}}_ForgottenMine",
+              "Tile": {
+              "X": 11,
+              "Y": 24
+              },
+              "Direction": "down"
+            },
+            {
+              "Id": "{{ModId}}_ForgottenMine",
+              "Condition": "PLAYER_HAS_MAIL Host {{ModId}}_BobHomeComplete",
+              "Location": "{{ModId}}_ForgottenMine",
+              "Tile": {
+              "X": 9,
+              "Y": 34
+              },
+              "Direction": "down"
+            }
+          ],
+          "Appearance": [
+            {
+              "Id": "{{ModId}}_BobMovieTheater",
+              "Condition": "ANY \"LOCATION_NAME Target MovieTheater\" \"IS_EVENT MovieTheaterScreening\"",
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/{{ModId}}_Bob_Trenchcoat",
+              "Sprite": "Characters/{{ModId}}_Bob_Trenchcoat",
+              "IsIslandAttire": false,
+              "Precedence": -1000,
+              "Weight": 0
+            }
+          ],
+          "MugShotSourceRect": {
+            "X": 0,
+            "Y": 6,
+            "Width": 16,
+            "Height": 24
+          },
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": false,
+          "BreathChestRect": null,
+          "BreathChestPosition": null,
+          "Shadow": null
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "{{ModId}}_Bob_Gaming": "8/9 9 9 10 10 10 11 11 11 10 10 10/8/Characters\\Dialogue\\{{ModId}}_Bob:Animation_Bob_Gaming",
+        "{{ModId}}_Bob_Mourning": "8/8 8 8/8/Characters\\Dialogue\\{{ModId}}_Bob:Animation_Bob_Mourning",
+        "{{ModId}}_Bob_LevitationBook": "24/24 24 24 25 25 25 26 26 26 25 25 25/24/Characters\\Dialogue\\{{ModId}}_Bob:Animation_Bob_LevitationBook",
+        "{{ModId}}_Bob_Reading": "19/19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23/23/Characters\\Dialogue\\{{ModId}}_Bob:Animation_Bob_Reading"
+      }
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_FoundCatacombs",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 102
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundCatacombs"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 102
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundCatacombs"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: currentPlayer |contains={{ModId}}/FoundCatacombs": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsBuffs",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 55,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/1",
+            "DMT/buff_Action": "{{ModId}}_BuffFountain",
+            "DMT/message_Action": "{{i18n:DMTECatacombsFountain}}",
+            "DMT/sound_Action": "statue_of_blessings"
+          }
+        },
+        {
+          "Position": {
+            "X": 56,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/1",
+            "DMT/buff_Action": "{{ModId}}_BuffFountain",
+            "DMT/message_Action": "{{i18n:DMTECatacombsFountain}}",
+            "DMT/sound_Action": "statue_of_blessings"
+          }
+        },
+        {
+          "Position": {
+            "X": 55,
+            "Y": 9
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/1",
+            "DMT/buff_Action": "{{ModId}}_BuffFountain",
+            "DMT/message_Action": "{{i18n:DMTECatacombsFountain}}",
+            "DMT/sound_Action": "statue_of_blessings"
+          }
+        },
+        {
+          "Position": {
+            "X": 56,
+            "Y": 9
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/1",
+            "DMT/buff_Action": "{{ModId}}_BuffFountain",
+            "DMT/message_Action": "{{i18n:DMTECatacombsFountain}}",
+            "DMT/sound_Action": "statue_of_blessings"
+          }
+        },
+        {
+          "Position": {
+            "X": 58,
+            "Y": 60
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/buff_Action": "{{ModId}}_BuffSpirit",
+            "DMT/message_Action": "{{i18n:DMTECatacombsSpiritTree}}",
+            "DMT/sound_Action": "statue_of_blessings"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "DMTE_CatacombsTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 106
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(TR)FrogEgg",
+            "DMT/message_Once_Action": "{{i18n:DMTECatacombsTreasure1}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsTreasure1Found",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue3"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsTreasure1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsTreasure1QuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 106
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue3": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsTreasure1QuestFalseSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 106
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "secret1"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue3": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 106
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTECatacombsTreasure1Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsTreasure1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "FromFile": "assets/Maps/EditDMTECatacombsInk.tmx",
+      "ToArea": {
+        "X": 80,
+        "Y": 78,
+        "Width": 1,
+        "Height": 1
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/EdgarStartQuest": true,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/EdgarsInkFound": false,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/EdgarsEndQuest": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarsInk",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 80,
+            "Y": 78
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O){{ModId}}_EdgarsInk",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/message_Once_Action": "{{i18n:DMTECatacombsInk}}",
+            "DMT/changeMultipleIndex_Once_Action": "Buildings2 80 78=z_Azathii_Catacombs/850",
+            "DMT/mail_Once_Action": "{{ModId}}/EdgarsInkFound"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarStartQuest": true,
+        "HasFlag|contains={{ModId}}/EdgarsInkFound": false,
+        "HasFlag|contains={{ModId}}/EdgarGivenItem": false,
+        "HasFlag|contains={{modId}}/EdgarEndQuest": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

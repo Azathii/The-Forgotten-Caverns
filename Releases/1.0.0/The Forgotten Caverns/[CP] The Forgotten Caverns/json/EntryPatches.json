@@ -1,0 +1,46 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntVAN.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 9,
+        "Width": 6,
+        "Height": 5
+      },
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Aimon.MoreLivelyFarmCave": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntAIMON.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 10,
+        "Width": 6,
+        "Height": 6
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Aimon.MoreLivelyFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Mine",
+      "FromFile": "assets/Maps/ForgottenElevator.tmx",
+      "Patchmode": "Overlay",
+      "Priority": "Late + 1",
+    }
+  ]
+}
