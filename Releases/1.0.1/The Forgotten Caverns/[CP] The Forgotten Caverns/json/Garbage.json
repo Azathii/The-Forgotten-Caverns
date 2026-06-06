@@ -1,0 +1,174 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/GarbageCans",
+      "TargetField": [ "GarbageCans" ],
+      "Entries": {
+        "{{ModId}}_RecyclingRoom1": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_BaseOreBin",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)378",
+                "(O)380",
+                "(O)382"
+              ]
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom2": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_GeodesBin",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)535",
+                "(O)536",
+                "(O)537",
+                "(O)749"
+              ]
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom3": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_DishOfTheDayBin",
+              "ItemId": "DISH_OF_THE_DAY",
+              "RandomItemId": null
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom4": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_MinersTreatBin",
+              "ItemId": "(O)243",
+              "RandomItemId": null
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom5": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_BaitBin",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)685",
+                "(O)908",
+                "(O)774",
+                "(O)DeluxeBait"
+              ]
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom6": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_FertilizerBin",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)368",
+                "(O)370",
+                "(O)805",
+                "(O)465"
+              ]
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom7": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_MixedSeedsBin",
+              "ItemId": "(O)770",
+              "RandomItemId": null
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom8": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.25 @addDailyLuck",
+              "Id": "{{ModId}}_BasicTreeSeedsBin",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)309",
+                "(O)310",
+                "(O)311"
+              ]
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom9": {
+          "Items": [
+            {
+              "IsMegaSuccess": true,
+              "IsDoubleMegaSuccess": false,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.05 @addDailyLuck",
+              "Id": "{{ModId}}_MushroomTreeSeedBin",
+              "ItemId": "(O)891",
+              "RandomItemId": null
+            }
+          ]
+        },
+        "{{ModId}}_RecyclingRoom10": {
+          "Items": [
+            {
+              "IsMegaSuccess": false,
+              "IsDoubleMegaSuccess": true,
+              "AddToInventoryDirectly": false,
+              "CreateMultipleDebris": false,
+              "Condition": "RANDOM 0.05 @addDailyLuck",
+              "Id": "{{ModId}}_MysticTreeSeedBin",
+              "ItemId": "(O)MysticTreeSeed",
+              "RandomItemId": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

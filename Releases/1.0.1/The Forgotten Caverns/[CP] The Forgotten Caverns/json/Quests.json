@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "{{ModId}}_QuestCarl": "Basic/{{i18n:Quest_CarlTitle}}/{{i18n:Quest_CarlDescription}}/{{i18n:Quest_CarlInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestPetra": "Basic/{{i18n:Quest_PetraTitle}}/{{i18n:Quest_PetraDescription}}/{{i18n:Quest_PetraInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestPetraReward": "Basic/{{i18n:Quest_PetraRewardTitle}}/{{i18n:Quest_PetraRewardDescription}}/{{i18n:Quest_PetraRewardInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestEarl": "Basic/{{i18n:Quest_EarlTitle}}/{{i18n:Quest_EarlDescription}}/{{i18n:Quest_EarlInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestEarlReward": "Basic/{{i18n:Quest_EarlRewardTitle}}/{{i18n:Quest_EarlRewardDescription}}/{{i18n:Quest_EarlRewardInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestCaptain": "Basic/{{i18n:Quest_CaptainTitle}}/{{i18n:Quest_CaptainDescription}}/{{i18n:Quest_CaptainInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestCaptainReward": "Basic/{{i18n:Quest_CaptainRewardTitle}}/{{i18n:Quest_CaptainRewardDescription}}/{{i18n:Quest_CaptainRewardInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestWren": "Basic/{{i18n:Quest_WrenTitle}}/{{i18n:Quest_WrenDescription}}/{{i18n:Quest_WrenInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestWrenReward": "Basic/{{i18n:Quest_WrenRewardTitle}}/{{i18n:Quest_WrenRewardDescription}}/{{i18n:Quest_WrenRewardInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestEdgar": "Basic/{{i18n:Quest_EdgarTitle}}/{{i18n:Quest_EdgarDescription}}/{{i18n:Quest_EdgarInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestEdgarReward": "Basic/{{i18n:Quest_EdgarRewardTitle}}/{{i18n:Quest_EdgarRewardDescription}}/{{i18n:Quest_EdgarRewardInstructions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue1": "Basic/{{i18n:Quest_Clue1Title}}/{{i18n:Quest_Clue1Description}}/{{i18n:Quest_Clue1Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue2": "Basic/{{i18n:Quest_Clue2Title}}/{{i18n:Quest_Clue2Description}}/{{i18n:Quest_Clue2Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue3": "Basic/{{i18n:Quest_Clue3Title}}/{{i18n:Quest_Clue3Description}}/{{i18n:Quest_Clue3Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue4": "Basic/{{i18n:Quest_Clue4Title}}/{{i18n:Quest_Clue4Description}}/{{i18n:Quest_Clue4Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue5": "Basic/{{i18n:Quest_Clue5Title}}/{{i18n:Quest_Clue5Description}}/{{i18n:Quest_Clue5Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue6": "Basic/{{i18n:Quest_Clue6Title}}/{{i18n:Quest_Clue6Description}}/{{i18n:Quest_Clue6Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue7": "Basic/{{i18n:Quest_Clue7Title}}/{{i18n:Quest_Clue7Description}}/{{i18n:Quest_Clue7Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue8": "Basic/{{i18n:Quest_Clue8Title}}/{{i18n:Quest_Clue8Description}}/{{i18n:Quest_Clue8Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue9": "Basic/{{i18n:Quest_Clue9Title}}/{{i18n:Quest_Clue9Description}}/{{i18n:Quest_Clue9Instrutions}}/null/-1/0/-1/false",
+        "{{ModId}}_QuestClue10": "Basic/{{i18n:Quest_Clue10Title}}/{{i18n:Quest_Clue10Description}}/{{i18n:Quest_Clue10Instrutions}}/null/-1/0/-1/false"
+      }
+    }
+  ]
+}

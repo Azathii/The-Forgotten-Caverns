@@ -1,0 +1,27 @@
+{
+  "Changes": [
+    { 
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/ForgottenWalls, Mods/{{ModId}}/ForgottenFloors",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/AdditionalWallpaperFlooring",
+      "Entries": {
+        "{{ModId}}_ForgottenWalls": {
+          "ID": "ForgottenWalls",
+          "Texture": "Mods/{{ModId}}/ForgottenWalls",
+          "IsFlooring": false,
+          "Count": 20
+        }, 
+        "{{ModId}}_ForgottenFloors": {
+          "ID": "ForgottenFloors",
+          "Texture": "Mods/{{ModId}}/ForgottenFloors",
+          "IsFlooring": true,
+          "Count": 8
+        }
+      }
+    }
+  ]
+}

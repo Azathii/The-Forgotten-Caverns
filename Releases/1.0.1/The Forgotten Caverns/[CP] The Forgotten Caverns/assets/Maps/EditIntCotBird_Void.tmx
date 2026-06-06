@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="2" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="34" nextobjectid="240">
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="264" columns="12">
+  <image source="farmhouse_tiles.png" width="192" height="352"/>
+ </tileset>
+ <tileset firstgid="2441" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors.png" width="256" height="688"/>
+ </tileset>
+ <tileset firstgid="3129" name="z_Azathii_FCEdits" tilewidth="16" tileheight="16" tilecount="1575" columns="35">
+  <image source="Azathii_FCEdits.png" width="560" height="720"/>
+  <tile id="1515">
+   <animation>
+    <frame tileid="1517" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1517" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1519" duration="150"/>
+    <frame tileid="1521" duration="150"/>
+    <frame tileid="1523" duration="150"/>
+    <frame tileid="1521" duration="150"/>
+    <frame tileid="1523" duration="150"/>
+    <frame tileid="1521" duration="150"/>
+    <frame tileid="1523" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1525" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1525" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+    <frame tileid="1515" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1516">
+   <animation>
+    <frame tileid="1518" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1518" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1522" duration="150"/>
+    <frame tileid="1524" duration="150"/>
+    <frame tileid="1522" duration="150"/>
+    <frame tileid="1524" duration="150"/>
+    <frame tileid="1522" duration="150"/>
+    <frame tileid="1524" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+    <frame tileid="1516" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1550">
+   <animation>
+    <frame tileid="1552" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1552" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1554" duration="150"/>
+    <frame tileid="1556" duration="150"/>
+    <frame tileid="1558" duration="150"/>
+    <frame tileid="1556" duration="150"/>
+    <frame tileid="1558" duration="150"/>
+    <frame tileid="1556" duration="150"/>
+    <frame tileid="1558" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+    <frame tileid="1550" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1551">
+   <animation>
+    <frame tileid="1553" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1553" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1555" duration="150"/>
+    <frame tileid="1557" duration="150"/>
+    <frame tileid="1559" duration="150"/>
+    <frame tileid="1557" duration="150"/>
+    <frame tileid="1559" duration="150"/>
+    <frame tileid="1557" duration="150"/>
+    <frame tileid="1559" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+    <frame tileid="1551" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="32" name="Back2" width="2" height="3">
+  <data encoding="csv">
+0,0,
+0,0,
+4599,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="2" height="3">
+  <data encoding="csv">
+0,0,
+0,0,
+0,4600
+</data>
+ </layer>
+ <layer id="30" name="Front2" width="2" height="3">
+  <data encoding="csv">
+4644,4645,
+4679,4680,
+0,0
+</data>
+ </layer>
+ <objectgroup id="33" name="Back2"/>
+ <objectgroup id="28" name="Buildings">
+  <object id="239" name="TileData" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="playSound parrot"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="31" name="Front2"/>
+</map>

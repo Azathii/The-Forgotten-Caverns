@@ -1,0 +1,349 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_PetraChestLocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestPetraFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/PetraChestOpen": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_PetraChestLocked2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestPetraFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/PetraChestOpen": "true",
+        "HasFlag|contains={{ModId}}/PetraChestTaken": "true"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_PetraChestUnlocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestPetraTrue}}",
+            "DMT/give_Once_Action": "(O)858,10",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestPetraReward",
+            "DMT/sound_Once_Action": "questcomplete",
+            "DMT/mail_Once_Action": "{{ModId}}/PetraChestTaken"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/PetraChestOpen": "true",
+        "HasFlag|contains={{ModId}}/PetraChestTaken": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenChestLocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestWrenFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/WrenChestOpen": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenChestLocked2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestWrenFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/WrenChestOpen": "true",
+        "HasFlag|contains={{ModId}}/WrenChestTaken": "true"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenChestUnlocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestWrenTrue}}",
+            "DMT/give_Once_Action": "(O)857",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestWrenReward",
+            "DMT/sound_Once_Action": "questcomplete",
+            "DMT/mail_Once_Action": "{{ModId}}/WrenChestTaken"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/WrenChestOpen": "true",
+        "HasFlag|contains={{ModId}}/WrenChestTaken": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlChestLocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 3,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestEarlFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlChestOpen": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlChestLocked2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 3,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestEarlFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlChestOpen": "true",
+        "HasFlag|contains={{ModId}}/EarlChestTaken": "true"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlChestUnlocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 3,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestEarlTrue}}",
+            "DMT/sound_Once_Action": "questcomplete",
+            "DMT/give_Once_Action": "(O)373",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestEarlReward",
+            "DMT/mail_Once_Action": "{{ModId}}/EarlChestTaken"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlChestOpen": "true",
+        "HasFlag|contains={{ModId}}/EarlChestTaken": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarChestLocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestEdgarFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarChestOpen": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarChestLocked2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestEdgarFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarChestOpen": "true",
+        "HasFlag|contains={{ModId}}/EdgarChestTaken": "true"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarChestUnlocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestEdgarTrue}}",
+            "DMT/sound_Once_Action": "questcomplete",
+            "DMT/give_Once_Action": "(O)PurpleBook",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestEdgarReward",
+            "DMT/mail_Once_Action": "{{ModId}}/EdgarChestTaken"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarChestOpen": "true",
+        "HasFlag|contains={{ModId}}/EdgarChestTaken": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainChestLocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestCaptainFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainChestOpen": "false"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainChestLocked2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestCaptainFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainChestOpen": "true",
+        "HasFlag|contains={{ModId}}/CaptainChestTaken": "true"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainChestUnlocked",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenVault",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTEVaultChestCaptainTrue}}",
+            "DMT/sound_Once_Action": "questcomplete",
+            "DMT/give_Once_Action": "(W){{ModId}}_CursedCutlass",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestCaptainReward",
+            "DMT/mail_Once_Action": "{{ModId}}/CaptainChestTaken"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainChestOpen": "true",
+        "HasFlag|contains={{ModId}}/CaptainChestTaken": "false"
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}

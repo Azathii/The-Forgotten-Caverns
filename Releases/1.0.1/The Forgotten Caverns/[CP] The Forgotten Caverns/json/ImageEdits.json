@@ -1,0 +1,388 @@
+{
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "TerrainFeatures/tree1_greenRain_winter, TerrainFeatures/tree1_winter, TerrainFeatures/tree2_greenRain_winter, TerrainFeatures/tree2_winter, TerrainFeatures/tree3_greenRain_winter, TerrainFeatures/tree3_winter, TerrainFeatures/tree8_winter",
+      "FromFile": "assets/Loose/{{TargetWithoutPath}}.png",
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "Season": "Winter",
+        "WinterTreePatch": "Enabled"
+      },
+      "Priority": "Late +20",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter",
+      "FromFile": "assets/Loose/Flooring.png",
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"     
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring1.png",
+      "ToArea": {"X": 80, "Y": 192, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"     
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring2.png",
+      "ToArea": {"X": 256, "Y": 208, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"     
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring3.png",
+      "ToArea": {"X": 272, "Y": 208, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"     
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring4.png",
+      "ToArea": {"X": 304, "Y": 208, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring5.png",
+      "ToArea": {"X": 336, "Y": 208, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring6.png",
+      "ToArea": {"X": 272, "Y": 256, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring7.png",
+      "ToArea": {"X": 336, "Y": 256, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring8.png",
+      "ToArea": {"X": 368, "Y": 256, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring9.png",
+      "ToArea": {"X": 16, "Y": 272, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring10.png",
+      "ToArea": {"X": 48, "Y": 272, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring11.png",
+      "ToArea": {"X": 112, "Y": 272, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring12.png",
+      "ToArea": {"X": 0, "Y": 560, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/Loose/Flooring13.png",
+      "ToArea": {"X": 16, "Y": 560, "Width": 16, "Height": 16},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "PavingPatch": "Enabled"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange" 
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/Azathii_FruitTrees",
+      "FromFile": "assets/Tilesheets/AzathiiFruitTreeWinter_SBV.png",
+      "ToArea": {"X": 336, "Y": 0, "Width": 48, "Height": 160},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "HasMod |contains=Lita.StarblueValleyUnofficial": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/Azathii_FruitTrees",
+      "FromFile": "assets/Tilesheets/AzathiiFruitTreeWinter_VPR.png",
+      "ToArea": {"X": 336, "Y": 0, "Width": 48, "Height": 160},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "TileSheets/fruitTrees",
+      "FromFile": "assets/Tilesheets/WinterFruitTrees_SBV.png",
+      "ToArea": {"X": 336, "Y": 0, "Width": 48, "Height": 480},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "HasMod |contains=Lita.StarblueValleyUnofficial": true
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "TileSheets/fruitTrees",
+      "FromFile": "assets/Tilesheets/WinterFruitTrees_VPR.png",
+      "ToArea": {"X": 336, "Y": 0, "Width": 48, "Height": 720},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": true
+      }, 
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "TileSheets/fruitTrees",
+      "FromFile": "assets/Tilesheets/YoungTrees_SBV.png",
+      "ToArea": {"X": 0, "Y": 496, "Width": 192, "Height": 64},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "HasMod |contains=Lita.StarblueValleyUnofficial": true
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "TileSheets/fruitTrees",
+      "FromFile": "assets/Tilesheets/YoungTrees_VPR.png",
+      "ToArea": {"X": 0, "Y": 496, "Width": 192, "Height": 64},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": true
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "TileSheets/Craftables",
+      "FromFile": "assets/Loose/BerryChest.png",
+      "ToArea": {"X": 0, "Y": 928, "Width": 96, "Height": 32},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationName": "{{ModId}}_ForgottenHotSprings"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"     
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Loose/Weather.png",
+      "ToArea": {"X": 341, "Y": 421, "Width": 12, "Height": 8},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Loose/WeatherStrip.png",
+      "ToArea": {"X": 317, "Y": 421, "Width": 96, "Height": 8},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationName": "{{ModId}}_ForgottenTravelHub"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Loose/Baubles.png",
+      "ToArea": {"X": 346, "Y": 1971, "Width": 20, "Height": 5},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Loose/Snowstep.png",
+      "ToArea": {"X": 248, "Y": 406, "Width": 6, "Height": 7},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns",
+        "Season": "Winter" 
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "TerrainFeatures/hoeDirt, TerrainFeatures/hoeDirtDark, TerrainFeatures/hoeDirtSnow",
+      "FromFile": "assets/Loose/{{TargetWithoutPath}}.png",
+      "ToArea": {"X": 0, "Y": 0, "Width": 192, "Height": 64},
+      "PatchMode": "Replace",
+      "When": {
+        "LocationContext": "AzathiiCaverns"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Skeleton, Characters/Monsters/Skeleton_dangerous, Characters/Monsters/Skeleton Mage, Characters/Monsters/Skeleton Mage_dangerous",
+      "FromFile": "assets/Monsters/{{TargetWithoutPath}}.png",
+      "ToArea": {"X": 0, "Y": 0, "Width": 64, "Height": 192},
+      "PatchMode": "Replace",
+      "When": {
+        "ReplaceSkeletonMobs": "Enabled",
+        "LocationContext": "AzathiiCaverns"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Skeleton, Characters/Monsters/Skeleton_dangerous, Characters/Monsters/Skeleton Mage, Characters/Monsters/Skeleton Mage_dangerous",
+      "FromFile": "assets/Monsters/{{TargetWithoutPath}}.png",
+      "ToArea": {"X": 0, "Y": 0, "Width": 64, "Height": 192},
+      "PatchMode": "Replace",
+      "When": {
+        "ReplaceSkeletonMobs": "Enabled",
+        "HasMod |contains=Azathii.ForgottenWoods": true,
+        "LocationName": "Azathii.ForgottenWoods_ForgottenFarmhouse"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Skeleton, Characters/Monsters/Skeleton_dangerous, Characters/Monsters/Skeleton Mage, Characters/Monsters/Skeleton Mage_dangerous",
+      "FromFile": "assets/Monsters/{{TargetWithoutPath}}.png",
+      "ToArea": {"X": 0, "Y": 0, "Width": 64, "Height": 192},
+      "PatchMode": "Replace",
+      "When": {
+        "ReplaceSkeletonMobs": "Enabled",
+        "HasMod |contains=Azathii.ForgottenWoods": true,
+        "LocationName": "Azathii.ForgottenWoods_ForgottenHill"
+      },
+      "Priority": "Late +10",
+      "Update": "OnTimeChange, OnLocationChange"       
+    }
+  ]
+}

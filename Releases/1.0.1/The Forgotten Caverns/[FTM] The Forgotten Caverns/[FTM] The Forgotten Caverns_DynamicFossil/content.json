@@ -1,0 +1,60 @@
+{
+  "OreSpawnEnabled": true,
+  "Ore_Spawn_Settings": {
+    "Areas": [
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "ForgottenMine_Fossil",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenMine",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag": "Island_UpgradeBridge"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "PercentExtraSpawnsPerMiningLevel": 0,
+    "MiningLevelRequired": {
+      "Fossil": 0
+    },
+    "StartingSpawnChance": {
+      "Fossil": 5
+    },
+    "LevelTenSpawnChance": {
+      "Fossil": 10
+    },
+    "CustomTileIndex": []
+  }
+}

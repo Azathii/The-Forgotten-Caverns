@@ -1,0 +1,139 @@
+{
+  "Changes": [
+    { 
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/AncientWizardHat, Mods/{{ModId}}/ClericsHelmet, Mods/{{ModId}}/Thorn, Mods/{{ModId}}/RadiantRapier, Mods/{{ModId}}/CursedCutlass",
+      "FromFile": "assets/Items/{{TargetWithoutPath}}.png"
+    },	
+    {
+      "Action": "EditData",
+      "Target": "Data/hats",
+      "Entries": {
+        "{{ModId}}_AncientWizardHat": "{{ModId}}_AncientWizardHat/{{i18n:Hat_AncientWizardHat.description}}/false/true//{{i18n:Hat_AncientWizardHat.name}}/0/Mods\\{{ModId}}\\AncientWizardHat",
+        "{{ModId}}_ClericsHelmet": "{{ModId}}_ClericsHelmet/{{i18n:Hat_ClericsHelmet.description}}/hide/true//{{i18n:Hat_ClericsHelmet.name}}/0/Mods\\{{ModId}}\\ClericsHelmet"
+        }          
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "HatMouse",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModId}}_AncientWizardHat": {
+           "Condition": "PLAYER_HAS_MAIL Any {{ModId}}/LootedAncientWizard",
+           "Id": "{{ModId}}_AncientWizardHat",
+           "ItemId": "{{ModId}}_AncientWizardHat",
+           "Price": "4500"
+         },
+        "{{ModId}}_ClericsHelmet": {
+           "Condition": "PLAYER_HAS_MAIL Any {{ModId}}/SanctumTreasure1Found",
+           "Id": "{{ModId}}_ClericsHelmet",
+           "ItemId": "{{ModId}}_ClericsHelmet",
+           "Price": "5000"
+         }
+       }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}_Thorn": {
+           "Name": "{{ModId}}_Thorn",
+           "DisplayName": "{{i18n:Weapon_Thorn.name}}",
+           "Description": "{{i18n:Weapon_Thorn.description}}",
+           "MinDamage": 20,
+           "MaxDamage": 28,
+           "Knockback": 1.0,
+           "Speed": 2,
+           "Precision": 8,
+           "Defense": 1,
+           "Type": 1,
+           "MineBaseLevel": -1,
+           "MineMinLevel": -1,
+           "AreaOfEffect": 0,
+           "CritChance": 0.25,
+           "CritMultiplier": 3.0,
+           "CanBeLostOnDeath": false,
+           "Texture": "Mods/{{ModId}}/Thorn",
+           "SpriteIndex": 0,
+           "Projectiles": null,
+           "CustomFields": null
+        },
+        "{{ModId}}_RadiantRapier": {
+           "Name": "{{ModId}}_RadiantRapier",
+           "DisplayName": "{{i18n:Weapon_RadiantRapier.name}}",
+           "Description": "{{i18n:Weapon_RadiantRapier.description}}",
+           "MinDamage": 90,
+           "MaxDamage": 130,
+           "Knockback": 1.4,
+           "Speed": 5,
+           "Precision": 50,
+           "Defense": 10,
+           "Type": 0,
+           "MineBaseLevel": -1,
+           "MineMinLevel": -1,
+           "AreaOfEffect": 0,
+           "CritChance": 0.1,
+           "CritMultiplier": 5.0,
+           "CanBeLostOnDeath": false,
+           "Texture": "Mods/{{ModId}}/RadiantRapier",
+           "SpriteIndex": 0,
+           "Projectiles": null,
+           "CustomFields": null
+        },   
+        "{{ModId}}_CursedCutlass": {
+           "Name": "{{ModId}}_CursedCutlass",
+           "DisplayName": "{{i18n:Weapon_CursedCutlass.name}}",
+           "Description": "{{i18n:Weapon_CursedCutlass.description}}",
+           "MinDamage": 35,
+           "MaxDamage": 50,
+           "Knockback": 1.0,
+           "Speed": 3,
+           "Precision": 5,
+           "Defense": 2,
+           "Type": 0,
+           "MineBaseLevel": -1,
+           "MineMinLevel": -1,
+           "AreaOfEffect": 0,
+           "CritChance": 0.05,
+           "CritMultiplier": 3.0,
+           "CanBeLostOnDeath": false,
+           "Texture": "Mods/{{ModId}}/CursedCutlass",
+           "SpriteIndex": 0,
+           "Projectiles": null,
+           "CustomFields": null
+        }
+      }
+    },   
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "AdventureShop",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModId}}_Thorn": {
+           "Condition": "PLAYER_HAS_MAIL Any {{ModId}}/CavernTreasure2Found",
+           "Id": "{{ModId}}_Thorn",
+           "ItemId": "{{ModId}}_Thorn",
+           "Price": "12500"
+        },
+        "{{ModId}}_RadiantRapier": {
+           "Condition": "PLAYER_HAS_MAIL Any {{ModId}}/SanctumTreasure2Found",
+           "Id": "{{ModId}}_RadiantRapier",
+           "ItemId": "{{ModId}}_RadiantRapier",
+           "Price": "60000"
+        },
+        "{{ModId}}_CursedCutlass": {
+           "Condition": "PLAYER_HAS_MAIL Any {{ModId}}/DinoTreasureFound",
+           "Id": "{{ModId}}_CursedCutlass",
+           "ItemId": "{{ModId}}_CursedCutlass",
+           "Price": "20000"
+        }
+      }
+    }
+  ]
+}
