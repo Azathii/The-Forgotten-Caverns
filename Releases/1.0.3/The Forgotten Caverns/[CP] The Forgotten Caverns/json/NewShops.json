@@ -1,0 +1,782 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModId}}_GraveRobberShop": {
+          "PriceModifiers": null,
+          "PriceModifierMode": "Stack",
+          "Owners": [
+            {
+              "Condition": null,
+              "Portrait": "null",
+              "Dialogues": [
+                {
+                  "Id": "{{ModId}}_GraveRobberShop",
+                  "Condition": null,
+                  "Dialogue": null,
+                  "RandomDialogue": [
+                    "{{i18n:Shop_GraveRobber1}}",
+                    "{{i18n:Shop_GraveRobber2}}",
+                    "{{i18n:Shop_GraveRobber3}}"
+                  ]
+                }
+              ],
+              "RandomizeDialogueOnOpen": true,
+              "ClosedMessage": null,
+              "Id": "AnyOrNone",
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_CavernLunch",
+              "ItemId": "{{ModId}}_CavernLunch",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_FriedFangtooth",
+              "ItemId": "{{ModId}}_FriedFangtooth",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "Id": "{{ModId}}_CreamedCavernSpinach",
+              "ItemId": "{{ModId}}_CreamedCavernSpinach",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "Id": "{{ModId}}_Lemonade",
+              "ItemId": "{{ModId}}_Lemonade",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "Id": "{{ModId}}_TropicalTwist",
+              "ItemId": "{{ModId}}_TropicalTwist",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "Id": "{{ModId}}_CitronTart",
+              "ItemId": "{{ModId}}_CitronTart",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "Id": "{{ModId}}_KeyLimePie",
+              "ItemId": "{{ModId}}_KeyLimePie",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "Id": "{{ModId}}_LemonDrizzleCake",
+              "ItemId": "{{ModId}}_LemonDrizzleCake",
+              "IsRecipe": true
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 5,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Urn1",
+              "ItemId": "{{ModId}}_Urn1"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 5,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Urn2",
+              "ItemId": "{{ModId}}_Urn2"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 5,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Urn3",
+              "ItemId": "{{ModId}}_Urn3"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 5,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Urn4",
+              "ItemId": "{{ModId}}_Urn4"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 2,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_GraveRoses",
+              "ItemId": "{{ModId}}_GraveRoses"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 10,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Grave1",
+              "ItemId": "{{ModId}}_Grave1"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 10,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Grave2",
+              "ItemId": "{{ModId}}_Grave2"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 10,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Grave3",
+              "ItemId": "{{ModId}}_Grave3"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 10,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Grave4",
+              "ItemId": "{{ModId}}_Grave4"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 15,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Sarcophagus",
+              "ItemId": "{{ModId}}_Sarcophagus"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 5,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones1",
+              "ItemId": "{{ModId}}_Bones1"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 5,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones2",
+              "ItemId": "{{ModId}}_Bones2"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 5,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones3",
+              "ItemId": "{{ModId}}_Bones3"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 3,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones4",
+              "ItemId": "{{ModId}}_Bones4"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 3,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones5",
+              "ItemId": "{{ModId}}_Bones5"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 3,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones6",
+              "ItemId": "{{ModId}}_Bones6"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 2,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones7",
+              "ItemId": "{{ModId}}_Bones7"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 2,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bones8",
+              "ItemId": "{{ModId}}_Bones8"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 18,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Catacomb1",
+              "ItemId": "{{ModId}}_Catacomb1"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 18,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Catacomb2",
+              "ItemId": "{{ModId}}_Catacomb2"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 12,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Catacomb3",
+              "ItemId": "{{ModId}}_Catacomb3"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 12,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Catacomb4",
+              "ItemId": "{{ModId}}_Catacomb4"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Cauldron",
+              "ItemId": "{{ModId}}_Cauldron"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 10,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_FlickerCandle1",
+              "ItemId": "{{ModId}}_FlickerCandle1"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 8,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_FlickerCandle2",
+              "ItemId": "{{ModId}}_FlickerCandle2"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 10,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_SpiritSconce",
+              "ItemId": "{{ModId}}_SpiritSconce"
+            },
+            {
+              "TradeItemId": "(O)881",
+              "TradeItemAmount": 20,
+              "Price": -1,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_SpiritStatue",
+              "ItemId": "{{ModId}}_SpiritStatue"
+            }
+          ]
+        },
+        "{{ModId}}_PrizeKiosk": {
+          "Currency": 2,
+          "PriceModifiers": null,
+          "PriceModifierMode": "Stack",
+          "Owners": [
+            {
+              "Condition": null,
+              "Portrait": "null",
+              "Dialogues": [
+                {
+                  "Id": "{{ModId}}_PrizeKiosk",
+                  "Condition": null,
+                  "Dialogue": null,
+                  "RandomDialogue": [
+                    "{{i18n:Shop_PrizeKiosk1}}",
+                    "{{i18n:Shop_PrizeKiosk2}}"
+                  ]
+                }
+              ],
+              "RandomizeDialogueOnOpen": true,
+              "ClosedMessage": null,
+              "Id": "AnyOrNone",
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 600,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_KeyLimeSapling",
+              "ItemId": "{{ModId}}_KeyLimeSapling"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 600,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_LemonSapling",
+              "ItemId": "{{ModId}}_LemonSapling"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 7500,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_ForgottenCatalogue",
+              "ItemId": "{{ModId}}_ForgottenCatalogue"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientChair1",
+              "ItemId": "{{ModId}}_AncientChair1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientChair4",
+              "ItemId": "{{ModId}}_AncientChair4"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientEndTable1",
+              "ItemId": "{{ModId}}_AncientEndTable1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 400,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientDiningTable1",
+              "ItemId": "{{ModId}}_AncientDiningTable1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 500,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientDiningTable2",
+              "ItemId": "{{ModId}}_AncientDiningTable2"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 200,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientTable1",
+              "ItemId": "{{ModId}}_AncientTable1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 150,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientDesk2",
+              "ItemId": "{{ModId}}_AncientDesk2"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 150,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientSideboard1",
+              "ItemId": "{{ModId}}_AncientSideboard1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 450,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientDresser",
+              "ItemId": "{{ModId}}_AncientDresser"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 500,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_AncientWardrobe2",
+              "ItemId": "{{ModId}}_AncientWardrobe2"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_RoseColumn2",
+              "ItemId": "{{ModId}}_RoseColumn2"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 550,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_ApothecaryDesk1",
+              "ItemId": "{{ModId}}_ApothecaryDesk1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 100,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Scales",
+              "ItemId": "{{ModId}}_Scales"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 600,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bar1",
+              "ItemId": "{{ModId}}_Bar1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 150,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bookcase1",
+              "ItemId": "{{ModId}}_Bookcase1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 800,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Terrarium",
+              "ItemId": "{{ModId}}_Terrarium"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 1000,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_GemDisplay1",
+              "ItemId": "{{ModId}}_GemDisplay1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 800,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_WeaponDisplay1",
+              "ItemId": "{{ModId}}_WeaponDisplay1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 1000,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_WisteriaIndoor",
+              "ItemId": "{{ModId}}_WisteriaIndoor"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 1000,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_WisteriaOutdoor",
+              "ItemId": "{{ModId}}_WisteriaOutdoor"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_RoseHouseplant1",
+              "ItemId": "{{ModId}}_RoseHouseplant1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 100,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_PottedBush1",
+              "ItemId": "{{ModId}}_PottedBush1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 100,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_PottedBush5",
+              "ItemId": "{{ModId}}_PottedBush5"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 100,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_PottedBush6",
+              "ItemId": "{{ModId}}_PottedBush6"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_EemieHouseplant3",
+              "ItemId": "{{ModId}}_EemieHouseplant3"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_EemieHouseplant7",
+              "ItemId": "{{ModId}}_EemieHouseplant7"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_EemieHouseplant8",
+              "ItemId": "{{ModId}}_EemieHouseplant8"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_EemieHouseplant16",
+              "ItemId": "{{ModId}}_EemieHouseplant16"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_EemieHouseplant17",
+              "ItemId": "{{ModId}}_EemieHouseplant17"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 80,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_EemieHouseplant21",
+              "ItemId": "{{ModId}}_EemieHouseplant21"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 150,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_FlowerMix5",
+              "ItemId": "{{ModId}}_FlowerMix5"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 150,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_FlowerMix6",
+              "ItemId": "{{ModId}}_FlowerMix6"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 75,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Candelabra1",
+              "ItemId": "{{ModId}}_Candelabra1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 200,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_SmallRug1",
+              "ItemId": "{{ModId}}_SmallRug1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 400,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_LargeRug2",
+              "ItemId": "{{ModId}}_LargeRug2"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 70,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Shelf1",
+              "ItemId": "{{ModId}}_Shelf1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 90,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Shelf2",
+              "ItemId": "{{ModId}}_Shelf2"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 150,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_HangingWisteria",
+              "ItemId": "{{ModId}}_HangingWisteria"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 100,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_BookPanel1",
+              "ItemId": "{{ModId}}_BookPanel1"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 100,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_SelfPortrait",
+              "ItemId": "{{ModId}}_SelfPortrait"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 500,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Bed3",
+              "ItemId": "{{ModId}}_Bed3"
+            },
+            {
+              "TradeItemId": null,
+              "TradeItemAmount": 1,
+              "Price": 500,
+              "AvailableStock": -1,
+              "AvailableStockLimit": "Global",
+              "Id": "{{ModId}}_Canopy1",
+              "ItemId": "{{ModId}}_Canopy1"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

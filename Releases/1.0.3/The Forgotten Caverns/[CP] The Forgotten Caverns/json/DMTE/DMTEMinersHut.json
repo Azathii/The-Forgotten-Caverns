@@ -1,0 +1,50 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_MinersHutBarrel1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMinersHut",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)243,3",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/MinersHutBarrel1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MinersHutBarrel1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MinersHutBarrel1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMinersHut",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MinersHutBarrel1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

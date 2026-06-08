@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="5" height="7" tilewidth="16" tileheight="16" infinite="0" nextlayerid="44" nextobjectid="72">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Catacombs" tilewidth="16" tileheight="16" tilecount="1650" columns="25">
+  <image source="Azathii_Catacombs.png" width="400" height="1056"/>
+ </tileset>
+ <tileset firstgid="2003" name="z_Azathii_Cavern" tilewidth="16" tileheight="16" tilecount="2268" columns="36">
+  <image source="Azathii_Cavern.png" width="576" height="1008"/>
+ </tileset>
+ <layer id="1" name="Back" width="5" height="7">
+  <data encoding="csv">
+2724,2725,2725,2724,0,
+2725,2763,2763,2724,2724,
+2513,2724,2549,2724,2724,
+2725,2725,2725,2725,2725,
+2724,2725,1763,2725,2549,
+2724,2765,1788,2724,2507,
+2508,2508,2508,2508,2544
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="5" height="7">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="14" name="Back3" width="5" height="7">
+  <data encoding="csv">
+2588,2588,2588,0,0,
+2624,2624,2626,2588,2588,
+0,0,2623,2624,2626,
+0,0,0,0,2623,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="5" height="7">
+  <data encoding="csv">
+2131,2132,2169,2170,2133,
+595,0,2205,2206,2169,
+3436,0,3253,3254,2205,
+0,0,1734,0,595,
+3432,0,0,0,0,
+0,0,0,3431,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Buildings2" width="5" height="7">
+  <data encoding="csv">
+0,2147484223,2147484222,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="42" name="Buildings3" width="5" height="7">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="5" height="7">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="5" height="7">
+  <data encoding="csv">
+570,571,0,0,0,
+0,0,3217,3218,0,
+0,0,1709,569,570,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,2385,2386,0
+</data>
+ </layer>
+ <layer id="9" name="Front2" width="5" height="7">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="AlwaysFront" width="5" height="7">
+  <data encoding="csv">
+0,0,0,519,520,
+0,0,0,544,545,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="17" name="AlwaysFront2" width="5" height="7">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="25" name="Back2"/>
+ <objectgroup id="26" name="Back3"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="71" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message RecyclingRoomMsg1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="27" name="Buildings2"/>
+ <objectgroup id="43" name="Buildings3"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="34" name="Front2"/>
+ <objectgroup id="38" name="AlwaysFront"/>
+ <objectgroup id="39" name="AlwaysFront2"/>
+</map>

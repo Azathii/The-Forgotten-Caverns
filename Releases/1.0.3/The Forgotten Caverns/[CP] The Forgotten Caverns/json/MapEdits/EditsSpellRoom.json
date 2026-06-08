@@ -1,0 +1,68 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpellRoom",
+      "FromFile": "assets/Maps/EditSpellRoomMsg1.tmx",
+      "ToArea": {
+        "X": 14,
+        "Y": 13,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpellRoom",
+      "FromFile": "assets/Maps/EditSpellRoomMsg2.tmx",
+      "ToArea": {
+        "X": 5,
+        "Y": 8,
+        "Width": 3,
+        "Height": 2
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpellRoom",
+      "FromFile": "assets/Maps/EditSpellRoomMsg3.tmx",
+      "ToArea": {
+        "X": 12,
+        "Y": 3,
+        "Width": 5,
+        "Height": 2
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpellRoom",
+      "FromFile": "assets/Maps/EditSpellRoomMsg4.tmx",
+      "ToArea": {
+        "X": 21,
+        "Y": 8,
+        "Width": 3,
+        "Height": 2
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

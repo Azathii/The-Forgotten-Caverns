@@ -1,0 +1,360 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "{{ModId}}_Bob": "{{i18n:Gifts_Bob.Love}}/(O)StardropTea 614 -2 -12 -102 -103 {{ModId}}_GloomBloom {{ModId}}_DuskberryCheesecake/{{i18n:Gifts_Bob.Like}}/-15 -16 -28 -101 440 614 726/{{i18n:Gifts_Bob.Dislike}}/613 634 635 636 637 638 -5 -6 -7 -26 -27 -75 -79 -81 edible_mushroom/{{i18n:Gifts_Bob.Hate}}/279 349 351 772 773/{{i18n:Gifts_Bob.Neutral}}/"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+        "{{ModId}}_Bob": {
+          "NPCName": "{{ModId}}_Bob",
+          "Reactions": [
+            {
+              "Tag": "spring_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.like.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.3}}"
+                }
+              },
+              "Id": "reaction_0"
+            },
+            {
+              "Tag": "summer_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Action.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Action.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Action.3}}"
+                }
+              },
+              "Id": "reaction_1"
+            },
+            {
+              "Tag": "fall_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.3}}"
+                }
+              },
+              "Id": "reaction_2"
+            },
+            {
+              "Tag": "winter_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.like.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.3}}"
+                }
+              },
+              "Id": "reaction_3"
+            },
+            {
+              "Tag": "spring_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Documentary.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Documentary.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Documentary.3}}"
+                }
+              },
+              "Id": "reaction_4"
+            },
+            {
+              "Tag": "summer_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.like.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.3}}"
+                }
+              },
+              "Id": "reaction_5"
+            },
+            {
+              "Tag": "fall_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.3}}"
+                }
+              },
+              "Id": "reaction_6"
+            },
+            {
+              "Tag": "winter_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Classic.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Classic.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Classic.3}}"
+                }
+              },
+              "Id": "reaction_7"
+            },
+            {
+              "Tag": "documentary",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Documentary.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Documentary.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Documentary.3}}"
+                }
+              },
+              "Id": "reaction_8"
+            },
+            {
+              "Tag": "action",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Action.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Action.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Action.3}}"
+                }
+              },
+              "Id": "reaction_9"
+            },
+            {
+              "Tag": "*",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.like.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Like.3}}"
+                }
+              },
+              "Id": "reaction_10"
+            },
+            {
+              "Tag": "horror",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Horror.3}}"
+                }
+              },
+              "Id": "reaction_11"
+            },
+            {
+              "Tag": "romance",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Romance.1}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Romance.2}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": null,
+                  "Text": "{{i18n:Movie_Bob.Romance.3}}"
+                }
+              },
+              "Id": "reaction_12"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+        "{{ModId}}_Bob": {
+          "Name": "{{ModId}}_Bob",
+          "LovedTags": [
+            "Jasmine Tea"
+          ],
+          "LikedTags": [
+            "Stardrop Sorbet"
+          ],
+          "DislikedTags": [
+            "Joja Cola",
+            "Cotton Candy",
+            "Sour Slimes",
+            "Personal Pizza",
+            "Nachos",
+            "Salmon Burger",
+            "Ice Cream Sandwich",
+            "Popcorn",
+            "Fries",
+            "Chocolate Popcorn",
+            "Black Licorice",
+            "Star Cookie",
+            "Jawbreaker",
+            "Salted Peanuts",
+            "Hummus Snack Pack",
+            "Kale Smoothie",
+            "Apple Slices",
+            "Panzanella Salad",
+            "Truffle Popcorn",
+            "Cappuccino Mousse Cake",
+            "JojaCorn",
+            "Rock Candy"
+          ]
+        }
+      }
+    }
+  ]
+}

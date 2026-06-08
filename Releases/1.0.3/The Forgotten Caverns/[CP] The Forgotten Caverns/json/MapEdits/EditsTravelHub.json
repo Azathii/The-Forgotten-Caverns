@@ -1,0 +1,224 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubWarpMsg.tmx",
+      "ToArea": {
+        "X": 26,
+        "Y": 5,
+        "Width": 2,
+        "Height": 3
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubWindowsDay.tmx",
+      "ToArea": {
+        "X": 30,
+        "Y": 3,
+        "Width": 5,
+        "Height": 3
+      },
+      "When": {
+        "Time": "{{Range: 0600, 1859}}",
+        "Windows": "{{Windows}}",
+        "Season": "Spring, Summer"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubWindowsNight.tmx",
+      "ToArea": {
+        "X": 30,
+        "Y": 3,
+        "Width": 5,
+        "Height": 3
+      },
+      "When": {
+        "Time": "{{Range: 1900, 2600}}",
+        "Windows": "{{Windows}}",
+        "Season": "Spring, Summer"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubWindowsDay.tmx",
+      "ToArea": {
+        "X": 30,
+        "Y": 3,
+        "Width": 5,
+        "Height": 3
+      },
+      "When": {
+        "Time": "{{Range: 0600, 1759}}",
+        "Windows": "{{Windows}}",
+        "Season": "Fall"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubWindowsNight.tmx",
+      "ToArea": {
+        "X": 30,
+        "Y": 3,
+        "Width": 5,
+        "Height": 3
+      },
+      "When": {
+        "Time": "{{Range: 1800, 2600}}",
+        "Windows": "{{Windows}}",
+        "Season": "Fall"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubWindowsDay.tmx",
+      "ToArea": {
+        "X": 30,
+        "Y": 3,
+        "Width": 5,
+        "Height": 3
+      },
+      "When": {
+        "Time": "{{Range: 0600, 1559}}",
+        "Windows": "{{Windows}}",
+        "Season": "Winter"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubWindowsNight.tmx",
+      "ToArea": {
+        "X": 30,
+        "Y": 3,
+        "Width": 5,
+        "Height": 3
+      },
+      "When": {
+        "Time": "{{Range: 1600, 2600}}",
+        "Windows": "{{Windows}}",
+        "Season": "Winter"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubSign_ForUp.tmx",
+      "ToArea": {
+        "X": 48,
+        "Y": 10,
+        "Width": 2,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/HighForageEnabled": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubSign_NoMob.tmx",
+      "ToArea": {
+        "X": 48,
+        "Y": 8,
+        "Width": 2,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/NoMobsEnabled": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubSign_MobUp.tmx",
+      "ToArea": {
+        "X": 48,
+        "Y": 8,
+        "Width": 2,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HasFlag: currentPlayer |contains={{ModId}}/NoMobsEnabled": "false",
+        "HasFlag: currentPlayer |contains={{ModId}}/MoreMobsEnabled": "true",
+        "HasFlag: currentPlayer |contains={{ModId}}/DangerousMobsEnabled": "false" 
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubSign_DangMobDown.tmx",
+      "ToArea": {
+        "X": 48,
+        "Y": 8,
+        "Width": 2,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HasFlag: currentPlayer |contains={{ModId}}/NoMobsEnabled": "false",
+        "HasFlag: currentPlayer |contains={{ModId}}/MoreMobsEnabled": "false",
+        "HasFlag: currentPlayer |contains={{ModId}}/DangerousMobsEnabled": "true"  
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubSign_DangMobUp.tmx",
+      "ToArea": {
+        "X": 48,
+        "Y": 8,
+        "Width": 2,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HasFlag: currentPlayer |contains={{ModId}}/NoMobsEnabled": "false",
+        "HasFlag: currentPlayer |contains={{ModId}}/MoreMobsEnabled": "true",
+        "HasFlag: currentPlayer |contains={{ModId}}/DangerousMobsEnabled": "true"  
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditTravelHubHideSigns.tmx",
+      "ToArea": {
+        "X": 48,
+        "Y": 8,
+        "Width": 2,
+        "Height": 4
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HideSigns": "Enabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

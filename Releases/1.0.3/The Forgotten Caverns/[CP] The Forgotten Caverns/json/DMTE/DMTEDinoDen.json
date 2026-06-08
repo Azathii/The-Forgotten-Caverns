@@ -1,0 +1,197 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_FoundDinoDen",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundDinoDen"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: currentPlayer |contains={{ModId}}/FoundDinoDen": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_DinoDenShipBlock",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 34
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_On": "{{i18n:DMTEDinoDenCabinBlocked}}"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: currentPlayer |contains={{ModId}}/FoundSpeakeasy": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_DinoDenTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 40,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)74",
+            "DMT/message_Once_Action": "{{i18n:DMTEDinoDenTreasure1}}",
+            "DMT/mail_Once_Action": "{{ModId}}/DinoDenTreasure1Found",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue7"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_DinoDenTreasure1QuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 40,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue7": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_DinoDenTreasure1QuestFalseSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 40,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "secret1"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue7": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_DinoDenTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 40,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEDinoDenTreasure1Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_DinoDenTreasure2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_Action": "Buildings2 17 5=z_Azathii_Cavern/2221",
+            "DMT/give_Once_Action": "(O)107",
+            "DMT/message_Once_Action": "{{i18n:DMTEDinoDenTreasure2}}",
+            "DMT/sound_Once_Action": "secret1",
+            "DMT/mail_Once_Action": "{{ModId}}/DinoDenTreasure2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_DinoDenTreasure2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEDinoDenTreasure2Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "FromFile": "assets/Maps/EditDMTEDinoDenEgg.tmx",
+      "ToArea": {
+        "X": 17,
+        "Y": 5,
+        "Width": 1,
+        "Height": 1
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

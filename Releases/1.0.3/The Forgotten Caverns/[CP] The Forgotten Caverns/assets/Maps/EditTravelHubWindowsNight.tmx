@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="5" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="43">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_FCEdits" tilewidth="16" tileheight="16" tilecount="1575" columns="35">
+  <image source="Azathii_FCEdits.png" width="560" height="720"/>
+ </tileset>
+ <layer id="2" name="Buildings" width="5" height="3">
+  <data encoding="csv">
+1345,1346,1347,1348,1553,
+1380,1381,1382,1383,1588,
+1415,1416,1417,1418,1623
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings"/>
+</map>

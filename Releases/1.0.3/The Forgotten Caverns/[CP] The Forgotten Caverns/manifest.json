@@ -1,0 +1,22 @@
+{
+  "Name": "The Forgotten Caverns",
+  "Author": "Azathii",
+  "Version": "1.0.3",
+  "Description": "Adds bioluminescent underground areas to the Farm Cave, as well as new items, fish, fruit trees, furniture, shops and a new befriendable NPC.",
+  "UniqueID": "Azathii.TheForgottenCaverns",
+  "MinimumApiVersion": "4.0.4",
+  "UpdateKeys": [ "Nexus:47216" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "aedenthorn.DynamicMapTilesExtended",
+      "IsRequired": true
+    },
+    {
+       "UniqueID": "mushymato.MMAP",
+       "IsRequired": true
+    }
+  ]
+}

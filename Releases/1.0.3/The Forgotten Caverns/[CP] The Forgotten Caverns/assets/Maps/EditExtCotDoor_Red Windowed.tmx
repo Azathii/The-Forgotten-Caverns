@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="28" nextobjectid="42">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_FCEdits" tilewidth="16" tileheight="16" tilecount="1575" columns="35">
+  <image source="Azathii_FCEdits.png" width="560" height="720"/>
+ </tileset>
+ <layer id="26" name="Buildings10" width="1" height="2">
+  <data encoding="csv">
+489,
+524
+</data>
+ </layer>
+ <objectgroup id="27" name="Buildings4">
+  <object id="41" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 11 30 Azathii.TheForgottenCaverns_ForgottenCottage"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

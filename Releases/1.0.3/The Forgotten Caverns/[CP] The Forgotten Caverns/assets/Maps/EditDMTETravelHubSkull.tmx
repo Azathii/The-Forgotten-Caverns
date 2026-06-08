@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="43" nextobjectid="54">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Catacombs" tilewidth="16" tileheight="16" tilecount="1650" columns="25">
+  <image source="Azathii_Catacombs.png" width="400" height="1056"/>
+  <tile id="276">
+   <animation>
+    <frame tileid="276" duration="150"/>
+    <frame tileid="279" duration="150"/>
+    <frame tileid="281" duration="150"/>
+    <frame tileid="283" duration="150"/>
+    <frame tileid="285" duration="150"/>
+    <frame tileid="287" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="277">
+   <animation>
+    <frame tileid="277" duration="150"/>
+    <frame tileid="280" duration="150"/>
+    <frame tileid="282" duration="150"/>
+    <frame tileid="284" duration="150"/>
+    <frame tileid="286" duration="150"/>
+    <frame tileid="288" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="301">
+   <animation>
+    <frame tileid="301" duration="150"/>
+    <frame tileid="304" duration="150"/>
+    <frame tileid="306" duration="150"/>
+    <frame tileid="308" duration="150"/>
+    <frame tileid="310" duration="150"/>
+    <frame tileid="312" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="302">
+   <animation>
+    <frame tileid="302" duration="150"/>
+    <frame tileid="305" duration="150"/>
+    <frame tileid="307" duration="150"/>
+    <frame tileid="309" duration="150"/>
+    <frame tileid="311" duration="150"/>
+    <frame tileid="313" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1138">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="42" name="Buildings" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="1" height="1">
+  <data encoding="csv">
+1494
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings">
+  <object id="43" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="None"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Front"/>
+</map>
