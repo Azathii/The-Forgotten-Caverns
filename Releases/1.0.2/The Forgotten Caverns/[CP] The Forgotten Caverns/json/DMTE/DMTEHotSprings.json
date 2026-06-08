@@ -1,0 +1,902 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_FoundHotSprings",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 82,
+            "Y": 26
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundHotSprings"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: currentPlayer |contains={{ModId}}/FoundHotSprings": false,
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundHotSprings",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 82,
+            "Y": 26
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_On": "{{i18n:DMTENewWarp}}",
+            "DMT/mail_Once_On": "{{ModId}}/FoundHotSprings"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: currentPlayer |contains={{ModId}}/FoundHotSprings": false,
+        "ModMessages": "Enabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsSteamDamage",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 34,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 47,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 60,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 72,
+            "Y": 25
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 85,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 90,
+            "Y": 48
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 87,
+            "Y": 63 
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 80
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 73,
+            "Y": 100
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 68,
+            "Y": 107
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 42,
+            "Y": 112
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 37,
+            "Y": 103
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        },
+        {
+          "Position": {
+            "X": 29,
+            "Y": 82
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/health_On": "-10",
+            "DMT/buff_On": "12"
+          }
+        }
+      ],
+      "When": {
+        "HotSpringsDamage": "Enabled"
+      }
+    },
+    {
+      "LogName": "DMTE_HotSpringsTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 79
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/chest_Once_Action": "60 79=(O)166 (O)TreasureTotem",
+            "DMT/message_Once_Action": "{{i18n:DMTEHotSpringsTreasure}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsTreasureFound",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue10"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsTreasureFound": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsTreasure1QuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 79
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsTreasureFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue10": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsTreasure1QuestFalseSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 79
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "dirtyHit"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsTreasureFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue10": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 79
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsTreasureEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsTreasureFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBerries1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 90,
+            "Y": 114
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "leafrustle",
+            "DMT/chest_Once_Action": "92 113=232|(O)410,4 (O)296,3 (O)258,2 (O)282,4 (O)396,3 (O)400,2",
+            "DMT/message_Once_Action": "{{i18n:DMTEBerryTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBerries1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBerries1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBerries1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 90,
+            "Y": 114
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "leafrustle",
+            "DMT/message_Action": "{{i18n:DMTEBerryTrueEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBerries1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBerries2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 56,
+            "Y": 92
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "leafrustle",
+            "DMT/chest_Once_Action": "57 93=232|(O)410,5 (O)296,3 (O)258,3 (O)282,2 (O)396,3 (O)400,1",
+            "DMT/message_Once_Action": "{{i18n:DMTEBerryTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBerries2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBerries2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBerries2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 56,
+            "Y": 92
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "leafrustle",
+            "DMT/message_Action": "{{i18n:DMTEBerryTrueEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBerries2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsOre1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 89,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)380,7",
+            "DMT/message_Once_Action": "{{i18n:DMTEBarrelOre}}",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBarrelOre1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrelOre1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsOre1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 89,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBarrelOreEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrelOre1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HunterShrineTrue",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 50
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/20",
+            "DMT/give_Action": "(O)774",
+            "DMT/sound_Action": "statue_of_blessings",
+            "DMT/buff_Action": "{{ModId}}_BuffHunter",
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineHTrue}}",
+            "DMT/health_On": "200",
+            "DMT/stamina_On": "500"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1200, 1259}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_HunterShrineFalseAM",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 50
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineHFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 0600, 1159}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_HunterShrineFalsePM",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 50
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineHFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1300, 2600}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_GathererShrineTrueSpring",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/20",
+            "DMT/give_Action": "(O)495",
+            "DMT/sound_Action": "statue_of_blessings",
+            "DMT/buff_Action": "{{ModId}}_BuffGatherer",
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineGTrue}}",
+            "DMT/health_On": "200",
+            "DMT/stamina_On": "500"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1200, 1259}}",
+        "Season": "Spring"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_GathererShrineTrueSummer",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/20",
+            "DMT/give_Action": "(O)496",
+            "DMT/sound_Action": "statue_of_blessings",
+            "DMT/buff_Action": "{{ModId}}_BuffGatherer",
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineGTrue}}",
+            "DMT/health_On": "200",
+            "DMT/stamina_On": "500"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1200, 1259}}",
+        "Season": "Summer"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_GathererShrineTrueFall",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/20",
+            "DMT/give_Action": "(O)497",
+            "DMT/sound_Action": "statue_of_blessings",
+            "DMT/buff_Action": "{{ModId}}_BuffGatherer",
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineGTrue}}",
+            "DMT/health_On": "200",
+            "DMT/stamina_On": "500"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1200, 1259}}",
+        "Season": "Fall"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_GathererShrineTrueWinter",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Action": "Money/20",
+            "DMT/give_Action": "(O)498",
+            "DMT/sound_Action": "statue_of_blessings",
+            "DMT/buff_Action": "{{ModId}}_BuffGatherer",
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineGTrue}}",
+            "DMT/health_On": "200",
+            "DMT/stamina_On": "500"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1200, 1259}}",
+        "Season": "Winter"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_GathererShrineFalseAM",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineGFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 0600, 1159}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_GathererShrineFalsePM",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEHotSpringsShrineGFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1300, 2600}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 22,
+            "Y": 9
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue1",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter1}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue1": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 96,
+            "Y": 25
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue2",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter2}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure2Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue2": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 69,
+            "Y": 9
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue3",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter3}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue3": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest4",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 70,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue4",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter4}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/FoundGrotto": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue4": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest5",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 78,
+            "Y": 101
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue5",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter5}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/BobsBootsFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue5": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest6",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 79
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue6",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter6}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/FoundSpeakeasy": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue6": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest7",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 49,
+            "Y": 112
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue7",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter7}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/DinoDenTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue7": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest8",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 84,
+            "Y": 53
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue8",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter8}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/OrchardTreasureFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue8": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest9",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 72,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue9",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter9}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/FoundSanctum": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue9": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_AddTreasureQuest10",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 99
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestClue10",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/message_Once_Action": "True|{{i18n:HotSpringsLetter10}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsTreasureFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue10": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

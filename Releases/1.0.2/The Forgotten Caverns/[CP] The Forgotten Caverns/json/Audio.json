@@ -1,0 +1,114 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "{{ModId}}_AshenSky": {
+          "ID": "{{ModId}}_AshenSky",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Ashen Sky.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        },
+        "{{ModId}}_CrystalThrones": {
+          "ID": "{{ModId}}_CrystalThrones",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Crystal Thrones.ogg}}" ],
+          "Looped": true
+        },
+        "{{ModId}}_HarmonyOfTheForgotten": {
+          "ID": "{{ModId}}_HarmonyOfTheForgotten",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Harmony of the Forgotten.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        },
+        "{{ModId}}_LongWay": {
+          "ID": "{{ModId}}_LongWay",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Long Way.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        },
+        "{{ModId}}_OldHouse": {
+          "ID": "{{ModId}}_OldHouse",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Old House.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        },
+        "{{ModId}}_PhantomsRequiem": {
+          "ID": "{{ModId}}_PhantomsRequiem",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Phantom's Requiem.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        },
+        "{{ModId}}_RabbitHole": {
+          "ID": "{{ModId}}_RabbitHole",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Rabbit Hole.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        },
+        "{{ModId}}_Sorrow": {
+          "ID": "{{ModId}}_Sorrow",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Sorrow.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        },
+        "{{ModId}}_Travel": {
+          "ID": "{{ModId}}_Travel",
+          "Category": "Music",
+          "FilePaths": [ "{{AbsoluteFilePath: assets/Music/Travel.ogg}}" ],
+          "StreamedVorbis": true,
+          "Looped": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/JukeboxTracks",
+      "Entries": {
+        "{{ModId}}_AshenSky": {
+          "Name": "{{i18n:Music_AshenSky}}",
+          "AlternativeTrackIds": ["AshenSky"]
+        },
+        "{{ModId}}_CrystalThrones": {
+          "Name": "{{i18n:Music_CrystalThrones}}",
+          "AlternativeTrackIds": ["CrystalThrones"]
+        },
+        "{{ModId}}_HarmonyOfTheForgotten": {
+          "Name": "{{i18n:Music_HarmonyOfTheForgotten}}",
+          "AlternativeTrackIds": ["HarmonyOfTheForgotten"]
+        },
+        "{{ModId}}_LongWay": {
+          "Name": "{{i18n:Music_LongWay}}",
+          "AlternativeTrackIds": ["LongWay"]
+        },
+        "{{ModId}}_OldHouse": {
+          "Name": "{{i18n:Music_OldHouse}}",
+          "AlternativeTrackIds": ["OldHouse"]
+        },
+        "{{ModId}}_PhantomsRequiem": {
+          "Name": "{{i18n:Music_PhantomsRequiem}}",
+          "AlternativeTrackIds": ["PhantomsRequiem"]
+        },
+        "{{ModId}}_RabbitHole": {
+          "Name": "{{i18n:Music_RabbitHole}}",
+          "AlternativeTrackIds": ["RabbitHole"]
+        },
+        "{{ModId}}_Sorrow": {
+          "Name": "{{i18n:Music_Sorrow}}",
+          "AlternativeTrackIds": ["Sorrow"]
+        },
+        "{{ModId}}_Travel": {
+          "Name": "{{i18n:Music_Travel}}",
+          "AlternativeTrackIds": ["Travel"]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/SpecialOrderStrings",
+      "Entries": {
+        "{{ModId}}_Bob_Name": "{{i18n:SpecialOrder_Bob.Name}}",
+        "{{ModId}}_Bob_Text": "{{i18n:SpecialOrder_Bob.Text}}",
+        "{{ModId}}_Bob_Objective_0_Text": "{{i18n:SpecialOrder_Bob.Obj0}}",
+        "{{ModId}}_Bob_Objective_1_Text": "{{i18n:SpecialOrder_Bob.Obj1}}",
+        "{{ModId}}_Bob_Objective_2_Text": "{{i18n:SpecialOrder_Bob.Obj2}}",
+        "{{ModId}}_Bob_Objective_3_Text": "{{i18n:SpecialOrder_Bob.Obj3}}",
+        "{{ModId}}_Bob_Objective_4_Text": "{{i18n:SpecialOrder_Bob.Obj4}}",
+        "{{ModId}}_Bob_Objective_5_Text": "{{i18n:SpecialOrder_Bob.Obj5}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "{{ModId}}_Bob": {
+          "Name": "[{{ModId}}_Bob_Name]",
+          "Requester": "{{ModId}}_Bob",
+          "Duration": "TwoWeeks",
+          "Repeatable": false,
+          "RequiredTags": "event_{{ModId}}_EventBobHeart5",
+          "Condition": "",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "[{{ModId}}_Bob_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+          "Objectives": [
+            {
+              "Type": "Collect",
+              "Text": "[{{ModId}}_Bob_Objective_0_Text]",
+              "RequiredCount": "50",
+              "Data": {
+              "AcceptedContextTags": "item_hardwood"
+              }
+            },
+            {
+              "Type": "Collect",
+              "Text": "[{{ModId}}_Bob_Objective_1_Text]",
+              "RequiredCount": "350",
+              "Data": {
+              "AcceptedContextTags": "item_wood"
+              }
+            },
+            {
+              "Type": "Collect",
+              "Text": "[{{ModId}}_Bob_Objective_2_Text]",
+              "RequiredCount": "20",
+              "Data": {
+              "AcceptedContextTags": "item_iron_bar"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[{{ModId}}_Bob_Objective_3_Text]",
+              "RequiredCount": "50",
+              "Data": {
+                "DropBox": "BobMaterials",
+                "DropBoxGameLocation": "{{ModId}}_ForgottenMinersHut",
+                "DropBoxIndicatorLocation": "3 22",
+                "AcceptedContextTags": "item_hardwood"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[{{ModId}}_Bob_Objective_4_Text]",
+              "RequiredCount": "350",
+              "Data": {
+                "DropBox": "BobMaterials",
+                "DropBoxGameLocation": "{{ModId}}_ForgottenMinersHut",
+                "DropBoxIndicatorLocation": "3 22",
+                "AcceptedContextTags": "item_wood"
+              }
+            },
+            {
+              "Type": "Donate",
+              "Text": "[{{ModId}}_Bob_Objective_5_Text]",
+              "RequiredCount": "20",
+              "Data": {
+                "DropBox": "BobMaterials",
+                "DropBoxGameLocation": "{{ModId}}_ForgottenMinersHut",
+                "DropBoxIndicatorLocation": "3 22",
+                "AcceptedContextTags": "item_iron_bar"
+              }
+            }
+          ],
+          "Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "6500"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "{{ModId}}/BobsRepairs"
+              }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {
+                "Amount": "100",
+                "TargetName": "{{ModId}}_Bob"
+              }
+            }
+          ],
+          "CustomFields": null
+        }
+      }
+    }
+  ]
+}

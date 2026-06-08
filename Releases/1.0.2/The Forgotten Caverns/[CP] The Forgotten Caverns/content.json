@@ -1,0 +1,742 @@
+{
+  "Format": "2.8.1",
+  "ConfigSchema": {
+    "HideSigns": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Disabled",
+      "Description": ""
+    },
+    "ModMessages": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "FloatingFireflies": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "HotTubHealing": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "HotSpringsDamage": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "ReplaceSkeletonMobs": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "PavingPatch": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "WinterTreePatch": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "CottageMailbox": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "ExteriorDoor": {
+      "AllowValues": "Blue, Blue Windowed, Brown, Brown Windowed, Charcoal, Charcoal Windowed, Green, Green Windowed, Red, Red Windowed",
+      "Default": "Charcoal Windowed",
+      "Description": ""
+    },
+    "ExteriorRoses": {
+      "AllowValues": "Blue, Light Blue, Lilac, Pink, Purple, Red, White, Yellow, None",
+      "Default": "Purple",
+      "Description": ""
+    },
+    "ConservatoryDiggableArea": {
+      "AllowValues": "Enabled, Disabled",
+      "Default": "Enabled",
+      "Description": ""
+    },
+    "InteriorRoses": {
+      "AllowValues": "Blue, Light Blue, Lilac, Pink, Purple, Red, White, Yellow, None",
+      "Default": "Red",
+      "Description": ""
+    },
+    "Windows": {
+      "AllowValues": "Black, White",
+      "Default": "Black",
+      "Description": ""
+    },
+    "InteriorRosesBedroom": {
+      "AllowValues": "Blue, Light Blue, Lilac, Pink, Purple, Red, White, Yellow, None",
+      "Default": "Red",
+      "Description": ""
+    },
+    "WindowsBedroom": {
+      "AllowValues": "Black, White",
+      "Default": "Black",
+      "Description": ""
+    },
+    "Kitchen": {
+      "AllowValues": "Black, Cream, Dove, Sage, White, None",
+      "Default": "Black",
+      "Description": ""
+    },
+    "Parrot": {
+      "AllowValues": "Purple, Silver, Prismatic, Void, None",
+      "Default": "Prismatic",
+      "Description": ""
+    },
+    "Fountain": {
+      "AllowValues": "Roses, Lilies, Pampas Cream, Pampas Pink, None",
+      "Default": "Lilies",
+      "Description": ""
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "Recolour",
+      "Value": "SBV",
+      "When": {
+        "HasMod |contains=Lita.StarblueValleyUnofficial": true
+      } 
+    },
+    {
+      "Name": "Recolour",
+      "Value": "VPR",
+      "When": {
+        "HasMod |contains=grapeponta.VibrantPastoralRecolor": true
+      }
+    },
+    {
+      "Name": "Recolour",
+      "Value": "DNER",
+      "When": {
+        "HasMod |contains=DaisyNiko.EarthyRecolour": true
+      }
+    }
+  ],
+  "CustomLocations": [
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenCavern",
+      "FromMapFile": "assets/Maps/ForgottenCavern.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenTravelHub",
+      "FromMapFile": "assets/Maps/ForgottenTravelHub.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenSpellRoom",
+      "FromMapFile": "assets/Maps/ForgottenSpellRoom.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenOrchard",
+      "FromMapFile": "assets/Maps/ForgottenOrchard.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenCottage",
+      "FromMapFile": "assets/Maps/ForgottenCottage.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenCottageBasement",
+      "FromMapFile": "assets/Maps/ForgottenCottageBasement.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenCottageBedroom",
+      "FromMapFile": "assets/Maps/ForgottenCottageBedroom.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenHotSprings",
+      "FromMapFile": "assets/Maps/ForgottenHotSprings.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenSanctum",
+      "FromMapFile": "assets/Maps/ForgottenSanctum.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenGrotto",
+      "FromMapFile": "assets/Maps/ForgottenGrotto.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenMine",
+      "FromMapFile": "assets/Maps/ForgottenMine.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenRecyclingRoom",
+      "FromMapFile": "assets/Maps/ForgottenRecyclingRoom.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenMinersHut",
+      "FromMapFile": "assets/Maps/ForgottenMinersHut.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired",
+      "FromMapFile": "assets/Maps/ForgottenMinersHutRepaired.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+      "FromMapFile": "assets/Maps/ForgottenCatacombs.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+      "FromMapFile": "assets/Maps/ForgottenDinoDen.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenCaptainsCabin",
+      "FromMapFile": "assets/Maps/ForgottenCaptainsCabin.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenSpeakeasy",
+      "FromMapFile": "assets/Maps/ForgottenSpeakeasy.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenVault",
+      "FromMapFile": "assets/Maps/ForgottenVault.tmx"
+    },
+    {
+      "Name": "Azathii.TheForgottenCaverns_ForgottenGamesRoom",
+      "FromMapFile": "assets/Maps/ForgottenGamesRoom.tmx"
+    }
+  ],
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Maps/Azathii_Catacombs, Maps/Azathii_Cavern, Maps/Azathii_Cavern2, Maps/Azathii_FCEdits, Maps/Azathii_FCHouse, Maps/Azathii_Fireflies, Maps/Azathii_LunaButterflies, Maps/Azathii_Pirates, Maps/Azathii_ForgottenFurniture, Maps/Azathii_CavernWaterfall, Maps/Lnh Patch- VAN asset edit hue-20 sat+10 light-50, Maps/Hidden Spring Patch- VAN asset edit hue0 sat0 light-30, Maps/Grotta Patch- VAN asset manually edited to match",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/LocationContexts",
+      "Entries": {
+        "AzathiiCaverns": {
+          "WeatherConditions": [
+            {
+              "Id": "AzathiiCaverns",
+              "Weather": "Default"
+            }
+          ]
+        },
+        "AzathiiCavernsCottage": {
+          "WeatherConditions": [
+            {
+              "Id": "AzathiiCavernsCottage",
+              "Weather": "Default"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_ForgottenCavern": {
+          "DisplayName": "{{i18n:LocDisplay_Cavern.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenCavern"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_CrystalThrones"
+            }
+          ],
+          "Fish": [
+            {
+              "ID": "{{ModId}}_BlindCaveTetra",
+              "ItemId": "{{ModId}}_BlindCaveTetra"
+            },
+            {
+              "ID": "{{ModId}}_CavernKoi",
+              "ItemId": "{{ModId}}_CavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_MidnightCavernKoi",
+              "ItemId": "{{ModId}}_MidnightCavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_Trash",
+              "ItemId": "(O)168",
+              "Chance": 0.3
+            },
+            {
+              "ID": "{{ModId}}_Ghostfish",
+              "ItemId": "(O)156",
+              "Chance": 0.2
+            },
+            {
+              "ID": "{{ModId}}_Stonefish",
+              "ItemId": "(O)158",
+              "Chance": 0.1
+            },
+            {
+              "ID": "{{ModId}}_CaveJelly",
+              "ItemId": "(O)CaveJelly",
+              "Chance": 0.1
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenTravelHub": {
+          "DisplayName": "{{i18n:LocDisplay_Travel.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenTravelHub"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_Travel"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenSpellRoom": {
+          "DisplayName": "{{i18n:LocDisplay_Spell.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenSpellRoom"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_Travel"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenCottage": {
+          "DisplayName": "{{i18n:LocDisplay_Cottage.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenCottage",
+            "Type": "StardewValley.Locations.DecoratableLocation"
+          },
+          "Music": [
+            {
+              "Track": "Crystal Bells"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenCottageBedroom": {
+          "DisplayName": "{{i18n:LocDisplay_CottageBed.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenCottageBedroom",
+            "Type": "StardewValley.Locations.DecoratableLocation"
+          },
+          "Music": [
+            {
+              "Track": "Crystal Bells"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenCottageBasement": {
+          "DisplayName": "{{i18n:LocDisplay_CottageBase.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenCottageBasement",
+            "Type": "StardewValley.Locations.DecoratableLocation"
+          },
+          "Music": [
+            {
+              "Track": "Secret Gnomes"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenOrchard": {
+          "DisplayName": "{{i18n:LocDisplay_Orchard.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenOrchard"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_CrystalThrones"
+            }
+          ],
+          "Fish": [
+            {
+              "ID": "{{ModId}}_BlindCaveTetra",
+              "ItemId": "{{ModId}}_BlindCaveTetra"
+            },
+            {
+              "ID": "{{ModId}}_CavernKoi",
+              "ItemId": "{{ModId}}_CavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_MidnightCavernKoi",
+              "ItemId": "{{ModId}}_MidnightCavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_Trash",
+              "ItemId": "(O)168",
+              "Chance": 0.3
+            },
+            {
+              "ID": "{{ModId}}_Ghostfish",
+              "ItemId": "(O)156",
+              "Chance": 0.2
+            },
+            {
+              "ID": "{{ModId}}_Stonefish",
+              "ItemId": "(O)158",
+              "Chance": 0.1
+            },
+            {
+              "ID": "{{ModId}}_CaveJelly",
+              "ItemId": "(O)CaveJelly",
+              "Chance": 0.1
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenHotSprings": {
+          "DisplayName": "{{i18n:LocDisplay_HotSprings.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenHotSprings"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_HarmonyOfTheForgotten"
+            }
+          ],
+          "Fish": [
+            {
+              "ID": "{{ModId}}_BlindCaveTetra",
+              "ItemId": "{{ModId}}_BlindCaveTetra"
+            },
+            {
+              "ID": "{{ModId}}_CavernKoi",
+              "ItemId": "{{ModId}}_CavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_MidnightCavernKoi",
+              "ItemId": "{{ModId}}_MidnightCavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_Trash",
+              "ItemId": "(O)168",
+              "Chance": 0.3
+            },
+            {
+              "ID": "{{ModId}}_Ghostfish",
+              "ItemId": "(O)156",
+              "Chance": 0.2
+            },
+            {
+              "ID": "{{ModId}}_Stonefish",
+              "ItemId": "(O)158",
+              "Chance": 0.1
+            },
+            {
+              "ID": "{{ModId}}_CaveJelly",
+              "ItemId": "(O)CaveJelly",
+              "Chance": 0.1
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenGrotto": {
+          "DisplayName": "{{i18n:LocDisplay_Grotto.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenGrotto"
+          },
+          "Music": [
+            {
+              "Track": "mermaidSong"
+            }
+          ],
+          "Fish": [
+            {
+              "ID": "{{ModId}}_BlindCaveTetra",
+              "ItemId": "{{ModId}}_BlindCaveTetra"
+            },
+            {
+              "ID": "{{ModId}}_CavernKoi",
+              "ItemId": "{{ModId}}_CavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_MidnightCavernKoi",
+              "ItemId": "{{ModId}}_MidnightCavernKoi"
+            },
+            {
+              "ID": "{{ModId}}_Trash",
+              "ItemId": "(O)168",
+              "Chance": 0.3
+            },
+            {
+              "ID": "{{ModId}}_Ghostfish",
+              "ItemId": "(O)156",
+              "Chance": 0.2
+            },
+            {
+              "ID": "{{ModId}}_Stonefish",
+              "ItemId": "(O)158",
+              "Chance": 0.1
+            },
+            {
+              "ID": "{{ModId}}_CaveJelly",
+              "ItemId": "(O)CaveJelly",
+              "Chance": 0.1
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenSanctum": {
+          "DisplayName": "{{i18n:LocDisplay_Sanctum.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenSanctum"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_PhantomsRequiem"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenMinersHut": {
+          "DisplayName": "{{i18n:LocDisplay_MinersHut.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenMinersHut"
+          },
+          "Music": [
+            {
+              "Track": "Lava_Ambient"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenMinersHutRepaired": {
+          "DisplayName": "{{i18n:LocDisplay_MinersHutRep.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenMinersHutRepaired"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_Travel"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenRecyclingRoom": {
+          "DisplayName": "{{i18n:LocDisplay_Recycling.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenRecyclingRoom"
+          },
+          "Music": [
+            {
+              "Track": "Upper_Ambient"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenCatacombs": {
+          "DisplayName": "{{i18n:LocDisplay_Catacombs.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenCatacombs"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_Sorrow"
+            }
+          ],
+          "Fish": [
+            {
+              "ID": "{{ModId}}_BlindCaveTetra",
+              "ItemId": "{{ModId}}_BlindCaveTetra"
+            },
+            {
+              "ID": "{{ModId}}_ForgottenFangtooth",
+              "ItemId": "{{ModId}}_ForgottenFangtooth"
+            },
+            {
+              "ID": "{{ModId}}_Trash",
+              "ItemId": "(O)168",
+              "Chance": 0.3
+            },
+            {
+              "ID": "{{ModId}}_Ghostfish",
+              "ItemId": "(O)156",
+              "Chance": 0.2
+            },
+            {
+              "ID": "{{ModId}}_CaveJelly",
+              "ItemId": "(O)CaveJelly",
+              "Chance": 0.1
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenDinoDen": {
+          "DisplayName": "{{i18n:LocDisplay_DinoDen.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenDinoDen"
+          },
+          "Music": [
+            {
+              "Track": "PIRATE_THEME"
+            }
+          ],
+          "Fish": [
+            {
+              "ID": "{{ModId}}_BlindCaveTetra",
+              "ItemId": "{{ModId}}_BlindCaveTetra"
+            },
+            {
+              "ID": "{{ModId}}_ForgottenFangtooth",
+              "ItemId": "{{ModId}}_ForgottenFangtooth"
+            },
+            {
+              "ID": "{{ModId}}_Trash",
+              "ItemId": "(O)168",
+              "Chance": 0.3
+            },
+            {
+              "ID": "{{ModId}}_Ghostfish",
+              "ItemId": "(O)156",
+              "Chance": 0.2
+            },
+            {
+              "ID": "{{ModId}}_CaveJelly",
+              "ItemId": "(O)CaveJelly",
+              "Chance": 0.1
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenCaptainsCabin": {
+          "DisplayName": "{{i18n:LocDisplay_Cabin.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenCaptainsCabin"
+          },
+          "Music": [
+            {
+              "Track": "Lava_Ambient"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenSpeakeasy": {
+          "DisplayName": "{{i18n:LocDisplay_Speakeasy.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenSpeakeasy"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_AshenSky"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenVault": {
+          "DisplayName": "{{i18n:LocDisplay_Vault.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenVault"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_AshenSky"
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenGamesRoom": {
+          "DisplayName": "{{i18n:LocDisplay_Games.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenGamesRoom"
+          },
+          "Music": [
+            {
+              "Track": "movieTheater"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_ForgottenMine": {
+          "DisplayName": "{{i18n:LocDisplay_Mine.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenMine"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_PhantomsRequiem"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_ForgottenMine": {
+          "DisplayName": "{{i18n:LocDisplay_Mine.name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_ForgottenMine"
+          },
+          "Music": [
+            {
+              "Track": "{{ModId}}_CrystalThrones"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "FromFile": "assets/Maps/ForgottenMineRepaired.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 56,
+        "Height": 61
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapProperties": {
+        "NPCWarp": "10 34 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 18 19 "
+      },
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern, Maps/{{ModId}}_ForgottenOrchard, Maps/{{ModId}}_ForgottenHotSprings, Maps/{{ModId}}_ForgottenGrotto, Maps/{{ModId}}_ForgottenCatacombs, Maps/{{ModId}}_ForgottenDinoDen",
+      "MapProperties": {
+        "mushymato.MMAP_WaterColor": "#4b517a7F",
+        "mushymato.MMAP_WaterDraw": "T"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern, Maps/{{ModId}}_ForgottenOrchard, Maps/{{ModId}}_ForgottenHotSprings",
+      "MapProperties": {
+        "mushymato.MMAP_WoodsBaubles": "T"
+      },
+      "When": {
+        "FloatingFireflies": "Enabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "json/Audio.json, json/Buffs.json, json/Chairs.json, json/EntryPatches.json, json/Events.json, json/Fish.json, json/FruitTrees.json, json/Furniture.json, json/Garbage.json, json/Hats&Weapons.json, json/ImageEdits.json, json/Objects.json, json/Mail.json, json/MapStrings.json, json/Minecart.json, json/NewShops.json, json/NPCChanges.json, json/Quests.json, json/Recipes.json, json/Walls&Floors.json, json/WorldMap.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "json/Bob/Bob.json, json/Bob/Dialogue&Schedule.json, json/Bob/Gifts&Movies.json, json/Bob/SpecialOrder.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "json/DMTE/DMTECaptainsCabin.json, json/DMTE/DMTECatacombs.json, json/DMTE/DMTECavern.json, json/DMTE/DMTEContainers.json, json/DMTE/DMTECottage.json, json/DMTE/DMTEDinoDen.json, json/DMTE/DMTEEmpty.json, json/DMTE/DMTEGamesRoom.json, json/DMTE/DMTEGrotto.json, json/DMTE/DMTEHotSprings.json, json/DMTE/DMTEMine.json, json/DMTE/DMTEMinersHut.json, json/DMTE/DMTEOrchard.json, json/DMTE/DMTESanctum.json, json/DMTE/DMTESpeakeasy.json, json/DMTE/DMTEVault.json, json/DMTE/DMTESpellRoom.json, json/DMTE/DMTETravelHub.json, json/DMTE/DMTEWoods.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "json/MapEdits/EditsCatacombsDino.json, json/MapEdits/EditsCottage.json, json/MapEdits/EditsCottageDesign.json, json/MapEdits/EditsHotSprings.json, json/MapEdits/EditsRecyclingRoom.json, json/MapEdits/EditsSpeakeasyGames.json, json/MapEdits/EditsTravelHub.json, json/MapEdits/EditsWarps.json, json/MapEdits/EditsSpellRoom.json"
+    }
+  ]
+}

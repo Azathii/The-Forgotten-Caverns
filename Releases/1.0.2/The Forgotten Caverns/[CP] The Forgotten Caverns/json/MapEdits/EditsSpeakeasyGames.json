@@ -1,0 +1,69 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "FromFile": "assets/Maps/EditSpeakeasyDoor.tmx",
+      "ToArea": {
+        "X": 35,
+        "Y": 2,
+        "Width": 3,
+        "Height": 3
+      },
+      "When": {
+	"HasFlag: hostPlayer |contains={{ModId}}/FoundSpeakeasy": false,
+	"HasFlag: hostPlayer |contains=HasClubCard": false
+      },
+      "Update": "OnDayStart"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "FromFile": "assets/Maps/EditSpeakeasyDoor.tmx",
+      "ToArea": {
+        "X": 35,
+        "Y": 2,
+        "Width": 3,
+        "Height": 3
+      },
+      "When": {
+	"HasFlag: hostPlayer |contains={{ModId}}/FoundSpeakeasy": true,
+	"HasFlag: hostPlayer |contains=HasClubCard": false
+      },
+      "Update": "OnDayStart"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "FromFile": "assets/Maps/EditSpeakeasyDoor.tmx",
+      "ToArea": {
+        "X": 35,
+        "Y": 2,
+        "Width": 3,
+        "Height": 3
+      },
+      "When": {
+	"HasFlag: hostPlayer |contains={{ModId}}/FoundSpeakeasy": false,
+	"HasFlag: hostPlayer |contains=HasClubCard": true
+      },
+      "Update": "OnDayStart"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGamesRoom",
+      "FromFile": "assets/Maps/EditGamesRoomClaw.tmx",
+      "ToArea": {
+        "X": 9,
+        "Y": 19,
+        "Width": 3,
+        "Height": 6
+      },
+      "Patchmode": "Replace",
+      "When": {
+	"HasFlag: hostPlayer |contains=ccMovieTheater": false,
+	"HasFlag: hostPlayer |contains=ccMovieTheaterJoja": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

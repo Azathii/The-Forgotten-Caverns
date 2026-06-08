@@ -1,0 +1,400 @@
+{
+  "Changes": [
+   {
+      "LogName": "DMTE_SanctumTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(H){{ModId}}_ClericsHelmet",
+            "DMT/changeMultipleIndex_Once_Action": "Buildings 8 12=z_Azathii_Catacombs/1370",
+            "DMT/message_Once_Action": "{{i18n:DMTESanctumTreasure1}}",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/mail_Once_Action": "{{ModId}}/SanctumTreasure1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumTreasure1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESanctumTreasure1Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumTreasure1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "FromFile": "assets/Maps/EditDMTESanctumHelm.tmx",
+      "ToArea": {
+        "X": 8,
+        "Y": 12,
+        "Width": 1,
+        "Height": 1
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumTreasure1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_BuffClericMasteryFalse",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/buff_Action": "{{ModId}}_BuffCleric",
+            "DMT/sound_Action": "yoba",
+            "DMT/message_Action": "{{i18n:DMTESanctumTreasure2a}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/buff_Action": "{{ModId}}_BuffCleric",
+            "DMT/sound_Action": "yoba",
+            "DMT/message_Action": "{{i18n:DMTESanctumTreasure2a}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumTreasure2Found": false,
+        "HasCraftingRecipe|contains=Anvil": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumTreasure2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/buff_Action": "{{ModId}}_BuffCleric",
+            "DMT/give_Once_Action": "(W){{ModId}}_RadiantRapier",
+            "DMT/changeMultipleIndex_Once_Action": "AlwaysFront 8 6=z_Azathii_Cavern2/58|AlwaysFront 9 6=z_Azathii_Cavern2/59|Front 8 7=z_Azathii_Cavern2/73|Front 9 7=z_Azathii_Cavern2/74",
+            "DMT/message_Once_Action": "{{i18n:DMTESanctumTreasure2b}}",
+            "DMT/sound_Once_Action": "secret1",
+            "DMT/mail_Once_Action": "{{ModId}}/SanctumTreasure2Found"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/buff_Action": "{{ModId}}_BuffCleric",
+            "DMT/give_Once_Action": "(W){{ModId}}_RadiantRapier",
+            "DMT/changeMultipleIndex_Once_Action": "AlwaysFront 8 6=z_Azathii_Cavern2/58|AlwaysFront 9 6=z_Azathii_Cavern2/59|Front 8 7=z_Azathii_Cavern2/73|Front 9 7=z_Azathii_Cavern2/74",
+            "DMT/message_Once_Action": "{{i18n:DMTESanctumTreasure2b}}",
+            "DMT/sound_Once_Action": "secret1",
+            "DMT/mail_Once_Action": "{{ModId}}/SanctumTreasure2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumTreasure2Found": false,
+        "HasCraftingRecipe|contains=Anvil": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_BuffClericMasteryTrue",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/buff_Action": "{{ModId}}_BuffCleric",
+            "DMT/sound_Action": "yoba",
+            "DMT/message_Action": "{{i18n:DMTESanctumTreasure2Empty}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/buff_Action": "{{ModId}}_BuffCleric",
+            "DMT/sound_Action": "yoba",
+            "DMT/message_Action": "{{i18n:DMTESanctumTreasure2Empty}}"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumTreasure2Found": true,
+        "HasCraftingRecipe|contains=Anvil": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "FromFile": "assets/Maps/EditDMTESanctumSword.tmx",
+      "ToArea": {
+        "X": 8,
+        "Y": 6,
+        "Width": 2,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumTreasure2Found": true,
+        "HasCraftingRecipe|contains=Anvil": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumBox1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)524",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/SanctumBox1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumBox1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumBox1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumBox1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumBox2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)114",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/SanctumBox2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumBox2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumBox2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumBox2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumBox3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)773",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/SanctumBox3Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumBox3Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SanctumBox3Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SanctumBox3Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundSanctum",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundSanctum",
+            "DMT/removeQuest_Once_On": "{{ModId}}_QuestClue9"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundSanctum",
+            "DMT/removeQuest_Once_On": "{{ModId}}_QuestClue9"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: anyPlayer |contains={{ModId}}/FoundSanctum": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundSanctumQuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_On": "questcomplete"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_On": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/FoundSanctum": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue9": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

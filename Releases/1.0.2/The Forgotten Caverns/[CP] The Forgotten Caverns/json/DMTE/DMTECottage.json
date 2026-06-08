@@ -1,0 +1,75 @@
+{
+  "Changes": [
+     {
+      "LogName": "DMTE_CarlQuest",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 38,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Once_Action": "(O){{ModId}}_CottageBlueprints",
+            "DMT/sound_Once_Action": "questcomplete",
+            "DMT/message_Once_Action": "{{i18n:CavernDialogueCarl}}",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestCarl",
+            "DMT/mail_Once_Action": "{{ModId}}/SpokenToCarl"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: currentPlayer |contains={{ModId}}/CottageRepairPurchased": true,
+	"HasFlag: currentPlayer |contains={{ModId}}/SpokenToCarl": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundCottage",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCottage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundCottage"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: currentPlayer |contains={{ModId}}/FoundCottage": false,
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundCottage",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCottage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_On": "{{i18n:DMTENewWarp}}",
+            "DMT/mail_Once_On": "{{ModId}}/FoundCottage"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: currentPlayer |contains={{ModId}}/FoundCottage": false,
+        "ModMessages": "Enabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

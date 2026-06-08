@@ -1,0 +1,232 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_MineTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 53
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(B)515",
+            "DMT/message_Once_Action": "{{i18n:DMTEMineTreasure1a}}",
+            "DMT/mail_Once_Action": "{{ModId}}/BobsBootsFound",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue5"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: hostPlayer, currentPlayer |contains={{ModId}}/BobsBootsFound": false,
+        "HasFlag: hostPlayer |contains={{ModId}}/BobsRepairs": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 53
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEMineTreasure1aEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: hostPlayer, currentPlayer |contains={{ModId}}/BobsBootsFound": true,
+        "HasFlag: hostPlayer |contains={{ModId}}/BobsRepairs": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineTreasure1BobBuried",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 53
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(B)515",
+            "DMT/message_Once_Action": "{{i18n:DMTEMineTreasure1b}}",
+            "DMT/mail_Once_Action": "{{ModId}}/BobsBootsFound",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue5"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: hostPlayer, currentPlayer |contains={{ModId}}/BobsBootsFound": false,
+        "HasFlag: hostPlayer |contains={{ModId}}/BobsRepairs": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineTreasure1BobBuriedFound",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 53
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEMineTreasure1bEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: hostPlayer, currentPlayer |contains={{ModId}}/BobsBootsFound": true,
+        "HasFlag: hostPlayer |contains={{ModId}}/BobsRepairs": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineTreasure1QuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 53
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/BobsBootsFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue5": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineTreasure1QuestFalseSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 53
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "secret1"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/BobsBootsFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue5": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineOre1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)378,12",
+            "DMT/message_Once_Action": "{{i18n:DMTEBarrelOre}}",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/mail_Once_Action": "{{ModId}}/MineBarrelOre1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrelOre1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineOre1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBarrelOreEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrelOre1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineOre2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 51,
+            "Y": 52
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)380,10",
+            "DMT/message_Once_Action": "{{i18n:DMTEBarrelOre}}",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/mail_Once_Action": "{{ModId}}/MineBarrelOre2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrelOre2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineOre2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 51,
+            "Y": 52
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBarrelOreEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrelOre2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

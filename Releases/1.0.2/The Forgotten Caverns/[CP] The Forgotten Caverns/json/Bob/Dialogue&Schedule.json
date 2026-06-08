@@ -1,0 +1,296 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}_Bob, Characters/schedules/{{ModId}}_Bob",
+      "FromFile": "json/Template.json"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{ModId}}_Bob",
+      "Entries": {
+        "questComplete_{{ModId}}_QuestClue5": "{{i18n:Dialogue_Bob.Boots}}",
+        "DumpsterDiveComment": "{{i18n:Dialogue_Bob.Special.1}}",
+        "AcceptBirthdayGift_Positive": "{{i18n:Dialogue_Bob.Special.2}}",
+        "AcceptBirthdayGift_Negative": "{{i18n:Dialogue_Bob.Special.3}}",
+        "AcceptGift_(O)StardropTea": "{{i18n:Dialogue_Bob.Special.4}}",
+        "AcceptGift_(O){{ModId}}_DuskberryCheesecake": "{{i18n:Dialogue_Bob.Special.24}}",
+        "AcceptGift_category_book_item":  "{{i18n:Dialogue_Bob.Special.5}}",  
+        "AcceptGift_(O)552":  "{{i18n:Dialogue_Bob.Special.6}}", 
+        "MovieInvitation": "{{i18n:Dialogue_Bob.Special.7}}",
+        "GreenRain": "{{i18n:Dialogue_Bob.Special.8}}",
+        "GreenRain_2": "{{i18n:Dialogue_Bob.Special.9}}",
+        "cc_Complete": "{{i18n:Dialogue_Bob.Special.10}}",
+        "movieTheater": "{{i18n:Dialogue_Bob.Special.11}}", 
+        "married": "{{i18n:Dialogue_Bob.Special.12}}", 
+        "divorced_once": "{{i18n:Dialogue_Bob.Special.13}}", 
+        "married_twice": "{{i18n:Dialogue_Bob.Special.14}}", 
+        "divorced_twice": "{{i18n:Dialogue_Bob.Special.15}}", 
+        "FullCrabPond": "{{i18n:Dialogue_Bob.Special.16}}", 
+        "questComplete_{{ModId}}_QuestCarl": "{{i18n:Dialogue_Bob.Special.17}}", 
+        "eventSeen_{{ModId}}_EventRobinsRefusal": "{{i18n:Dialogue_Bob.Special.18}}", 
+        "eventSeen_{{ModId}}_EventBobHeart3": "{{i18n:Dialogue_Bob.Special.19}}", 
+        "eventSeen_{{ModId}}_EventBobHeart4": "{{i18n:Dialogue_Bob.Special.20}}",
+        "eventSeen_{{ModId}}_EventBobsNewFriends": "{{i18n:Dialogue_Bob.Special.21}}", 
+        "eventSeen_{{ModId}}_EventBobHeart6": "{{i18n:Dialogue_Bob.Special.22}}", 
+        "eventSeen_{{ModId}}_EventBobHeart10": "{{i18n:Dialogue_Bob.Special.23}}",
+        "spring_5_*": "{{i18n:Dialogue_Bob.Seasonal.1}}",
+        "spring_Wed8": "{{i18n:Dialogue_Bob.Seasonal.2}}",
+        "spring_11_*": "{{i18n:Dialogue_Bob.Seasonal.3}}",
+        "spring_19_*": "{{i18n:Dialogue_Bob.Seasonal.4}}",
+        "spring_22_*": "{{i18n:Dialogue_Bob.Seasonal.5}}",
+        "spring_25-*": "{{i18n:Dialogue_Bob.Seasonal.6}}",
+        "spring_28_*": "{{i18n:Dialogue_Bob.Seasonal.7}}",
+        "summer_Mon4": "{{i18n:Dialogue_Bob.Seasonal.8}}",
+        "summer_9_*": "{{i18n:Dialogue_Bob.Seasonal.9}}",
+        "summer_12_*": "{{i18n:Dialogue_Bob.Seasonal.10}}",
+        "summer_16-*": "{{i18n:Dialogue_Bob.Seasonal.11}}",
+        "summer_18_*": "{{i18n:Dialogue_Bob.Seasonal.12}}",
+        "summer_23_*": "{{i18n:Dialogue_Bob.Seasonal.13}}",
+        "summer_Sun6": "{{i18n:Dialogue_Bob.Seasonal.14}}",
+        "fall_3_*": "{{i18n:Dialogue_Bob.Seasonal.15}}",
+        "fall_Fri4": "{{i18n:Dialogue_Bob.Seasonal.16}}",
+        "fall_12_*": "{{i18n:Dialogue_Bob.Seasonal.17}}",
+        "fall_15_*": "{{i18n:Dialogue_Bob.Seasonal.18}}",
+        "fall_17_*": "{{i18n:Dialogue_Bob.Seasonal.19}}",
+        "fall_Mon8": "{{i18n:Dialogue_Bob.Seasonal.20}}",
+        "winter_2_*": "{{i18n:Dialogue_Bob.Seasonal.21}}",
+        "winter_16_*": "{{i18n:Dialogue_Bob.Seasonal.22}}",
+        "winter_Mon2": "{{i18n:Dialogue_Bob.Seasonal.23}}",
+        "winter_27_*": "{{i18n:Dialogue_Bob.Seasonal.24}}",
+        "winter_25_*": "{{i18n:Dialogue_Bob.Seasonal.25}}",
+        "Mon": "{{i18n:Dialogue_Bob.Weekly.1}}",
+        "Tue": "{{i18n:Dialogue_Bob.Weekly.2}}",
+        "Wed": "{{i18n:Dialogue_Bob.Weekly.3}}",
+        "Thu": "{{i18n:Dialogue_Bob.Weekly.4}}",
+        "Fri": "{{i18n:Dialogue_Bob.Weekly.5}}",
+        "Sat": "{{i18n:Dialogue_Bob.Weekly.6}}",
+        "Sun": "{{i18n:Dialogue_Bob.Weekly.7}}",
+        "bobintro_nice": "{{i18n:Event_Bob.Intro.3}}",
+        "bobintro_funny": "{{i18n:Event_Bob.Intro.4}}",
+        "bob2heart_nice": "{{i18n:Event_Bob.2Heart.6}}",
+        "bob2heart_funny": "{{i18n:Event_Bob.2Heart.7}}",
+        "bob4heart_nice": "{{i18n:Event_Bob.4Heart.5}}",
+        "bob4heart_encourage": "{{i18n:Event_Bob.4Heart.6}}",
+        "bob8heart_prairie": "{{i18n:Event_Bob.8Heart.4}}",
+        "bob8heart_junimo": "{{i18n:Event_Bob.8Heart.5}}",
+        "bob8heart_slots": "{{i18n:Event_Bob.8Heart.6}}",
+        "Animation_Bob_Gaming": "{{i18n:Animation_Bob.Gaming}}",
+        "Animation_Bob_Mourning": "{{i18n:Animation_Bob.Mourning}}",
+        "Animation_Bob_LevitationBook": "{{i18n:Animation_Bob.Practice}}",
+        "Animation_Bob_Reading": "{{i18n:Animation_Bob.Reading}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{ModId}}_Bob",
+      "Entries": {
+        "Mon2": "{{i18n:Dialogue_Bob.Weekly.8}}",
+        "Tue2": "{{i18n:Dialogue_Bob.Weekly.9}}",
+        "Wed2": "{{i18n:Dialogue_Bob.Weekly.10}}",
+        "Thu2": "{{i18n:Dialogue_Bob.Weekly.11}}",
+        "Fri2": "{{i18n:Dialogue_Bob.Weekly.12}}",
+        "Sat2": "{{i18n:Dialogue_Bob.Weekly.13}}",
+        "Sun2": "{{i18n:Dialogue_Bob.Weekly.14}}"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart2": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{ModId}}_Bob",
+      "Entries": {
+        "Mon4": "{{i18n:Dialogue_Bob.Weekly.15}}",
+        "Tue4": "{{i18n:Dialogue_Bob.Weekly.16}}",
+        "Wed4": "{{i18n:Dialogue_Bob.Weekly.17}}",
+        "Thu4": "{{i18n:Dialogue_Bob.Weekly.18}}",
+        "Fri4": "{{i18n:Dialogue_Bob.Weekly.19}}",
+        "Sat4": "{{i18n:Dialogue_Bob.Weekly.20}}",
+        "Sun4": "{{i18n:Dialogue_Bob.Weekly.21}}"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart4": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{ModId}}_Bob",
+      "Entries": {
+        "Mon6": "{{i18n:Dialogue_Bob.Weekly.22}}",
+        "Tue6": "{{i18n:Dialogue_Bob.Weekly.23}}",
+        "Wed6": "{{i18n:Dialogue_Bob.Weekly.24}}",
+        "Thu6": "{{i18n:Dialogue_Bob.Weekly.25}}",
+        "Fri6": "{{i18n:Dialogue_Bob.Weekly.26}}",
+        "Sat6": "{{i18n:Dialogue_Bob.Weekly.27}}",
+        "Sun6": "{{i18n:Dialogue_Bob.Weekly.28}}"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart6": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{ModId}}_Bob",
+      "Entries": {
+        "Mon8": "{{i18n:Dialogue_Bob.Weekly.29}}",
+        "Tue8": "{{i18n:Dialogue_Bob.Weekly.30}}",
+        "Wed8": "{{i18n:Dialogue_Bob.Weekly.31}}",
+        "Thu8": "{{i18n:Dialogue_Bob.Weekly.32}}",
+        "Fri8": "{{i18n:Dialogue_Bob.Weekly.33}}",
+        "Sat8": "{{i18n:Dialogue_Bob.Weekly.34}}",
+        "Sun8": "{{i18n:Dialogue_Bob.Weekly.35}}"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart8": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{ModId}}_Bob",
+      "Entries": {
+        "Mon10": "{{i18n:Dialogue_Bob.Weekly.36}}",
+        "Tue10": "{{i18n:Dialogue_Bob.Weekly.37}}",
+        "Wed10": "{{i18n:Dialogue_Bob.Weekly.38}}",
+        "Thu10": "{{i18n:Dialogue_Bob.Weekly.39}}",
+        "Fri10": "{{i18n:Dialogue_Bob.Weekly.40}}",
+        "Sat10": "{{i18n:Dialogue_Bob.Weekly.41}}",
+        "Sun10": "{{i18n:Dialogue_Bob.Weekly.42}}"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart10": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "spring_Mon": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1300 Azathii.TheForgottenCaverns_ForgottenMine 8 36 3/1900 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2",
+        "spring_Tue": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1300 Azathii.TheForgottenCaverns_ForgottenMine 8 36 3/1900 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2",
+        "spring_Wed": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1300 Azathii.TheForgottenCaverns_ForgottenMine 8 36 3/1900 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2",
+        "spring_Thu": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1300 Azathii.TheForgottenCaverns_ForgottenMine 8 36 3/1900 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2",
+        "spring_Fri": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1300 Azathii.TheForgottenCaverns_ForgottenMine 8 36 3/1900 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2",
+        "spring_Sat": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1300 Azathii.TheForgottenCaverns_ForgottenMine 8 36 3/1900 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2",
+        "spring_Sun": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1300 Azathii.TheForgottenCaverns_ForgottenMine 8 36 3/1900 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart4": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "winter_24": "0610 Azathii.TheForgottenCaverns_ForgottenMine 24 24 0 {{ModId}}_Bob_Mourning/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart2": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "spring_Mon": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Tue": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Wed": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Thu": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Fri": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Sat": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3",
+        "spring_Sun": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobsNewFriends": true,
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart6": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "spring_Mon": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Tue": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Wed": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 29 8 3/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Thu": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Fri": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Sat": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 4 17 0/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Sun": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 8 35 3/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart6": false,
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": true,
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart8": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "spring_Mon": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Tue": "0610 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",       
+        "spring_Wed": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenMine 8 40 2/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Thu": "0610 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2", 
+        "spring_Fri": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Sat": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3",
+        "spring_Sun": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart6": true,
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": false,
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart8": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "spring_Mon": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Tue": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Wed": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 29 8 3/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Thu": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Fri": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Sat": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 4 17 0/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Sun": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 8 35 3/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart6": true,
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": true,
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart8": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "spring_Mon": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Tue": "0610 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Wed": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1900 Azathii.TheForgottenCaverns_ForgottenOrchard 16 26 1/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Thu": "0610 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Fri": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 8 34 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Sat": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/1800 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2",
+        "spring_Sun": "0610 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/0800 Azathii.TheForgottenCaverns_ForgottenMine 21 20 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/1800 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMine 11 24 2"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart8": true,
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/schedules/{{ModId}}_Bob",
+      "Entries": {
+        "spring_Mon": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Tue": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Wed": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenOrchard 16 26 1/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Thu": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/0900 Azathii.TheForgottenCaverns_ForgottenCavern 30 46 2/1500 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Fri": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 22 24 0/1200 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 24 5 2 {{ModId}}_Bob_LevitationBook/1400 Azathii.TheForgottenCaverns_ForgottenRecyclingRoom 14 11 3/1600 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/2000 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Sat": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 4 17 0/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/1800 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2",
+        "spring_Sun": "0610 Azathii.TheForgottenCaverns_ForgottenMine 9 34 2/0620 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2/0800 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 7 10 2 {{ModId}}_Bob_Reading/1000 Azathii.TheForgottenCaverns_ForgottenMine 8 35 3/1200 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 22 9 3/1800 Azathii.TheForgottenCaverns_ForgottenGamesRoom 22 24 0 {{ModId}}_Bob_Gaming/2350 Azathii.TheForgottenCaverns_ForgottenMinersHutRepaired 9 5 2"
+      },
+      "When": {
+        "HasSeenEvent: hostPlayer |contains={{ModId}}_EventBobHeart8": true,
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": true
+      }
+    }
+  ]
+}
