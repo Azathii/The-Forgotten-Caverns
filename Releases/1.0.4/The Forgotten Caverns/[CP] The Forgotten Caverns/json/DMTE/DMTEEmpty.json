@@ -1,0 +1,1166 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_CavernEmptyContainers",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 111,
+            "Y": 78
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 112,
+            "Y": 78
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 25,
+            "Y": 91
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 26,
+            "Y": 91
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 27,
+            "Y": 90
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "DMTE_HotSpringsEmptyContainers",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 24,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 53,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 54,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 86,
+            "Y": 47
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 75,
+            "Y": 111
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 76,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 77,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 66,
+            "Y": 101
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 67,
+            "Y": 101
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 88,
+            "Y": 114
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 104,
+            "Y": 112
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 105,
+            "Y": 112
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 109
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 23,
+            "Y": 79
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 37,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 67,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 68,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 69,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 62,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 63,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 64,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 97,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 98,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 99,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 94,
+            "Y": 46
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 95,
+            "Y": 46
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 96,
+            "Y": 46
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 82,
+            "Y": 62
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 83,
+            "Y": 62
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 84,
+            "Y": 62
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 73,
+            "Y": 103
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 74,
+            "Y": 103
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 75,
+            "Y": 103
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 94,
+            "Y": 104
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 95,
+            "Y": 104
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 96,
+            "Y": 104
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 104
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 104,
+            "Y": 104
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 105,
+            "Y": 104
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 111
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 111
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 40,
+            "Y": 111
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 51,
+            "Y": 82
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 52,
+            "Y": 82
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 53,
+            "Y": 82
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEBerryFalse}}",
+            "DMT/sound_Action": "leafrustle"
+          }
+        },
+        {
+          "Position": {
+            "X": 107,
+            "Y": 96
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "DMTE_MineEmptyContainers",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 6,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 30,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 31,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 29,
+            "Y": 45
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 30,
+            "Y": 45
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 45,
+            "Y": 22
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 47,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 48,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "DMTE_RecyclingRoomEmptyContainers",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenRecyclingRoom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 3,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 6,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 11,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 13,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 13,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 11,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 9
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "Ship"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "DMTE_SanctumEmptyContainers",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSanctum",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 4,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 13,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "DMTE_CatacombsEmptyContainers",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 95
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 95
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 4,
+            "Y": 75
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 64
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 24,
+            "Y": 58
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 45,
+            "Y": 78
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 53,
+            "Y": 74
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 61,
+            "Y": 51
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 50,
+            "Y": 37
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 36,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 49,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 71,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 69,
+            "Y": 42
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 37,
+            "Y": 74
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 75,
+            "Y": 56
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 89,
+            "Y": 56
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 90,
+            "Y": 57
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 81,
+            "Y": 75
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        },
+        {
+          "Position": {
+            "X": 65,
+            "Y": 82
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}",
+            "DMT/sound_Action": "stone_button"
+          }
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+

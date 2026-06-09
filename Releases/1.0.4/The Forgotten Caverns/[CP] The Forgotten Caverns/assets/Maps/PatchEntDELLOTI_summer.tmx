@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="5" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="4">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Cavern" tilewidth="16" tileheight="16" tilecount="2304" columns="36">
+  <image source="Azathii_Cavern.png" width="576" height="1024"/>
+  <tile id="83">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2657" name="z_summer_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="summer_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="4632" name="z_spring_daisyextras" tilewidth="16" tileheight="16" tilecount="1800" columns="30">
+  <image source="spring_daisyextras.png" width="480" height="960"/>
+  <tile id="178">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="5" height="5">
+  <data encoding="csv">
+2832,2832,2832,2882,4811,
+2932,2932,2932,2882,4811,
+2932,436,436,436,0,
+139,472,472,472,0,
+139,139,472,139,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="5" height="5">
+  <data encoding="csv">
+4950,4951,4952,0,2890,
+0,0,0,0,2915,
+3603,0,0,0,0,
+3603,0,0,0,0,
+3603,3603,3603,3603,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,297,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="AlwaysFront9" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+3699,3674,0,0,0,
+3725,3673,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront10" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,3726,
+0,0,0,0,3726,
+3722,0,80,0,3727
+</data>
+ </layer>
+ <layer id="11" name="AlwaysFront11" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+3674,0,0,3675,3700,
+2147487349,0,0,3676,3673,
+3672,3698,3699,3701,3648,
+3650,3723,3724,2147487371,3649
+</data>
+ </layer>
+ <objectgroup id="5" name="Back">
+  <object id="1" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Azathii.TheForgottenCaverns_ForgottenCavern 109 19"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Azathii.TheForgottenCaverns_ForgottenCavern 109 19"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="48" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Azathii.TheForgottenCaverns_ForgottenCavern 109 19"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="12" name="AlwaysFront9"/>
+ <objectgroup id="13" name="AlwaysFront10"/>
+ <objectgroup id="14" name="AlwaysFront11"/>
+</map>

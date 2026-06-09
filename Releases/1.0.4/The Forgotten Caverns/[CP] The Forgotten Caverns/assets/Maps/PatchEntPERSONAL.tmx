@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="2">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Cavern" tilewidth="16" tileheight="16" tilecount="2304" columns="36">
+  <image source="Azathii_Cavern.png" width="576" height="1024"/>
+  <tile id="83">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="4">
+  <data encoding="csv">
+139,139,139,
+472,472,472,
+508,508,508,
+139,508,139
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="3" height="4">
+  <data encoding="csv">
+0,0,0,
+233,0,237,
+214,0,222,
+0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="3" height="4">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,297,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="3" height="4">
+  <data encoding="csv">
+217,0,221,
+0,0,0,
+0,0,0,
+78,0,78
+</data>
+ </layer>
+ <layer id="10" name="AlwaysFront9" width="3" height="4">
+  <data encoding="csv">
+0,0,0,
+901,902,903,
+0,938,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront10" width="3" height="4">
+  <data encoding="csv">
+0,0,0,
+233,0,237,
+214,215,222,
+0,80,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back">
+  <object id="1" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Azathii.TheForgottenCaverns_ForgottenCavern 109 19"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="12" name="AlwaysFront9"/>
+ <objectgroup id="13" name="AlwaysFront10"/>
+</map>

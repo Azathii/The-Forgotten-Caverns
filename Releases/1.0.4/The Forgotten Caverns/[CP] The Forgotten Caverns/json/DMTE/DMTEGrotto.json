@@ -1,0 +1,93 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_GrottoTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGrotto",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/chest_Once_Action": "24 24=(O)SkillBook_2 (O)891 (O)422 (O)205",
+            "DMT/message_Once_Action": "{{i18n:DMTEGrottoTreasure}}",
+            "DMT/sound_Once_Action": "secret1",
+            "DMT/mail_Once_Action": "{{ModId}}/GrottoTreasureFound"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/GrottoTreasureFound": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_GrottoTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGrotto",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEGrottoTreasureEmpty2}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/GrottoTreasureFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundGrotto",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGrotto",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundGrotto",
+            "DMT/removeQuest_Once_On": "{{ModId}}_QuestClue4"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: anyPlayer |contains={{ModId}}/FoundGrotto": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundGrottoQuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGrotto",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_On": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/FoundGrotto": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue4": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

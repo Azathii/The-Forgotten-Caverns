@@ -1,0 +1,214 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_OrchardTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenOrchard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)633",
+            "DMT/message_Once_Action": "{{i18n:DMTEOrchardTreasure}}",
+            "DMT/mail_Once_Action": "{{ModId}}/OrchardTreasureFound",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue8"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/OrchardTreasureFound": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_OrchardTreasure1QuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenOrchard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/OrchardTreasureFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue8": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_OrchardTreasure1QuestFalseSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenOrchard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "secret1"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/OrchardTreasureFound": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue8": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_OrchardTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenOrchard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 45,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEOrchardTreasureEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/OrchardTreasureFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundOrchardNoMsg",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenOrchard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 76
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "{{ModId}}/FoundOrchard"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: anyPlayer |contains={{ModId}}/FoundOrchard": false,
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundOrchard",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenOrchard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 76
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_On": "{{i18n:DMTENewWarp}}",
+            "DMT/mail_Once_On": "{{ModId}}/FoundOrchard"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: anyPlayer |contains={{ModId}}/FoundOrchard": false,
+        "ModMessages": "Enabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_OrchardHotTubHealing",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenOrchard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecondContinuous_On": "10",
+            "DMT/staminaPerSecondContinuous_On": "20"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecondContinuous_On": "10",
+            "DMT/staminaPerSecondContinuous_On": "20"
+          }
+        },
+        {
+          "Position": {
+            "X": 13,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecondContinuous_On": "10",
+            "DMT/staminaPerSecondContinuous_On": "20"
+          }
+        },
+        {
+          "Position": {
+            "X": 11,
+            "Y": 34
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecondContinuous_On": "10",
+            "DMT/staminaPerSecondContinuous_On": "20"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 34
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecondContinuous_On": "10",
+            "DMT/staminaPerSecondContinuous_On": "20"
+          }
+        },
+        {
+          "Position": {
+            "X": 13,
+            "Y": 34
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecondContinuous_On": "10",
+            "DMT/staminaPerSecondContinuous_On": "20"
+          }
+        }
+      ],
+      "When": {
+        "HotTubHealing": "Enabled"
+      }
+    }
+  ]
+}

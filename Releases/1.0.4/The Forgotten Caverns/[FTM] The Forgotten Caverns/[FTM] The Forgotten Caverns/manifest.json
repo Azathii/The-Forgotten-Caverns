@@ -1,0 +1,13 @@
+{
+  "Name": "[FTM] The Forgotten Caverns",
+  "Author": "Azathii",
+  "Version": "1.0.4",
+  "Description": "Adds forageables, monsters and ores to The Forgotten Caverns' maps.",
+  "UniqueID": "Azathii.TheForgottenCaverns.FTM",
+  "MinimumApiVersion": "4.0.4",
+  "UpdateKeys": [ "Nexus:47216" ],
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.25.0"
+  }
+}
