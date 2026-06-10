@@ -1,0 +1,443 @@
+{
+  "Changes": [
+    { 
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/CottageBlueprints, Mods/{{ModId}}/CaptainsLocket, Mods/{{ModId}}/EarlsSpices, Mods/{{ModId}}/EdgarsInk, Mods/{{ModId}}/Duskberry, Mods/{{ModId}}/CavernSpinach, Mods/{{ModId}}/GloomBloom, Mods/{{ModId}}/MidnightEntoloma, Mods/{{ModId}}/CavernLunch, Mods/{{ModId}}/FriedFangtooth, Mods/{{ModId}}/Lemonade, Mods/{{ModId}}/TropicalTwist, Mods/{{ModId}}/CitronTart, Mods/{{ModId}}/KeyLimePie, Mods/{{ModId}}/LemonDrizzleCake, Mods/{{ModId}}/DuskberryCheesecake, Mods/{{ModId}}/CreamedCavernSpinach",
+      "FromFile": "assets/Items/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_CottageBlueprints": {
+          "Name": "{{ModId}}_CottageBlueprints",
+          "DisplayName": "{{i18n:KeyObject_CottageBlueprints.name}}",
+          "Description": "{{i18n:KeyObject_CottageBlueprints.description}}",
+          "Type": "Quest",
+          "Category": 0,
+          "Price": 99000,
+          "Texture": "Mods/{{ModId}}/CottageBlueprints",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": null,
+          "CustomFields": null
+        },
+        "{{ModId}}_CaptainsLocket": {
+          "Name": "{{ModId}}_CaptainsLocket",
+          "DisplayName": "{{i18n:KeyObject_CaptainsLocket.name}}",
+          "Description": "{{i18n:KeyObject_CaptainsLocket.description}}",
+          "Type": "Quest",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods/{{ModId}}/CaptainsLocket",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": null,
+          "CustomFields": null
+        },
+        "{{ModId}}_EarlsSpices": {
+          "Name": "{{ModId}}_EarlsSpices",
+          "DisplayName": "{{i18n:KeyObject_EarlsSpices.name}}",
+          "Description": "{{i18n:KeyObject_EarlsSpices.description}}",
+          "Type": "Quest",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods/{{ModId}}/EarlsSpices",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": null,
+          "CustomFields": null
+        },
+        "{{ModId}}_EdgarsInk": {
+          "Name": "{{ModId}}_EdgarsInk",
+          "DisplayName": "{{i18n:KeyObject_EdgarsInk.name}}",
+          "Description": "{{i18n:KeyObject_EdgarsInk.description}}",
+          "Type": "Quest",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods/{{ModId}}/EdgarsInk",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": null,
+          "CustomFields": null
+        },
+        "{{ModId}}_Duskberry": {
+          "Name": "{{ModId}}_Duskberry",
+          "DisplayName": "{{i18n:Object_Duskberry.name}}",
+          "Description": "{{i18n:Object_Duskberry.description}}",
+          "Type": "Basic",
+          "Category": -79,
+          "Price": 150,
+          "Texture": "Mods/{{ModId}}/Duskberry",
+          "SpriteIndex": 0,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_pale_violet_red",
+            "fruit_item",
+            "forage_item",
+            "forage_item_cave"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_CavernSpinach": {
+          "Name": "{{ModId}}_CavernSpinach",
+          "DisplayName": "{{i18n:Object_CavernSpinach.name}}",
+          "Description": "{{i18n:Object_CavernSpinach.description}}",
+          "Type": "Basic",
+          "Category": -81,
+          "Price": 75,
+          "Texture": "Mods/{{ModId}}/CavernSpinach",
+          "SpriteIndex": 0,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_dark_green",
+            "forage_item",
+            "forage_item_cave"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_MidnightEntoloma": {
+          "Name": "{{ModId}}_MidnightEntoloma",
+          "DisplayName": "{{i18n:Object_MidnightEntoloma.name}}",
+          "Description": "{{i18n:Object_MidnightEntoloma.description}}",
+          "Type": "Basic",
+          "Category": -81,
+          "Price": 160,
+          "Texture": "Mods/{{ModId}}/MidnightEntoloma",
+          "SpriteIndex": 0,
+          "Edibility": 10,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_dark_blue",
+            "edible_mushroom",
+            "forage_item",
+            "forage_item_cave"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_GloomBloom": {
+          "Name": "{{ModId}}_GloomBloom",
+          "DisplayName": "{{i18n:Object_GloomBloom.name}}",
+          "Description": "{{i18n:Object_GloomBloom.description}}",
+          "Type": "Basic",
+          "Category": -80,
+          "Price": 180,
+          "Texture": "Mods/{{ModId}}/GloomBloom",
+          "SpriteIndex": 0,
+          "Edibility": 0,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_blue",
+            "flower_item",
+            "forage_item",
+            "forage_item_cave"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_CavernLunch": {
+          "Name": "{{ModId}}_CavernLunch",
+          "DisplayName": "{{i18n:Object_CavernLunch.name}}",
+          "Description": "{{i18n:Object_CavernLunch.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 650,
+          "Texture": "Mods/{{ModId}}/CavernLunch",
+          "SpriteIndex": 0,
+          "Edibility": 96,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 400,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 1.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 75.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_blue",
+            "food_salad"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_FriedFangtooth": {
+          "Name": "{{ModId}}_FriedFangtooth",
+          "DisplayName": "{{i18n:Object_FriedFangtooth.name}}",
+          "Description": "{{i18n:Object_FriedFangtooth.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 650,
+          "Texture": "Mods/{{ModId}}/FriedFangtooth",
+          "SpriteIndex": 0,
+          "Edibility": 50,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 400,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 1.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_orange",
+            "food_seafood"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_CreamedCavernSpinach": {
+          "Name": "{{ModId}}_CreamedCavernSpinach",
+          "DisplayName": "{{i18n:Object_CreamedCavernSpinach.name}}",
+          "Description": "{{i18n:Object_CreamedCavernSpinach.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 1000,
+          "Texture": "Mods/{{ModId}}/CreamedCavernSpinach",
+          "SpriteIndex": 0,
+          "Edibility": 110,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Id": "Food",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 660,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 2.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.0,
+                "Defense": 1.0,
+                "Attack": 1.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_dark_green",
+            "food_soup"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_Lemonade": {
+          "Name": "{{ModId}}_Lemonade",
+          "DisplayName": "{{i18n:Object_Lemonade.name}}",
+          "Description": "{{i18n:Object_Lemonade.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 400,
+          "Texture": "Mods/{{ModId}}/Lemonade",
+          "SpriteIndex": 0,
+          "Edibility": 60,
+          "IsDrink": true,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_yellow",
+            "dye_strong",
+            "food_sweet"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_TropicalTwist": {
+          "Name": "{{ModId}}_TropicalTwist",
+          "DisplayName": "{{i18n:Object_TropicalTwist.name}}",
+          "Description": "{{i18n:Object_TropicalTwist.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods/{{ModId}}/TropicalTwist",
+          "SpriteIndex": 0,
+          "Edibility": 70,
+          "IsDrink": true,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_white",
+            "food_sweet"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_CitronTart": {
+          "Name": "{{ModId}}_CitronTart",
+          "DisplayName": "{{i18n:Object_CitronTart.name}}",
+          "Description": "{{i18n:Object_CitronTart.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 450,
+          "Texture": "Mods/{{ModId}}/CitronTart",
+          "SpriteIndex": 0,
+          "Edibility": 75,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_yellow",
+            "food_bakery",
+            "food_sweet"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_KeyLimePie": {
+          "Name": "{{ModId}}_KeyLimePie",
+          "DisplayName": "{{i18n:Object_KeyLimePie.name}}",
+          "Description": "{{i18n:Object_KeyLimePie.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 450,
+          "Texture": "Mods/{{ModId}}/KeyLimePie",
+          "SpriteIndex": 0,
+          "Edibility": 75,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_lime",
+            "food_bakery",
+            "food_sweet"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_LemonDrizzleCake": {
+          "Name": "{{ModId}}_LemonDrizzleCake",
+          "DisplayName": "{{i18n:Object_LemonDrizzleCake.name}}",
+          "Description": "{{i18n:Object_LemonDrizzleCake.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 500,
+          "Texture": "Mods/{{ModId}}/LemonDrizzleCake",
+          "SpriteIndex": 0,
+          "Edibility": 100,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_yellow",
+            "food_bakery",
+            "food_cake",
+            "food_sweet"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_DuskberryCheesecake": {
+          "Name": "{{ModId}}_DuskberryCheesecake",
+          "DisplayName": "{{i18n:Object_DuskberryCheesecake.name}}",
+          "Description": "{{i18n:Object_DuskberryCheesecake.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 1600,
+          "Texture": "Mods/{{ModId}}/DuskberryCheesecake",
+          "SpriteIndex": 0,
+          "Edibility": 150,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_white",
+            "food_bakery",
+            "food_cake",
+            "food_sweet"
+          ],
+          "CustomFields": null
+        }
+      }
+    }
+  ]
+}

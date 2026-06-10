@@ -1,0 +1,66 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_CaptainsLocket",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCaptainsCabin",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 4
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_Action": "Buildings 1 4=z_Azathii_Pirates/371",
+            "DMT/give_Once_Action": "(O){{ModId}}_CaptainsLocket",
+            "DMT/message_Once_Action": "{{i18n:DMTECaptainsCabinLocket}}",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/mail_Once_Action": "{{ModId}}/CaptainsLocketFound"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainsLocketFound": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainsLocketFound",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCaptainsCabin",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 4
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTECaptainsCabinLocketEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainsLocketFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCaptainsCabin",
+      "FromFile": "assets/Maps/EditDMTECapatinsCabinLocket.tmx",
+      "ToArea": {
+        "X": 1,
+        "Y": 4,
+        "Width": 1,
+        "Height": 1
+      },
+      "Patchmode": "Replace",
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainsLocketFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="50" nextobjectid="45">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Cavern" tilewidth="16" tileheight="16" tilecount="2304" columns="36">
+  <image source="Azathii_Cavern.png" width="576" height="1024"/>
+  <tile id="1968">
+   <animation>
+    <frame tileid="1968" duration="450"/>
+    <frame tileid="1968" duration="450"/>
+    <frame tileid="1968" duration="450"/>
+    <frame tileid="2004" duration="450"/>
+    <frame tileid="1968" duration="450"/>
+    <frame tileid="1968" duration="450"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="42" name="Back" width="1" height="6">
+  <data encoding="csv">
+0,
+0,
+0,
+0,
+0,
+2321
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="1" height="6">
+  <data encoding="csv">
+0,
+0,
+0,
+0,
+2285,
+0
+</data>
+ </layer>
+ <layer id="46" name="Paths" width="1" height="6">
+  <data encoding="csv">
+0,
+297,
+297,
+0,
+0,
+297
+</data>
+ </layer>
+ <layer id="43" name="Front" width="1" height="6">
+  <data encoding="csv">
+0,
+0,
+0,
+2249,
+0,
+0
+</data>
+ </layer>
+ <layer id="48" name="AlwaysFront" width="1" height="6">
+  <data encoding="csv">
+2141,
+2177,
+2213,
+0,
+0,
+0
+</data>
+ </layer>
+ <objectgroup id="44" name="Back">
+  <object id="44" name="TileData" x="0" y="80" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="MagicWarp Azathii.TheForgottenCaverns_ForgottenSpeakeasy 4 15"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Buildings">
+  <object id="43" name="TileData" x="0" y="48" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message WarpCatacombs"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="47" name="Paths"/>
+ <objectgroup id="45" name="Front"/>
+ <objectgroup id="49" name="AlwaysFront"/>
+</map>

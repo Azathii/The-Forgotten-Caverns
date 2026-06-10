@@ -1,0 +1,96 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapProperties": {
+        "Warp": "9 105 Azathii.TheForgottenCaverns_ForgottenHotSprings 99 91 10 105 Azathii.TheForgottenCaverns_ForgottenHotSprings 100 91 20 50 Azathii.TheForgottenCaverns_ForgottenSpeakeasy 21 20 84 29 Azathii.ForgottenWoods_ForgottenSmallCrypt 8 29 85 29 Azathii.ForgottenWoods_ForgottenSmallCrypt 8 29"
+      }, 
+      "When": {
+	"HasMod |contains=Azathii.ForgottenWoods": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "FromFile": "assets/Maps/EditCatacombsGate.tmx",
+      "ToArea": {
+        "X": 83,
+        "Y": 37,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasMod |contains=Azathii.ForgottenWoods": true,
+	"HasFlag: currentPlayer, hostPlayer |contains=Azathii.ForgottenWoods/CryptMinecartUnlocked": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "FromFile": "assets/Maps/EditCatacombsGate.tmx",
+      "ToArea": {
+        "X": 86,
+        "Y": 37,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasMod |contains=Azathii.ForgottenWoods": true,
+	"HasFlag: currentPlayer, hostPlayer |contains=Azathii.ForgottenWoods/CryptMinecartUnlocked": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "FromFile": "assets/Maps/EditCatacombsGateNoFW.tmx",
+      "ToArea": {
+        "X": 83,
+        "Y": 37,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasMod |contains=Azathii.ForgottenWoods": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "FromFile": "assets/Maps/EditCatacombsGateNoFW.tmx",
+      "ToArea": {
+        "X": 86,
+        "Y": 37,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasMod |contains=Azathii.ForgottenWoods": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenDinoDen",
+      "FromFile": "assets/Maps/EditDinoDenBlock.tmx",
+      "ToArea": {
+        "X": 28,
+        "Y": 34,
+        "Width": 1,
+        "Height": 1
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/FoundSpeakeasy": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

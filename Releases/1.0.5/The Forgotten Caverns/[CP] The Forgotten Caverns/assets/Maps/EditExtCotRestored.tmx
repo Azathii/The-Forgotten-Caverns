@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="7" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="44" nextobjectid="56">
+ <properties>
+  <property name="AllowGiantCrops" value="T"/>
+  <property name="AllowGrassGrowInWinter" value="T"/>
+  <property name="AllowGrassSurviveInWinter" value="T"/>
+  <property name="AmbientLight" value="90 90 35"/>
+  <property name="BrookSounds" value="10 37 5 11 37 5 12 37 5 22 34 5 23 34 5 10 22 5 11 22 5 12 22 5 13 22 5 79 6 5 80 6 5 81 6 5 82 6 5 83 6 5 84 6 5 76 18 5 77 18 5 78 18 5 79 18 5 86 19 5 87 19 5 89 39 5 90 39 5 91 39 5 92 39 5 93 39 5 94 39 5 89 45 5 90 45 5 91 45 5 92 45 5 93 45 5 94 45 5 107 65 5 108 65 5 109 65 5 110 65 5 111 64 5 112 64 5 114 66 5 48 100 5 49 100 5 50 100 5 51 100 5 54 102 5 55 102 5 56 101 5 57 101 5 30 40 1 31 40 1 30 41 1 31 41 1"/>
+  <property name="DirtDecayChance" value="0.1"/>
+  <property name="ForceAllowTreePlanting" value="T"/>
+  <property name="IsFarm" value="T"/>
+  <property name="LocationContext" value="AzathiiCavernsFarm"/>
+  <property name="TreatAsOutdoors" value="T"/>
+  <property name="Warp" value="109 18 FarmCave 4 12 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"/>
+  <property name="indoorWater" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_FCEdits" tilewidth="16" tileheight="16" tilecount="1575" columns="35">
+  <image source="Azathii_FCEdits.png" width="560" height="720"/>
+ </tileset>
+ <tileset firstgid="1928" name="z_Azathii_Cavern" tilewidth="16" tileheight="16" tilecount="2304" columns="36">
+  <image source="Azathii_Cavern.png" width="576" height="1024"/>
+ </tileset>
+ <layer id="32" name="Back3" width="7" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,643,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="7" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+500,501,502,503,504,505,506,
+535,536,537,538,539,540,541,
+3333,571,572,573,574,575,3333,
+3369,606,607,608,609,610,3369,
+640,641,642,0,644,645,646
+</data>
+ </layer>
+ <layer id="22" name="Buildings2" width="7" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+570,0,0,0,0,0,576,
+605,0,0,0,0,0,611,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="7" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,297,0,0,0,
+0,0,0,0,0,0,0,
+0,297,0,0,0,297,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="7" height="9">
+  <data encoding="csv">
+360,361,362,363,364,365,366,
+395,396,397,398,399,400,401,
+430,431,432,433,434,435,436,
+465,466,467,468,469,470,471,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="26" name="Back3"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="55" name="TileData" x="48" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 11 30 Azathii.TheForgottenCaverns_ForgottenCottage"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="27" name="Buildings2"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

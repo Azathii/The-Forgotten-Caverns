@@ -1,0 +1,911 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        "eventSeen_{{ModId}}_EventDemetriusDiscovery": "{{i18n:Dialogue_Demetrius.1}}",
+        "eventSeen_{{ModId}}_EventBobHeart6": "{{i18n:Dialogue_Demetrius.2}}" 
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "eventSeen_{{ModId}}_EventRobinsRefusal": "{{i18n:Dialogue_Robin.1}}" 
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "eventSeen_{{ModId}}_EventDemetriusDiscovery": "{{i18n:Dialogue_Wizard.1}}" 
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Carpenter",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModId}}_CottageBlueprints": {
+          "ActionsOnPurchase": [
+            "AddMail Host {{ModId}}/CottageRepairPurchased received",
+            "AddQuest {{ModId}}_QuestCarl"
+          ],
+          "Price": "99000",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "AvoidRepeat": true,
+          "Condition": "PLAYER_HAS_MAIL Host {{ModId}}/RobinsRefusal",
+          "Id": "{{ModId}}_CottageBlueprints",
+          "ItemId": "{{ModId}}_CottageBlueprints"
+        }
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModId}}_CottageBlueprints",
+          "BeforeId": "(O)388" 
+        }
+      ]    
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Abigail",
+            1
+          ],
+          "Value": "{{ModId}}_GloomBloom {{ModId}}_CitronTart {{ModId}}_KeyLimePie",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Alex",
+            1
+          ],
+          "Value": "{{ModId}}_CavernLunch",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Caroline",
+            1
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_FriedFangtooth {{ModId}}_TropicalTwist",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Clint",
+            1
+          ],
+          "Value": "{{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Demetrius",
+            1
+          ],
+          "Value": "{{ModId}}_Lemon {{ModId}}_KeyLime",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Dwarf",
+            1
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Elliott",
+            1
+          ],
+          "Value": "{{ModId}}_FriedFangtooth {{ModId}}_TropicalTwist",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Emily",
+            1
+          ],
+          "Value": "{{ModId}}_TropicalTwist",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Evelyn",
+            1
+          ],
+          "Value": "{{ModId}}_DuskberryCheesecake",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "George",
+            1
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_MidnightEntoloma {{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Gus",
+            1
+          ],
+          "Value": "{{ModId}}_KeyLime {{ModId}}_Lemon",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Haley",
+            1
+          ],
+          "Value": "{{ModId}}_LemonDrizzleCake",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Harvey",
+            1
+          ],
+          "Value": "{{ModId}}_CavernLunch",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Jas",
+            1
+          ],
+          "Value": "{{ModId}}_Duskberry {{ModId}}_LemonDrizzleCake {{ModId}}_Lemonade",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Jodi",
+            1
+          ],
+          "Value": "{{ModId}}_CitronTart {{ModId}}_LemonDrizzleCake",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Kent",
+            1
+          ],
+          "Value": "{{ModId}}_CavernLunch {{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Krobus",
+            1
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Leah",
+            1
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_CreamedCavernSpinach {{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Leo",
+            1
+          ],
+          "Value": "{{ModId}}_Duskberry {{ModId}}_LemonDrizzleCake {{ModId}}_Lemonade",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Lewis",
+            1
+          ],
+          "Value": "{{ModId}}_CavernLunch",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Linus",
+            1
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_Duskberry {{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Marnie",
+            1
+          ],
+          "Value": "{{ModId}}_DuskberryCheesecake {{ModId}}_LemonDrizzleCake",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Maru",
+            1
+          ],
+          "Value": "{{ModId}}_CitronTart {{ModId}}_KeyLimePie",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Pam",
+            1
+          ],
+          "Value": "{{ModId}}_CreamedCavernSpinach {{ModId}}_TropicalTwist",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Penny",
+            1
+          ],
+          "Value": "{{ModId}}_CavernLunch {{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Pierre",
+            1
+          ],
+          "Value": "{{ModId}}_FriedFangtooth",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Robin",
+            1
+          ],
+          "Value": "{{ModId}}_DuskberryCheesecake",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Sam",
+            1
+          ],
+          "Value": "{{ModId}}_CitronTart {{ModId}}_KeyLimePie",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Sandy",
+            1
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Sebastian",
+            1
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Shane",
+            1
+          ],
+          "Value": "{{ModId}}_KeyLime {{ModId}}_KeyLimePie",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Vincent",
+            1
+          ],
+          "Value": "{{ModId}}_Duskberry {{ModId}}_LemonDrizzleCake {{ModId}}_Lemonade",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Willy",
+            1
+          ],
+          "Value": "{{ModId}}_ForgottenFangtooth {{ModId}}_FriedFangtooth",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Wizard",
+            1
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Demetrius",
+            3
+          ],
+          "Value": "{{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Evelyn",
+            3
+          ],
+          "Value": "{{ModId}}_Duskberry {{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Lewis",
+            3
+          ],
+          "Value": "{{ModId}}_KeyLime {{ModId}}_Lemon",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Marnie",
+            3
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Maru",
+            3
+          ],
+          "Value": "{{ModId}}_KeyLime {{ModId}}_Lemon",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Robin",
+            3
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Shane",
+            3
+          ],
+          "Value": "{{ModId}}_Lemon",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Abigail",
+            5
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Caroline",
+            5
+          ],
+          "Value": "{{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Clint",
+            5
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Elliott",
+            5
+          ],
+          "Value": "{{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Emily",
+            5
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Evelyn",
+            5
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "George",
+            5
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Gus",
+            5
+          ],
+          "Value": "{{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Haley",
+            5
+          ],
+          "Value": "{{ModId}}_KeyLime {{ModId}}_Lemon",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Jas",
+            5
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Jodi",
+            5
+          ],
+          "Value": "{{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Kent",
+            5
+          ],
+          "Value": "{{ModId}}_TropicalTwist",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Leah",
+            5
+          ],
+          "Value": "{{ModId}}_FriedFangtooth {{ModId}}_LemonDrizzleCake",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Leo",
+            5
+          ],
+          "Value": "{{ModId}}_CavernLunch {{ModId}}_TropicalTwist",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Lewis",
+            5
+          ],
+          "Value": "{{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Marnie",
+            5
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Maru",
+            5
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Penny",
+            5
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Pierre",
+            5
+          ],
+          "Value": "{{ModId}}_CavernLunch",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Robin",
+            5
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Sam",
+            5
+          ],
+          "Value": "{{ModId}}_CavernLunch",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Sebastian",
+            5
+          ],
+          "Value": "{{ModId}}_TropicalTwist",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Shane",
+            5
+          ],
+          "Value": "{{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Alex",
+            7
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Caroline",
+            7
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Clint",
+            7
+          ],
+          "Value": "{{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Elliott",
+            7
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Emily",
+            7
+          ],
+          "Value": "{{ModId}}_FriedFangtooth",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Evelyn",
+            7
+          ],
+          "Value": "{{ModId}}_FriedFangtooth",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Gus",
+            7
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Haley",
+            7
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Harvey",
+            7
+          ],
+          "Value": "{{ModId}}_DuskberryCheesecake",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Jas",
+            7
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_KeyLime {{ModId}}_Lemon",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Jodi",
+            7
+          ],
+          "Value": "{{ModId}}_Duskberry",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Kent",
+            7
+          ],
+          "Value": "{{ModId}}_GloomBloom",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Leah",
+            7
+          ],
+          "Value": "{{ModId}}_CitronTart {{ModId}}_KeyLimePie",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Leo",
+            7
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_KeyLime {{ModId}}_Lemon",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Leah",
+            7
+          ],
+          "Value": "{{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Maru",
+            7
+          ],
+          "Value": "{{ModId}}_MidnightEntoloma",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Pierre",
+            7
+          ],
+          "Value": "{{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Sam",
+            7
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_CreamedCavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Sebastian",
+            7
+          ],
+          "Value": "{{ModId}}_CavernLunch",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Shane",
+            7
+          ],
+          "Value": "{{ModId}}_CavernSpinach",
+          "Delimiter": ""
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Vincent",
+            7
+          ],
+          "Value": "{{ModId}}_CavernSpinach {{ModId}}_KeyLime {{ModId}}_Lemon",
+          "Delimiter": ""
+        }
+      ]
+    }
+  ]
+}

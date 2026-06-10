@@ -1,0 +1,104 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_SpellForageSpawn",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpellRoom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "terraria_warp",
+            "DMT/mailRemove_Action": "{{ModId}}/HighForageEnabled",
+            "DMT/message_Action": "{{i18n:DMTEForageLowSpawnOn}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 7,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "terraria_warp",
+            "DMT/mail_Action": "{{ModId}}/HighForageEnabled",
+            "DMT/message_Action": "{{i18n:DMTEForageHighSpawnOn}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "DMTE_SpellMobsNumber+Type",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpellRoom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "terraria_warp",
+            "DMT/mailRemove_Action": "{{ModId}}/MoreMobsEnabled|{{ModId}}/NoMobsEnabled",
+            "DMT/message_Action": "{{i18n:DMTEMobNormalSpawn}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "terraria_warp",
+            "DMT/mailRemove_Action": "{{ModId}}/MoreMobsEnabled",
+            "DMT/mail_Action": "{{ModId}}/NoMobsEnabled",
+            "DMT/message_Action": "{{i18n:DMTEMobNoSpawn}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "terraria_warp",
+            "DMT/mailRemove_Action": "{{ModId}}/NoMobsEnabled",
+            "DMT/mail_Action": "{{ModId}}/MoreMobsEnabled",
+            "DMT/message_Action": "{{i18n:DMTEMobHighSpawn}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "terraria_warp",
+            "DMT/mailRemove_Action": "{{ModId}}/DangerousMobsEnabled",
+            "DMT/message_Action": "{{i18n:DMTEVanMob}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 23,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "terraria_warp",
+            "DMT/mail_Action": "{{ModId}}/DangerousMobsEnabled",
+            "DMT/message_Action": "{{i18n:DMTEDangMob}}"
+          }
+        }
+      ]
+    }
+  ]
+}

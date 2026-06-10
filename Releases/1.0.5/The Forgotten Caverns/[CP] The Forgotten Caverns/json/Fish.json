@@ -1,0 +1,384 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/BlindCaveTetra, Mods/{{ModId}}/CavernKoi, Mods/{{ModId}}/MidnightCavernKoi, Mods/{{ModId}}/ForgottenFangtooth, Mods/{{ModId}}/BlindCaveTetra_Aquarium, Mods/{{ModId}}/CavernKoi_Aquarium, Mods/{{ModId}}/MidnightCavernKoi_Aquarium, Mods/{{ModId}}/ForgottenFangtooth_Aquarium",
+      "FromFile": "assets/Items/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "{{ModId}}_BlindCaveTetra": "{{ModId}}_BlindCaveTetra/30/dart/1/5/0600 2600/spring summer fall winter/both/0/1/.3/.3/0/false",
+        "{{ModId}}_CavernKoi": "{{ModId}}_CavernKoi/55/mixed/15/40/0600 2200/spring summer fall winter/both/0/2/.3/.1/0/false",
+        "{{ModId}}_MidnightCavernKoi": "{{ModId}}_MidnightCavernKoi/75/mixed/15/40/2200 2600/spring summer fall winter/both/0/3/.1/.5/0/false",
+        "{{ModId}}_ForgottenFangtooth": "{{ModId}}_ForgottenFangtooth/80/sinker/8/25/1900 2600/spring summer fall winter/both/0/4/.1/.5/5/false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "{{ModId}}_BlindCaveTetra": "0/fish/////Mods\\{{ModId}}\\BlindCaveTetra_Aquarium",
+        "{{ModId}}_CavernKoi": "0/fish/////Mods\\{{ModId}}\\CavernKoi_Aquarium",
+        "{{ModId}}_MidnightCavernKoi": "0/fish/////Mods\\{{ModId}}\\MidnightCavernKoi_Aquarium",
+        "{{ModId}}_ForgottenFangtooth": "0/fish/////Mods\\{{ModId}}\\ForgottenFangtooth_Aquarium"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "{{ModId}}_BlindCaveTetra": {
+          "ID": "{{ModId}}_BlindCaveTetra",
+          "RequiredTags": [
+            "{{ModId}}_BlindCaveTetra",
+            "{{ModId}}_Fish"
+          ],
+          "SpawnTime": 2,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.05,
+              "ItemId": "(O)CaveJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemId": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemId": "(O)CaveJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.5,
+              "ItemId": "(O)CarrotSeeds",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)78 5"
+            ],
+            "6": [
+              "(O)Carrot 5"
+            ],
+            "8": [
+              "(O)562 1"
+            ]
+          },
+          "CustomFields": null
+        },
+        "{{ModId}}_CavernKoi": {
+          "ID": "{{ModId}}_CavernKoi",
+          "RequiredTags": [
+            "{{ModId}}_CavernKoi",
+            "{{ModId}}_Fish"
+          ],
+          "SpawnTime": 2,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.05,
+              "ItemId": "(O)MysteryBox",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemId": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemId": "(O)CaveJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.5,
+              "ItemId": "(O)384",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)384 3"
+            ],
+            "6": [
+              "(O)376 3"
+            ],
+            "8": [
+              "(O)556 1"
+            ]
+          },
+          "CustomFields": null
+        },
+        "{{ModId}}_MidnightCavernKoi": {
+          "ID": "{{ModId}}_MidnightCavernKoi",
+          "RequiredTags": [
+            "{{ModId}}_MidnightCavernKoi",
+            "{{ModId}}_Fish"
+          ],
+          "SpawnTime": 3,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.05,
+              "ItemId": "(O)GoldenMysteryBox",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemId": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemId": "(O)CaveJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.5,
+              "ItemId": "(O)386",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)384 3"
+            ],
+            "6": [
+              "(O)422 1"
+            ],
+            "8": [
+              "(O)577 1"
+            ]
+          },
+          "CustomFields": null
+        },
+        "{{ModId}}_ForgottenFangtooth": {
+          "ID": "{{ModId}}_ForgottenFangtooth",
+          "RequiredTags": [
+            "{{ModId}}_ForgottenFangtooth",
+            "{{ModId}}_Fish"
+          ],
+          "SpawnTime": 4,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.05,
+              "ItemId": "(O)373",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemId": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.1,
+              "ItemId": "(O)CaveJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.5,
+              "ItemId": "(O)490",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "4": [
+              "(O)276 2"
+            ],
+            "6": [
+              "(O)156 1"
+            ],
+            "8": [
+              "(O)608 1"
+            ]
+          },
+          "CustomFields": null
+        }
+      }  
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_BlindCaveTetra": {
+          "Name": "{{ModId}}_BlindCaveTetra",
+          "DisplayName": "{{i18n:Object_BlindCaveTetra.name}}",
+          "Description": "{{i18n:Object_BlindCaveTetra.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 50,
+          "Texture": "Mods/{{ModId}}/BlindCaveTetra",
+          "SpriteIndex": 0,
+          "Edibility": 5,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_white",
+            "fish_river",
+            "fish_freshwater",
+            "fish_mines",
+            "food_nonvegetarian",
+            "allergen_fish",
+            "fish_has_roe",
+            "{{ModId}}_BlindCaveTetra",
+            "{{ModId}}_Fish"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_CavernKoi": {
+          "Name": "{{ModId}}_CavernKoi",
+          "DisplayName": "{{i18n:Object_CavernKoi.name}}",
+          "Description": "{{i18n:Object_CavernKoi.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 75,
+          "Texture": "Mods/{{ModId}}/CavernKoi",
+          "SpriteIndex": 0,
+          "Edibility": 15,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_orange",
+            "fish_river",
+            "fish_freshwater",
+            "fish_mines",
+            "fish_talk_stiff",
+            "food_nonvegetarian",
+            "allergen_fish",
+            "fish_has_roe",
+            "{{ModId}}_CavernKoi",
+            "{{ModId}}_Fish"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_MidnightCavernKoi": {
+          "Name": "{{ModId}}_MidnightCavernKoi",
+          "DisplayName": "{{i18n:Object_MidnightCavernKoi.name}}",
+          "Description": "{{i18n:Object_MidnightCavernKoi.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 200,
+          "Texture": "Mods/{{ModId}}/MidnightCavernKoi",
+          "SpriteIndex": 0,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_iridium",
+            "fish_river",
+            "fish_freshwater",
+            "fish_mines",
+            "fish_talk_stiff",
+            "food_nonvegetarian",
+            "allergen_fish",
+            "fish_has_roe",
+            "{{ModId}}_MidnightCavernKoi",
+            "{{ModId}}_Fish"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_ForgottenFangtooth": {
+          "Name": "{{ModId}}_ForgottenFangtooth",
+          "DisplayName": "{{i18n:Object_ForgottenFangtooth.name}}",
+          "Description": "{{i18n:Object_ForgottenFangtooth.description}}",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": 350,
+          "Texture": "Mods/{{ModId}}/ForgottenFangtooth",
+          "SpriteIndex": 0,
+          "Edibility": 55,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_dark_blue",
+            "fish_river",
+            "fish_freshwater",
+            "fish_mines",
+            "fish_talk_carnivorous",
+            "food_nonvegetarian",
+            "allergen_fish",
+            "fish_has_roe",
+            "{{ModId}}_ForgottenFangtooth",
+            "{{ModId}}_Fish"
+          ],
+          "CustomFields": null
+        }
+      }
+    }
+  ]
+}

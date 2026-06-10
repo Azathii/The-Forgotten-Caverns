@@ -1,0 +1,10 @@
+{
+  "Name": "[dll] The Forgotten Caverns",
+  "Author": "Azathii",
+  "Version": "1.0.5",
+  "Description": "Adds weapon enchantments, the crane game, tweak to avoid DMTE Actions not working with empty inventory slots and fix for GMCM crashing audio on main Cavern map.",
+  "UniqueID": "Azathii.TheForgottenCaverns.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ "Nexus:" ],
+  "EntryDll": "Azathii.TheForgottenCaverns.dll"
+}

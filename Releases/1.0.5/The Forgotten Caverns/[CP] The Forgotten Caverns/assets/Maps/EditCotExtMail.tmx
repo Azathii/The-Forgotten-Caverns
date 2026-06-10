@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="2">
+ <properties>
+  <property name="AmbientLight" value="90 90 35"/>
+  <property name="Warp" value="8 12 Farm 34 6"/>
+ </properties>
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Cavern" tilewidth="16" tileheight="16" tilecount="2304" columns="36">
+  <image source="Azathii_Cavern.png" width="576" height="1024"/>
+ </tileset>
+ <layer id="2" name="Buildings" width="1" height="2">
+  <data encoding="csv">
+0,
+1535
+</data>
+ </layer>
+ <layer id="4" name="Front2" width="1" height="2">
+  <data encoding="csv">
+1499,
+0
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings">
+  <object id="1" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Mailbox"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Front2"/>
+</map>

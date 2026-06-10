@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="81">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Catacombs" tilewidth="16" tileheight="16" tilecount="1650" columns="25">
+  <image source="Azathii_Catacombs.png" width="400" height="1056"/>
+  <tile id="517">
+   <animation>
+    <frame tileid="517" duration="500"/>
+    <frame tileid="517" duration="500"/>
+    <frame tileid="796" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="898">
+   <animation>
+    <frame tileid="898" duration="250"/>
+    <frame tileid="944" duration="250"/>
+    <frame tileid="898" duration="250"/>
+    <frame tileid="946" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="899">
+   <animation>
+    <frame tileid="899" duration="250"/>
+    <frame tileid="945" duration="250"/>
+    <frame tileid="899" duration="250"/>
+    <frame tileid="947" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="923">
+   <animation>
+    <frame tileid="923" duration="250"/>
+    <frame tileid="969" duration="250"/>
+    <frame tileid="923" duration="250"/>
+    <frame tileid="971" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="924">
+   <animation>
+    <frame tileid="924" duration="250"/>
+    <frame tileid="970" duration="250"/>
+    <frame tileid="924" duration="250"/>
+    <frame tileid="972" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2003" name="z_Azathii_FCHouse" tilewidth="16" tileheight="16" tilecount="855" columns="15">
+  <image source="Azathii_FCHouse.png" width="240" height="912"/>
+  <tile id="105">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+2333,2333,2333,
+2348,2348,2348,
+2363,2363,2363,
+2190,2191,2190,
+2205,2206,2205
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,2838,2145
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="3" height="6">
+  <data encoding="csv">
+2005,2005,2005,
+0,0,0,
+2041,2041,2041,
+2056,2056,2056,
+0,1326,1327,
+0,0,1196
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,297,297,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+2145,2145,2145,
+0,0,0,
+0,0,0,
+0,0,1171,
+0,0,0
+</data>
+ </layer>
+ <layer id="9" name="Front2" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,1251,1252,
+0,1276,1277,
+0,1301,1302,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="10" name="AlwaysFront" width="3" height="6">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,1146,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="25" name="Back2"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="80" name="TileData" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message GamesRoomSpeechObsS1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="34" name="Front2"/>
+ <objectgroup id="38" name="AlwaysFront"/>
+</map>
