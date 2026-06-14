@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="2" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="54">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Catacombs" tilewidth="16" tileheight="16" tilecount="1650" columns="25">
+  <image source="Azathii_Catacombs.png" width="400" height="1056"/>
+  <tile id="276">
+   <animation>
+    <frame tileid="276" duration="150"/>
+    <frame tileid="279" duration="150"/>
+    <frame tileid="281" duration="150"/>
+    <frame tileid="283" duration="150"/>
+    <frame tileid="285" duration="150"/>
+    <frame tileid="287" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="277">
+   <animation>
+    <frame tileid="277" duration="150"/>
+    <frame tileid="280" duration="150"/>
+    <frame tileid="282" duration="150"/>
+    <frame tileid="284" duration="150"/>
+    <frame tileid="286" duration="150"/>
+    <frame tileid="288" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="301">
+   <animation>
+    <frame tileid="301" duration="150"/>
+    <frame tileid="304" duration="150"/>
+    <frame tileid="306" duration="150"/>
+    <frame tileid="308" duration="150"/>
+    <frame tileid="310" duration="150"/>
+    <frame tileid="312" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="302">
+   <animation>
+    <frame tileid="302" duration="150"/>
+    <frame tileid="305" duration="150"/>
+    <frame tileid="307" duration="150"/>
+    <frame tileid="309" duration="150"/>
+    <frame tileid="311" duration="150"/>
+    <frame tileid="313" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1138">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1226">
+   <animation>
+    <frame tileid="1226" duration="150"/>
+    <frame tileid="1227" duration="150"/>
+    <frame tileid="1228" duration="150"/>
+    <frame tileid="1229" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1228">
+   <animation>
+    <frame tileid="1228" duration="150"/>
+    <frame tileid="1229" duration="150"/>
+    <frame tileid="1226" duration="150"/>
+    <frame tileid="1227" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1520">
+   <animation>
+    <frame tileid="1520" duration="150"/>
+    <frame tileid="1522" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1521">
+   <animation>
+    <frame tileid="1521" duration="150"/>
+    <frame tileid="1523" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1545">
+   <animation>
+    <frame tileid="1545" duration="150"/>
+    <frame tileid="1547" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1546">
+   <animation>
+    <frame tileid="1546" duration="150"/>
+    <frame tileid="1548" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="15" name="Buildings3" width="2" height="2">
+  <data encoding="csv">
+1873,1874,
+1898,1899
+</data>
+ </layer>
+ <objectgroup id="28" name="Buildings3"/>
+</map>

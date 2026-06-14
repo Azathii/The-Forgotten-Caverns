@@ -1,0 +1,60 @@
+{
+  "OreSpawnEnabled": true,
+  "Ore_Spawn_Settings": {
+    "Areas": [
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "ForgottenMine_Iridium",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenMine",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag": "HasUnlockedSkullDoor"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "PercentExtraSpawnsPerMiningLevel": 0,
+    "MiningLevelRequired": {
+      "Iridium": 0
+    },
+    "StartingSpawnChance": {
+      "Iridium": 5
+    },
+    "LevelTenSpawnChance": {
+      "Iridium": 10
+    },
+    "CustomTileIndex": []
+  }
+}

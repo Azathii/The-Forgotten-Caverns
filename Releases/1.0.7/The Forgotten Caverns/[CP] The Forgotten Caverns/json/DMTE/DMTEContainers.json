@@ -1,0 +1,1016 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_CavernBarrel1.Burger",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 16,
+            "Y": 106
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)241",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CavernBarrel1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernBarrel1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernBarrel1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 16,
+            "Y": 106
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernBarrel1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel1.Coal",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 55,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)382,10",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBarrel1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel1Found": false
+      },
+       "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 55,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel2.Wood",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 89,
+            "Y": 46
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)388,15",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBarrel2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 89,
+            "Y": 46
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel3.Bombs",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 75,
+            "Y": 60
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)287,5",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBarrel3Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel3Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel3Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 75,
+            "Y": 60
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel3Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel4.LifeElixir",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 60,
+            "Y": 111
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)773",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBarrel4Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel4Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel4Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 60,
+            "Y": 111
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel4Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel5.OilOfGarlic",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 106,
+            "Y": 95
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)772",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBarrel5Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel5Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel5Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 106,
+            "Y": 95
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel5Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel6.Hardwood",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 105
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)709,8",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/HotSpringsBarrel6Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel6Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_HotSpringsBarrel6Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 105
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/HotSpringsBarrel6Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineBarrel1.CopperBars",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 49,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)334,3",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/MineBarrel1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrel1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineBarrel1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 49,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrel1Found": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "DMTE_MineBarrel2.GoldBar",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 46,
+            "Y": 39
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)336",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/MineBarrel2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrel2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineBarrel2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 46,
+            "Y": 39
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrel2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineBarrel3.Burger",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 26
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/give_Once_Action": "(O)241",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/MineBarrel3Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrel3Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_MineBarrel3Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenMine",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 26
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/MineBarrel3Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsBox1.MagnetBait",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 54,
+            "Y": 100
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)703,5",
+            "DMT/message_Once_Action": "{{i18n:DMTECatacombsBox1}}",
+            "DMT/sound_Once_Action": "Ship",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsBox1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsBox1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsBox1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 54,
+            "Y": 100
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "Ship",
+            "DMT/message_Action": "{{i18n:DMTECatacombsBox1Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsBox1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn1.RootsPlatter",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 80
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)244",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 80
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn2.BoneFragments",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)881,4",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn2Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn3.FlickeringCandle",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 83
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(F){{ModId}}_FlickerCandle1",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn3Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn3Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn3Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 83
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn3Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn4.SkullBrazier",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 55,
+            "Y": 81
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(BC)149",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn4Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn4Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn4Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 55,
+            "Y": 81
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn4Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn5.BoneFragments",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 82,
+            "Y": 76
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)881,3",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn5Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn5Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn5Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 82,
+            "Y": 76
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn5Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn6.OilOfGarlic",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 36,
+            "Y": 63
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)772",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn6Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn6Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn6Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 36,
+            "Y": 63
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn6Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn7.BoneFragments",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 52
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)881,2",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn7Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn7Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn7Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 52
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn7Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn8.FlickeringCandle",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 79,
+            "Y": 39
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(F){{ModId}}_FlickerCandle2",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn8Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn8Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn8Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 79,
+            "Y": 39
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn8Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn9.BoneFragments",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 70,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)881,4",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn9Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn9Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn9Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 70,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn9Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn10.BoneFragments",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 46,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)881,2",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn10Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn10Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn10Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 46,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn10Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn11.LifeElixir",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 63,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "stone_button",
+            "DMT/give_Once_Action": "(O)773",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CatacombsUrn11Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn11Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CatacombsUrn11Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCatacombs",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 63,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "stone_button",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CatacombsUrn11Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

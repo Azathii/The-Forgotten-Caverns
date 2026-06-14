@@ -1,0 +1,183 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_CavernTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 41
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)SkillBook_1",
+            "DMT/buff_Once_Action": "25",
+            "DMT/message_Once_Action": "{{i18n:DMTECavernTreasure1}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CavernTreasure1Found",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue1"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernTreasure1QuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 41
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue1": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernTreasure1QuestFalseSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 41
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "secret1"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure1Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue1": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 41
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTECavernTreasure1Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernTreasure2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 96
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(W){{ModId}}_Thorn",
+            "DMT/message_Once_Action": "{{i18n:DMTECavernTreasure2}}",
+            "DMT/mail_Once_Action": "{{ModId}}/CavernTreasure2Found",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestClue2"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure2Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernTreasure2QuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 96
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure2Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue2": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernTreasure2QuestFalseSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 96
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "secret1"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure2Found": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue2": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CavernTreasure2Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 96
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTECavernTreasure2Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CavernTreasure2Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "Changes": [
+    {
+      "Logname": "DMTE_CompletedWoodsNoMsg",
+      "Action": "EditMap",
+      "Target": "Maps/Azathii.ForgottenWoods_ForgottenExit",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 2,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mail_Once_On": "Azathii.ForgottenWoods/WoodsComplete"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains=Azathii.ForgottenWoods": true,
+        "HasVisitedLocation: currentPlayer, hostPlayer |contains={{ModId}}_ForgottenTravelHub": true,
+        "HasFlag: currentPlayer, hostPlayer |contains=Azathii.ForgottenWoods/WoodsComplete": false,
+        "ModMessages": "Disabled" 
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "Logname": "DMTE_CompletedWoods",
+      "Action": "EditMap",
+      "Target": "Maps/Azathii.ForgottenWoods_ForgottenExit",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 2,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_On": "{{i18n:DMTEWoodsWarp}}",
+            "DMT/mail_Once_On": "Azathii.ForgottenWoods/WoodsComplete"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains=Azathii.ForgottenWoods": true,
+        "HasVisitedLocation: currentPlayer, hostPlayer |contains={{ModId}}_ForgottenTravelHub": true,
+        "HasFlag: currentPlayer, hostPlayer |contains=Azathii.ForgottenWoods/WoodsComplete": false,
+        "ModMessages": "Enabled" 
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    }
+  ]
+}

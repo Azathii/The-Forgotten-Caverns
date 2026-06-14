@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenHotSprings",
+      "FromFile": "assets/Maps/EditHotSpringsMine.tmx",
+      "ToArea": {
+        "X": 91,
+        "Y": 18,
+        "Width": 1,
+        "Height": 3
+      },
+      "Patchmode": "Replace",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/FoundCatacombs": true,
+	"HasFlag: hostPlayer |contains=ccCraftsRoom": true
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}

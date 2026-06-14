@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="6" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="2">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Cavern" tilewidth="16" tileheight="16" tilecount="2304" columns="36">
+  <image source="Azathii_Cavern.png" width="576" height="1024"/>
+  <tile id="83">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2657" name="z_mine_lava_dangerous" tilewidth="16" tileheight="16" tilecount="320" columns="16">
+  <image source="Mines/mine_lava_dangerous.png" width="256" height="320"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="5">
+  <data encoding="csv">
+139,139,2794,2826,2794,2794,
+139,139,139,2794,2796,2794,
+139,139,139,472,472,472,
+139,139,139,508,508,508,
+139,139,139,139,508,139
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="6" height="5">
+  <data encoding="csv">
+0,197,0,0,0,0,
+0,0,214,0,0,0,
+0,0,0,233,0,237,
+0,0,0,214,0,222,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="6" height="5">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,297,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="6" height="5">
+  <data encoding="csv">
+78,0,198,0,0,0,
+78,78,0,2873,0,2877,
+78,78,78,0,0,0,
+78,78,78,0,0,0,
+78,78,78,78,0,78
+</data>
+ </layer>
+ <layer id="10" name="AlwaysFront9" width="6" height="5">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,901,902,903,
+0,0,0,0,938,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront10" width="6" height="5">
+  <data encoding="csv">
+0,2853,2854,0,0,0,
+0,0,2870,0,0,0,
+0,2668,2669,2889,0,2893,
+0,2684,2685,2870,2871,2878,
+0,0,0,2701,80,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back">
+  <object id="1" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Azathii.TheForgottenCaverns_ForgottenCavern 109 19"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="12" name="AlwaysFront9"/>
+ <objectgroup id="13" name="AlwaysFront10"/>
+</map>

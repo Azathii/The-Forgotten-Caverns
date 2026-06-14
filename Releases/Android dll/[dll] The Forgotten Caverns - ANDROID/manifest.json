@@ -1,0 +1,9 @@
+{
+  "Name": "[dll] The Forgotten Caverns - ANDROID",
+  "Author": "Azathii",
+  "Version": "1.0.7",
+  "Description": "ANDROID ONLY. Adds weapon enchantments, the crane game, tweak to avoid DMTE Actions not working with empty inventory slots.",
+  "UniqueID": "Azathii.TheForgottenCaverns.Android.dll",
+  "UpdateKeys": [ "" ],
+  "EntryDll": "Azathii.TheForgottenCaverns.Android.dll"
+}

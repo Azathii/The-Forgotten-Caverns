@@ -1,0 +1,4251 @@
+{
+  "ForageSpawnEnabled": true,
+  "MonsterSpawnEnabled": true,
+  "OreSpawnEnabled": true,
+  "Forage_Spawn_Settings": {
+    "Areas": [
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageMush_ModCaveChoice",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["!FARM_CAVE Host None, !FARM_CAVE Host Mushrooms, !FARM_CAVE Host Bats"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false",
+                          "HasMod |contains=aedenthorn.FarmCaveFramework": "true"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageMushHigh_ModCaveChoice",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["!FARM_CAVE Host None, !FARM_CAVE Host Mushrooms, !FARM_CAVE Host Bats"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true",
+                          "HasMod |contains=aedenthorn.FarmCaveFramework": "true"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageMush_ModCaveChoice",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host None"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageMushHigh_ModCaveChoice",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host None"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageFruit",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host Mushrooms"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Cherry",
+          "Pomegranate",
+          "Peach",
+          "Apple",
+          "Orange",
+          "Spice Berry",
+          "Apricot",
+          "Wild Plum",
+          "Blackberry",
+          "Salmonberry",
+          "Crystal Fruit",
+          "Azathii.TheForgottenCaverns_Lemon",
+          "Azathii.TheForgottenCaverns_KeyLime",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageFruitHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host Mushrooms"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageMush",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host Bats"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Morel",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom",
+          "Azathii.TheForgottenCaverns_CavernSpinach",
+          "Azathii.TheForgottenCaverns_Duskberry"
+        ],
+        "UniqueAreaID": "ForgottenCavernForageMushHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host Bats"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Purple Mushroom"
+        ],
+        "SummerItemIndex": [
+          "Purple Mushroom"
+        ],
+        "FallItemIndex": [
+          "Purple Mushroom"
+        ],
+        "WinterItemIndex": [
+          "Purple Mushroom"
+        ],
+        "UniqueAreaID": "ForgottenCavernForagePMush",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": -38,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host Bats"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Purple Mushroom"
+        ],
+        "SummerItemIndex": [
+          "Purple Mushroom"
+        ],
+        "FallItemIndex": [
+          "Purple Mushroom"
+        ],
+        "WinterItemIndex": [
+          "Purple Mushroom"
+        ],
+        "UniqueAreaID": "ForgottenCavernForagePMushHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCavern",
+        "MinimumSpawnsPerDay": -18,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": ["FARM_CAVE Host Bats"],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "SummerItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "FallItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "WinterItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "UniqueAreaID": "ForgottenHotSpringsForage",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenHotSprings",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "SummerItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "FallItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "WinterItemIndex": [
+          "Coal",
+          "Coal",
+          "Coal",
+          "Coal",
+          "Copper Ore",
+          "Copper Ore",
+          "Iron Ore",
+          "Iron Ore",
+          "Gold Ore",
+          "Gold Ore",
+          "Geode",
+          "Geode",
+          "Frozen Geode",
+          "Magma Geode",
+          "Quartz",
+          "Earth Crystal",
+          "Frozen Tear",
+          "Fire Quartz"
+        ],
+        "UniqueAreaID": "ForgottenHotSpringsForageHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenHotSprings",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Clam"
+        ],
+        "SummerItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Rainbow Shell"
+        ],
+        "FallItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Clam"
+        ],
+        "WinterItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Clam",
+          "Nautilus Shell"
+        ],
+        "UniqueAreaID": "ForgottenGrottoForage",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenGrotto",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [
+          "36, 35;9, 24"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Clam"
+        ],
+        "SummerItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Rainbow Shell"
+        ],
+        "FallItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Clam"
+        ],
+        "WinterItemIndex": [
+          "Sea Urchin",
+          "Coral",
+          "Seaweed",
+          "Cockle",
+          "Oyster",
+          "Mussel",
+          "Clam",
+          "Nautilus Shell"
+        ],
+        "UniqueAreaID": "ForgottenGrottoForageHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenGrotto",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [
+          "36, 35;9, 24"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "SummerItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "FallItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "WinterItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "UniqueAreaID": "ForgottenCatacombsForage",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "SummerItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "FallItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "WinterItemIndex": [
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Bone Fragment",
+          "Clay",
+          "Clay",
+          "Clay",
+          "Azathii.TheForgottenCaverns_MidnightEntoloma",
+          "Azathii.TheForgottenCaverns_GloomBloom"
+        ],
+        "UniqueAreaID": "ForgottenCatacombsForageHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "SummerItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "FallItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "WinterItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "UniqueAreaID": "ForgottenCatacombsBoneForage",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": -48,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "SummerItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "FallItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "WinterItemIndex": [
+          "Prehistoric Rib",
+          "Prehistoric Scapula",
+          "Prehistoric Skull",
+          "Prehistoric Tibia",
+          "Prehistoric Vertebra",
+          "Skeletal Hand",
+          "Skeletal Tail"
+        ],
+        "UniqueAreaID": "ForgottenCatacombsBoneForageHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": -23,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "UniqueAreaID": "ForgottenDinoDenForage",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "SummerItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "FallItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "WinterItemIndex": [
+          "Common Mushroom",
+          "Common Mushroom",
+          "Common Mushroom",
+          "Fiddlehead Fern",
+          "Fiddlehead Fern",
+          "Morel",
+          "Morel",
+          "Chanterelle",
+          "Chanterelle",
+          "Red Mushroom"
+        ],
+        "UniqueAreaID": "ForgottenDinoDenForageHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Purple Mushroom"
+        ],
+        "SummerItemIndex": [
+          "Purple Mushroom"
+        ],
+        "FallItemIndex": [
+          "Purple Mushroom"
+        ],
+        "WinterItemIndex": [
+          "Purple Mushroom"
+        ],
+        "UniqueAreaID": "ForgottenDinoDenPMush",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+        "MinimumSpawnsPerDay": -38,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "false"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      },
+      {
+        "SpringItemIndex": [
+          "Purple Mushroom"
+        ],
+        "SummerItemIndex": [
+          "Purple Mushroom"
+        ],
+        "FallItemIndex": [
+          "Purple Mushroom"
+        ],
+        "WinterItemIndex": [
+          "Purple Mushroom"
+        ],
+        "UniqueAreaID": "ForgottenDinoDenPMushHigh",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+        "MinimumSpawnsPerDay": -18,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {"HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/HighForageEnabled": "true"},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 7
+      }
+    ],
+    "PercentExtraSpawnsPerForagingLevel": 0,
+    "SpringItemIndex": [],
+    "SummerItemIndex": [],
+    "FallItemIndex": [],
+    "WinterItemIndex": [],
+    "CustomTileIndex": []
+  },
+  "Monster_Spawn_Settings": {
+    "Areas": [
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "blue squid",
+            "Settings": {
+              "HP": 150,
+              "Damage": 10,
+              "Defense": 0,
+              "Speed": 2,
+              "EXP": 8,
+              "SpawnWeight": 4,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bomb",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Squid Ink",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 1
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "bug",
+            "Settings": {
+              "SpawnWeight": 2,
+              "Sprite": "Characters/Monsters/Bug_dangerous"
+            }
+          },
+          {
+            "MonsterName": "cave fly",
+            "Settings": {
+              "SpawnWeight": 2,
+              "Sprite": "Characters/Monsters/Fly_dangerous"
+            }
+          },
+          {
+            "MonsterName": "dust sprite",
+            "Settings": {
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "MonsterName": "green slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MaximumSkillLevel": 3,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "blue slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 4,
+              "MaximumSkillLevel": 7,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "red slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "MaximumSkillLevel": 9,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "purple slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MaximumSkillLevel": 3,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "MonsterName": "frost bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 4,
+              "MaximumSkillLevel": 7,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "MonsterName": "lava bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "MaximumSkillLevel": 9,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "MonsterName": "iridium bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 2
+            }
+          }
+        ],
+        "UniqueAreaID": "ForgottenHotSpringEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenHotSprings",
+        "MinimumSpawnsPerDay": 15,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 15,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "false" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "blue squid",
+            "Settings": {
+              "HP": 150,
+              "Damage": 10,
+              "Defense": 0,
+              "Speed": 2,
+              "EXP": 8,
+              "SpawnWeight": 4,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bomb",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Squid Ink",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 1
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "bug",
+            "Settings": {
+              "SpawnWeight": 2,
+              "Sprite": "Characters/Monsters/Bug_dangerous"
+            }
+          },
+          {
+            "MonsterName": "cave fly",
+            "Settings": {
+              "SpawnWeight": 2,
+              "Sprite": "Characters/Monsters/Fly_dangerous"
+            }
+          },
+          {
+            "MonsterName": "dust sprite",
+            "Settings": {
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "green slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MaximumSkillLevel": 3,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "blue slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 4,
+              "MaximumSkillLevel": 7,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "red slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "MaximumSkillLevel": 9,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "purple slime",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MaximumSkillLevel": 3,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "MonsterName": "frost bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 4,
+              "MaximumSkillLevel": 7,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "MonsterName": "lava bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "MaximumSkillLevel": 9,
+              "SpawnWeight": 2
+            }
+          },
+          {
+            "MonsterName": "iridium bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 2
+            }
+          }
+        ],
+        "UniqueAreaID": "ForgottenHotSpringEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenHotSprings",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 60,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 25,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "true",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "false" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "bug",
+            "Settings": {
+              "HP": 350,
+              "Damage": 18,
+              "Defense": 0,
+              "Speed": 2,
+              "EXP": 8,
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bug Meat",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Ancient Seed",
+                  "PercentChanceToSpawn": "0.5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "White Algae",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Assassin Bug"
+            }
+          },
+          {
+            "MonsterName": "blue squid",
+            "Settings": {
+              "SpawnWeight": 4,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bomb",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Squid Ink",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "spider",
+            "Settings": {
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Void Essence",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Void Essence",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Strange Bun",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Copper Bar",
+                  "PercentChanceToSpawn": "4",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iron Bar",
+                  "PercentChanceToSpawn": "3",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iridium Bar",
+                  "PercentChanceToSpawn": "1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "dust sprite",
+            "Settings": {
+              "HP": 400,
+              "Damage": 20,
+              "Defense": 6,
+              "Speed": 3,
+              "EXP": 5,
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Coal",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 3
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Coal",
+                  "PercentChanceToSpawn": "25",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Coffee Bean",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Common Mushroom",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Red Mushroom",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "0.5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Dust Spirit_dangerous"
+            }
+          },
+          {
+            "MonsterName": "prismatic slime",
+            "Settings": {
+              "HP": 800,
+              "Damage": 25,
+              "Defense": 1,
+              "Speed": 3,
+              "EXP": 25,
+              "SpawnWeight": 1,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Radioactive Ore",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Radioactive Ore",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 1
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "bat",
+            "Settings": {
+              "HP": 300,
+              "Damage": 30,
+              "Defense": 1,
+              "Speed": 3,
+              "EXP": 25,
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "PercentChanceToSpawn": "90",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Battery Pack",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Energy Tonic",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iridium Bar",
+                  "PercentChanceToSpawn": "0.2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Life Elixir",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Bat_dangerous"
+            }
+          }
+        ],
+        "UniqueAreaID": "ForgottenHotSpringEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenHotSprings",
+        "MinimumSpawnsPerDay": 15,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 15,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "true" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "bug",
+            "Settings": {
+              "HP": 350,
+              "Damage": 18,
+              "Defense": 0,
+              "Speed": 2,
+              "EXP": 8,
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bug Meat",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Ancient Seed",
+                  "PercentChanceToSpawn": "0.5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "White Algae",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Assassin Bug"
+            }
+          },
+          {
+            "MonsterName": "blue squid",
+            "Settings": {
+              "SpawnWeight": 4,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bomb",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Solar Essence",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Squid Ink",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "spider",
+            "Settings": {
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Void Essence",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Void Essence",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Strange Bun",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Copper Bar",
+                  "PercentChanceToSpawn": "4",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iron Bar",
+                  "PercentChanceToSpawn": "3",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iridium Bar",
+                  "PercentChanceToSpawn": "1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "dust sprite",
+            "Settings": {
+              "HP": 400,
+              "Damage": 20,
+              "Defense": 6,
+              "Speed": 3,
+              "EXP": 5,
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Coal",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 3
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Coal",
+                  "PercentChanceToSpawn": "25",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Coffee Bean",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Common Mushroom",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Red Mushroom",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Gold Bar",
+                  "PercentChanceToSpawn": "0.5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Dust Spirit_dangerous"
+            }
+          },
+          {
+            "MonsterName": "prismatic slime",
+            "Settings": {
+              "HP": 800,
+              "Damage": 25,
+              "Defense": 1,
+              "Speed": 3,
+              "EXP": 25,
+              "SpawnWeight": 1,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "PercentChanceToSpawn": "75",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Radioactive Ore",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Radioactive Ore",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 1
+                }
+              ],
+              "ExtraLoot": false
+            }
+          },
+          {
+            "MonsterName": "bat",
+            "Settings": {
+              "HP": 300,
+              "Damage": 30,
+              "Defense": 1,
+              "Speed": 3,
+              "EXP": 25,
+              "SpawnWeight": 2,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "PercentChanceToSpawn": "90",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Battery Pack",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Energy Tonic",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iridium Bar",
+                  "PercentChanceToSpawn": "0.2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Life Elixir",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "5",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Bat_dangerous"
+            }
+          }
+        ],
+        "UniqueAreaID": "ForgottenHotSpringEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenHotSprings",
+        "MinimumSpawnsPerDay": 30,
+        "MaximumSpawnsPerDay": 60,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 25,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "true",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "true" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "pepper rex"
+          }
+        ],
+        "UniqueAreaID": "ForgottenDinoDenEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+        "MinimumSpawnsPerDay": 2,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "true",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "false"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "pepper rex"
+          }
+        ],
+        "UniqueAreaID": "ForgottenDinoDenEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 4,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "false"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "pepper rex"
+          }
+        ],
+        "UniqueAreaID": "ForgottenDinoDenEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenDinoDen",
+        "MinimumSpawnsPerDay": 6,
+        "MaximumSpawnsPerDay": 8,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 4,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "true"
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "skeleton",
+            "Settings": {
+              "SpawnWeight": 8
+            }
+          },
+          {
+            "MonsterName": "skeleton mage",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 6
+            }
+          },
+          {
+            "MonsterName": "haunted skull",
+            "Settings": {
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "MonsterName": "ghost",
+            "Settings": {
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "carbon ghost",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 1
+            }
+          }
+        ],
+        "UniqueAreaID": "ForgottenCatacombsEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": 20,
+        "MaximumSpawnsPerDay": 40,
+        "IncludeTerrainTypes": [
+          "Stone",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "66, 25;45, 6"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 20,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "false" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "skeleton",
+            "Settings": {
+              "SpawnWeight": 8
+            }
+          },
+          {
+            "MonsterName": "skeleton mage",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 6
+            }
+          },
+          {
+            "MonsterName": "haunted skull",
+            "Settings": {
+              "SpawnWeight": 4
+            }
+          },
+          {
+            "MonsterName": "ghost",
+            "Settings": {
+              "SpawnWeight": 1
+            }
+          },
+          {
+            "MonsterName": "carbon ghost",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 10,
+              "SpawnWeight": 1
+            }
+          }
+        ],
+        "UniqueAreaID": "ForgottenCatacombsEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": 40,
+        "MaximumSpawnsPerDay": 80,
+        "IncludeTerrainTypes": [
+          "Stone",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "66, 25;45, 6"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 30,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "true",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "false" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "skeleton",
+            "Settings": {
+              "HP": 655,
+              "Damage": 18,
+              "Defense": 2,
+              "Speed": 2,
+              "EXP": 10,
+              "SpawnWeight": 8,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 3
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "40",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Skeleton_dangerous"
+            }
+          },
+          {
+            "MonsterName": "skeleton mage",
+            "Settings": {
+              "HP": 555,
+              "Damage": 30,
+              "Defense": 2,
+              "Speed": 2,
+              "EXP": 10,
+              "SpawnWeight": 6,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 3
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "40",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Skeleton Mage_dangerous"
+            }
+          },
+          {
+            "MonsterName": "haunted skull",
+            "Settings": {
+              "HP": 310,
+              "Damage": 25,
+              "Defense": 2,
+              "Speed": 3,
+              "EXP": 18,
+              "SpawnWeight": 4,
+              "Loot": [
+                {
+                  "Category": "Ring",
+                  "Name": "Aquamarine Ring",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Ring",
+                  "Name": "Ruby Ring",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Artifact Trove",
+                  "PercentChanceToSpawn": "3",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bomb",
+                  "PercentChanceToSpawn": "3",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Haunted Skull_dangerous"
+            }
+          },
+          {
+            "MonsterName": "putrid ghost",
+            "Settings": {
+              "SpawnWeight": 1,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Omni Geode",
+                  "PercentChanceToSpawn": "99",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Refined Quartz",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ]
+            }
+          }
+        ], 
+        "UniqueAreaID": "ForgottenCatacombsEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": 20,
+        "MaximumSpawnsPerDay": 40,
+        "IncludeTerrainTypes": [
+          "Stone",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "66, 25;45, 6"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 20,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "true" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "skeleton",
+            "Settings": {
+              "HP": 655,
+              "Damage": 18,
+              "Defense": 2,
+              "Speed": 2,
+              "EXP": 10,
+              "SpawnWeight": 8,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 3
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "40",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Skeleton_dangerous"
+            }
+          },
+          {
+            "MonsterName": "skeleton mage",
+            "Settings": {
+              "HP": 555,
+              "Damage": 30,
+              "Defense": 2,
+              "Speed": 2,
+              "EXP": 10,
+              "SpawnWeight": 6,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "20",
+                  "Stack": 3
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "40",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bone Fragment",
+                  "PercentChanceToSpawn": "50",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Skeleton Mage_dangerous"
+            }
+          },
+          {
+            "MonsterName": "haunted skull",
+            "Settings": {
+              "HP": 310,
+              "Damage": 25,
+              "Defense": 2,
+              "Speed": 3,
+              "EXP": 18,
+              "SpawnWeight": 4,
+              "Loot": [
+                {
+                  "Category": "Ring",
+                  "Name": "Aquamarine Ring",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Ring",
+                  "Name": "Ruby Ring",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Artifact Trove",
+                  "PercentChanceToSpawn": "3",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bomb",
+                  "PercentChanceToSpawn": "3",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Mega Bomb",
+                  "PercentChanceToSpawn": "2",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ],
+              "Sprite": "Characters/Monsters/Haunted Skull_dangerous"
+            }
+          },
+          {
+            "MonsterName": "putrid ghost",
+            "Settings": {
+              "SpawnWeight": 1,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Omni Geode",
+                  "PercentChanceToSpawn": "99",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Refined Quartz",
+                  "PercentChanceToSpawn": "10",
+                  "Stack": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Diamond",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Prismatic Shard",
+                  "PercentChanceToSpawn": "0.1",
+                  "Stack": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Qi Gem",
+                  "PercentChanceToSpawn": "7.5",
+                  "Stack": 1
+                }
+              ]
+            }
+          }
+        ], 
+        "UniqueAreaID": "ForgottenCatacombsEnemies",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenCatacombs",
+        "MinimumSpawnsPerDay": 40,
+        "MaximumSpawnsPerDay": 80,
+        "IncludeTerrainTypes": [
+          "Stone",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "66, 25;45, 6"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 5,
+          "MaximumSimultaneousSpawns": 30,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/NoMobsEnabled": "false",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/MoreMobsEnabled": "true",
+                          "HasFlag: currentPlayer |contains=Azathii.TheForgottenCaverns/DangerousMobsEnabled": "true" 
+                          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      }
+    ]
+  },
+  "Ore_Spawn_Settings": {
+    "Areas": [
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "Azathii.CavernsMineSpawn",
+        "MapName": "Azathii.TheForgottenCaverns_ForgottenMine",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone",
+          "Water",
+          "Wood"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "PercentExtraSpawnsPerMiningLevel": 0,
+    "MiningLevelRequired": {
+      "Stone": 0,
+      "Geode": 0,
+      "FrozenGeode": 5,
+      "MagmaGeode": 8,
+      "OmniGeode": 9,
+      "Gem": 6,
+      "Copper": 0,
+      "Iron": 4,
+      "Gold": 7,
+      "Mystic": 10,
+      "Diamond": 8,
+      "Ruby": 6,
+      "Jade": 3,
+      "Amethyst": 2,
+      "Topaz": 2,
+      "Emerald": 6,
+      "Aquamarine": 3,
+      "Mussel": 4,
+      "Clay": 0
+    },
+    "StartingSpawnChance": {
+      "Stone": 66,
+      "Geode": 8,
+      "FrozenGeode": 4,
+      "MagmaGeode": 2,
+      "OmniGeode": 1,
+      "Gem": 5,
+      "Copper": 21,
+      "Iron": 15,
+      "Gold": 10,
+      "Mystic": 4,
+      "Diamond": 1,
+      "Ruby": 3,
+      "Jade": 5,
+      "Amethyst": 6,
+      "Topaz": 6,
+      "Emerald": 3,
+      "Aquamarine": 5,
+      "Mussel": 15,
+      "Clay": 66
+    },
+    "LevelTenSpawnChance": {
+      "Stone": 48,
+      "Geode": 4,
+      "FrozenGeode": 5,
+      "MagmaGeode": 5,
+      "OmniGeode": 4,
+      "Gem": 8,
+      "Copper": 16,
+      "Iron": 13,
+      "Gold": 10,
+      "Mystic": 3,
+      "Diamond": 2,
+      "Ruby": 4,
+      "Jade": 5,
+      "Amethyst": 6,
+      "Topaz": 6,
+      "Emerald": 4,
+      "Aquamarine": 5,
+      "Mussel": 20,
+      "Clay": 48
+    },
+    "CustomTileIndex": []
+  }
+}

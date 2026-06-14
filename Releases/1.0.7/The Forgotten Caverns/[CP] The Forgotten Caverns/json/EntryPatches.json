@@ -1,0 +1,553 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntVAN.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 9,
+        "Width": 6,
+        "Height": 5
+      },
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Aimon.MoreLivelyFarmCave": false,
+        "HasMod |contains=Inkubus.ModestCave": false,
+        "HasMod |contains=Lnh.FantasyFarmCave": false,
+        "HasMod |contains=Lunatyx.LegacyFarmCave": false,
+        "HasMod |contains=delloti.FarmCave": false,
+        "HasMod |contains=Lnh.GrottoFarmCave": false,
+        "HasMod |contains=neuralwiles.HiddenSpringFarmCave": false,
+        "HasMod |contains=Hesper.HotSpringFarmcave": false,
+        "HasMod |contains=Kana.Grotta": false,
+        "HasMod |contains=RebekahArt.TinyFarmCave": false,
+        "HasMod |contains=acearohippo.PCFCVariety": false,
+        "HasMod |contains=crystalinerose.FarmCaves": false,
+        "HasMod |contains=Xiddav.FarmCave": false,
+        "HasMod |contains=Kurimiu.PlantableFarmcave": false,
+        "HasMod |contains=jenf1.hauntedfarmcavecp": false,
+        "HasMod |contains=Kanjinuma.PersonalFarmCave": false,
+        "HasMod |contains=DaisyNiko.BlackberryFieldsFarm": false
+      },
+      "Update": "OnLocationChange"
+    },
+
+//AIMON
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntAIMON.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 10,
+        "Width": 6,
+        "Height": 6
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Aimon.MoreLivelyFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+
+//MODEST
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntMODEST.tmx",
+      "ToArea": {
+        "X": 12,
+        "Y": 11,
+        "Width": 4,
+        "Height": 4
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Inkubus.ModestCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 14 12 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=Inkubus.ModestCave": true
+      }
+    },
+
+//LNH FANTASY
+    {
+      "Action": "Load",
+      "Target": "Maps/Lnh Patch- VAN asset edit hue-20 sat+10 light-50",
+      "FromFile": "assets/Patches/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasMod |contains=Lnh.FantasyFarmCave": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntLNH_FANTASY.tmx",
+      "ToArea": {
+        "X": 1,
+        "Y": 9,
+        "Width": 6,
+        "Height": 5
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Lnh.FantasyFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 4 11 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=Lnh.FantasyFarmCave": true
+      }
+    },
+
+//LEGACY
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntLEGACY.tmx",
+      "ToArea": {
+        "X": 1,
+        "Y": 9,
+        "Width": 6,
+        "Height": 5
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Lunatyx.LegacyFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 4 11 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=Lunatyx.LegacyFarmCave": true
+      }
+    },
+
+//DELLOTI
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntDELLOTI_{{Season}}.tmx",
+      "ToArea": {
+        "X": 10,
+        "Y": 10,
+        "Width": 5,
+        "Height": 5
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "Season": "{{Season}}",
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=delloti.FarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 12 12 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=delloti.FarmCave": true
+      }
+    },
+
+//LNH GROTTO
+    {
+      "Action": "Load",
+      "Target": "Maps/Lnh Patch- VAN asset edit hue-20 sat+10 light-50",
+      "FromFile": "assets/Patches/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasMod |contains=Lnh.GrottoFarmCave": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntLNH_GROTTO.tmx",
+      "ToArea": {
+        "X": 4,
+        "Y": 9,
+        "Width":3,
+        "Height": 3
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Lnh.GrottoFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 5 10 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=Lnh.GrottoFarmCave": true
+      }
+    },
+
+//HIDDEN SPRING
+    {
+      "Action": "Load",
+      "Target": "Maps/Hidden Spring Patch- VAN asset edit hue0 sat0 light-30",
+      "FromFile": "assets/Patches/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasMod |contains=neuralwiles.HiddenSpringFarmCave": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntHIDDEN_SPRING.tmx",
+      "ToArea": {
+        "X": 1,
+        "Y": 10,
+        "Width":5,
+        "Height": 5
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=neuralwiles.HiddenSpringFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 4 12 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=neuralwiles.HiddenSpringFarmCave": true
+      }
+    },
+
+//HOT SPRING
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntHOT_SPRING.tmx",
+      "ToArea": {
+        "X": 1,
+        "Y": 10,
+        "Width":6,
+        "Height": 5
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Hesper.HotSpringFarmcave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 4 12 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=Hesper.HotSpringFarmcave": true
+      }
+    },
+
+//GROTTA 
+    {
+      "Action": "Load",
+      "Target": "Maps/Grotta Patch- VAN asset manually edited to match",
+      "FromFile": "assets/Patches/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasMod |contains=Kana.Grotta": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntGROTTA.tmx",
+      "ToArea": {
+        "X": 1,
+        "Y": 9,
+        "Width":6,
+        "Height": 5
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Kana.Grotta": true
+      },
+      "Update": "OnLocationChange"
+    },
+
+//REBEKHA 
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntLADDER.tmx",
+      "ToArea": {
+        "X": 3,
+        "Y": 9,
+        "Width":1,
+        "Height": 1
+      },
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=RebekahArt.TinyFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 3 8 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=RebekahArt.TinyFarmCave": true
+      }
+    },
+
+//HIPPO CAVE VARIETY 
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntLADDER.tmx",
+      "ToArea": {
+        "X": 3,
+        "Y": 8,
+        "Width":1,
+        "Height": 1
+      },
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=acearohippo.PCFCVariety": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 4 8 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=acearohippo.PCFCVariety": true
+      }
+    },
+
+//KISSA'S FARM CAVE PACK 
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntLADDER.tmx",
+      "ToArea": {
+        "X": 3,
+        "Y": 9,
+        "Width":1,
+        "Height": 1
+      },
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=crystalinerose.FarmCaves": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 4 9 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=crystalinerose.FarmCaves": true
+      }
+    },
+
+//XIDDAV's'S FARM CAVE 
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntLADDER.tmx",
+      "ToArea": {
+        "X": 2,
+        "Y": 5,
+        "Width":1,
+        "Height": 1
+      },
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Xiddav.FarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 2 6 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=Xiddav.FarmCave": true
+      }
+    },
+
+//KURI'S PLANTABLE FARM CAVE
+    {
+      "Action": "Load",
+      "Target": "Maps/Kuri's Plantable - VAN asset manually edited",
+      "FromFile": "assets/Patches/{{TargetWithoutPath}}.png",
+      "When": {
+        "HasMod |contains=Kurimiu.PlantableFarmcave": true
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntKURI.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 8,
+        "Width":6,
+        "Height": 6
+      },
+      "Priority": "Late",
+      "Patchmode": "Replace",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Kurimiu.PlantableFarmcave": true
+      },
+      "Update": "OnLocationChange"
+    },
+
+//JEN'S HAUNTED FARM CAVE
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntJEN_HAUNTED.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 9,
+        "Width": 6,
+        "Height": 5
+      },
+      "Priority": "Late",
+      "Patchmode": "Replace",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=jenf1.hauntedfarmcavecp": true
+      },
+      "Update": "OnLocationChange"
+    },
+
+//PERSONAL FARM CAVE
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntPERSONAL.tmx",
+      "ToArea": {
+        "X": 13,
+        "Y": 15,
+        "Width":3,
+        "Height": 4
+      },
+      "Priority": "Late",
+      "Patchmode": "Replace",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=Kanjinuma.PersonalFarmCave": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 14 17 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=Kanjinuma.PersonalFarmCave": true
+      }
+    },
+
+//BLACKBERRY FIELDS FARM
+    {
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/Maps/PatchEntVAN.tmx",
+      "ToArea": {
+        "X": 0,
+        "Y": 10,
+        "Width": 6,
+        "Height": 5
+      },
+      "Patchmode": "Replace",
+      "Priority": "Late",
+      "When": {
+        "HasSeenEvent: hostPlayer| contains={{ModId}}_EventDemetriusDiscovery": true,
+        "HasMod |contains=DaisyNiko.BlackberryFieldsFarm": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenCavern",
+      "MapProperties": {
+        "Warp": "109 18 FarmCave 4 13 23 12  Azathii.TheForgottenCaverns_ForgottenOrchard 27 77 18 117 Azathii.TheForgottenCaverns_ForgottenHotSprings 13 5"
+      }, 
+      "When": {
+        "HasMod |contains=DaisyNiko.BlackberryFieldsFarm": true
+      }
+    },
+
+//MINE PATCH
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Mine",
+      "FromFile": "assets/Maps/ForgottenElevator.tmx",
+      "Patchmode": "Overlay",
+      "Priority": "Late + 1",
+    }
+  ]
+}

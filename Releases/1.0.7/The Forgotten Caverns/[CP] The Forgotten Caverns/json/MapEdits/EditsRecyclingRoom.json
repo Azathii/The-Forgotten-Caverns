@@ -1,0 +1,20 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenRecyclingRoom",
+      "FromFile": "assets/Maps/EditRecyclingRoom.tmx",
+      "ToArea": {
+        "X": 24,
+        "Y": 14,
+        "Width": 5,
+        "Height": 7
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}/BobsRepairsFlag": true
+      },
+      "Update": "OnDayStart"
+    }
+  ]
+}

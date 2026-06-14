@@ -1,0 +1,89 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_TravelHubWelcome",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 16,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_On": "{{i18n:DMTETravelHubWelcome}}",
+            "DMT/mail_Once_On": "{{ModId}}/TravelHubWelcome"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/TravelHubWelcome": false,
+        "ModMessages": "Enabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_TravelHubTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 39,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(H){{ModId}}_AncientWizardHat",
+            "DMT/changeMultipleIndex_Once_Action": "Front 39 19=z_Azathii_Catacombs/1141",
+            "DMT/message_Once_Action": "{{i18n:DMTETravelHubTreasure}}",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/mail_Once_Action": "{{ModId}}/TravelHubTreasureFound"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/TravelHubTreasureFound": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_TravelHubTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 39,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTETravelHubTreasureEmpty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/TravelHubTreasureFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenTravelHub",
+      "FromFile": "assets/Maps/EditDMTETravelHubSkull.tmx",
+      "ToArea": {
+        "X": 39,
+        "Y": 19,
+        "Width": 1,
+        "Height": 1
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "HasFlag|contains={{ModId}}/TravelHubTreasureFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}
