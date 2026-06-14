@@ -1,0 +1,95 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGamesRoom",
+      "FromFile": "assets/Maps/EditDMTEGamesRoomSpices.tmx",
+      "ToArea": {
+        "X": 15,
+        "Y": 11,
+        "Width": 1,
+        "Height": 2
+      },
+      "Patchmode": "Overlay",
+      "When": {
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/EarlStartQuest": true,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/EarlsSpicesFound": false,
+	"HasFlag: currentPlayer, hostPlayer |contains={{ModId}}/EarlEndQuest": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlsSpices",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGamesRoom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O){{ModId}}_EarlsSpices",
+            "DMT/sound_Once_Action": "coin",
+            "DMT/message_Once_Action": "{{i18n:DMTEGamesRoomSpices}}",
+            "DMT/changeMultipleIndex_Once_Action": "Buildings3 15 11=z_Azathii_Catacombs/850",
+            "DMT/mail_Once_Action": "{{ModId}}/EarlsSpicesFound"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlStartQuest": true,
+        "HasFlag|contains={{ModId}}/EarlsSpicesFound": false,
+        "HasFlag|contains={{ModId}}/EarlGivenItem": false,
+        "HasFlag|contains={{modId}}/EarlEndQuest": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_GamesRoomTreasure1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGamesRoom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/give_Once_Action": "(O)879,2",
+            "DMT/message_Once_Action": "{{i18n:DMTEGamesRoomTreasure1}}",
+            "DMT/sound_Once_Action": "secret1",
+            "DMT/mail_Once_Action": "{{ModId}}/GamesRoomTreasure1Found"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/GamesRoomTreasure1Found": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_GamesRoomTreasure1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenGamesRoom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTEGamesRoomTreasure1Empty}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/GamesRoomTreasure1Found": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
+  ]
+}

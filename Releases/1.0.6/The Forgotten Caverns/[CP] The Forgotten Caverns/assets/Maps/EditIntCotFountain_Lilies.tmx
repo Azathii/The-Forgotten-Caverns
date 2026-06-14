@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="2" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="34" nextobjectid="244">
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="264" columns="12">
+  <image source="farmhouse_tiles.png" width="192" height="352"/>
+ </tileset>
+ <tileset firstgid="2441" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors.png" width="256" height="688"/>
+ </tileset>
+ <tileset firstgid="3129" name="z_Azathii_FCEdits" tilewidth="16" tileheight="16" tilecount="1575" columns="35">
+  <image source="Azathii_FCEdits.png" width="560" height="720"/>
+  <tile id="910">
+   <animation>
+    <frame tileid="910" duration="150"/>
+    <frame tileid="912" duration="150"/>
+    <frame tileid="914" duration="150"/>
+    <frame tileid="916" duration="150"/>
+    <frame tileid="918" duration="150"/>
+    <frame tileid="920" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="911">
+   <animation>
+    <frame tileid="911" duration="150"/>
+    <frame tileid="913" duration="150"/>
+    <frame tileid="915" duration="150"/>
+    <frame tileid="917" duration="150"/>
+    <frame tileid="919" duration="150"/>
+    <frame tileid="921" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="945">
+   <animation>
+    <frame tileid="945" duration="150"/>
+    <frame tileid="947" duration="150"/>
+    <frame tileid="949" duration="150"/>
+    <frame tileid="951" duration="150"/>
+    <frame tileid="953" duration="150"/>
+    <frame tileid="955" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="946">
+   <animation>
+    <frame tileid="946" duration="150"/>
+    <frame tileid="948" duration="150"/>
+    <frame tileid="950" duration="150"/>
+    <frame tileid="952" duration="150"/>
+    <frame tileid="954" duration="150"/>
+    <frame tileid="956" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="32" name="Back2" width="2" height="4">
+  <data encoding="csv">
+0,0,
+0,0,
+0,0,
+0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="2" height="4">
+  <data encoding="csv">
+0,0,
+0,0,
+0,0,
+4074,4075
+</data>
+ </layer>
+ <layer id="30" name="Front" width="2" height="4">
+  <data encoding="csv">
+0,0,
+3925,3926,
+4039,4040,
+0,0
+</data>
+ </layer>
+ <objectgroup id="33" name="Back2">
+  <object id="240" name="TileData" x="0" y="32" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="241" name="TileData" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="242" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="243" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="28" name="Buildings"/>
+ <objectgroup id="31" name="Front"/>
+</map>

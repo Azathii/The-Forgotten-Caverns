@@ -1,0 +1,133 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Data/Events/{{ModId}}_ForgottenCavern, Data/Events/{{ModId}}_ForgottenOrchard, Data/Events/{{ModId}}_ForgottenMine, Data/Events/{{ModId}}_ForgottenCatacombs, Data/Events/{{ModId}}_ForgottenSpeakeasy, Data/Events/{{ModId}}_ForgottenGamesRoom, Data/Events/{{ModId}}_ForgottenMinersHut, Data/Events/{{ModId}}_ForgottenMinersHutRepaired",
+      "FromFile": "json/Template.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Azathii.ForgottenWoods_ForgottenSmallCrypt, Data/Events/Azathii.ForgottenWoods_ForgottenPeak", 
+      "FromFile": "json/Template.json",
+      "When": {
+        "HasMod |contains=Azathii.ForgottenWoods": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "{{ModId}}_EventDemetriusDiscovery/GameStateQuery MINE_LOWEST_LEVEL_REACHED 80/GameStateQuery PLAYER_HAS_MAIL Host {{ModId}}_DemetriusVisit/!SawEvent {{ModId}}_EventDemetriusDiscovery/Time 0600 1200/IsHost": "continue/64 15/farmer 64 16 2 Demetrius 64 18 0/pause 1000 /speak Demetrius \"{{i18n:Event_Demetrius.1}}\"/pause 1000/speak Demetrius \"{{i18n:Event_Demetrius.2}}\"/faceDirection Demetrius 3/pause 1000/faceDirection Demetrius 0/speak Demetrius \"{{i18n:Event_Demetrius.3}}\"/pause 1000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForgottenCavern",
+      "Entries": {
+	"{{ModId}}_EventRobinsRefusal/GameStateQuery PLAYER_VISITED_LOCATION Current {{ModId}}_ForgottenTravelHub/SawEvent {{ModId}}_EventDemetriusDiscovery/Time 0600 1600/IsHost": "{{ModId}}_RabbitHole/105 25/farmer 103 21 2 {{ModId}}_Bob 96 31 2 Robin 105 25 2/skippable/viewport -2000 -2000/playSound doorClose/pause 1000/viewport 100 27 true/faceDirection Robin 1/pause 1000/faceDirection Robin 2/pause 1000/faceDirection Robin 3/pause 1000/faceDirection Robin 2/emote Robin 8 true/speak Robin \"{{i18n:Event_Robin.1}}\"/pause 1000/viewport move -2 2 2000/advancedMove Robin false 0 3 -2 0 0 6 -5 0 0 1 -2 0 3 150/waitForAllStationary/emote {{ModId}}_Bob 8/move farmer 0 8 2/emote farmer 8 true/faceDirection Robin 2/pause 1000/speak Robin \"{{i18n:Event_Robin.2}}\"/pause 800/move {{ModId}}_Bob 0 1 2/emote {{ModId}}_Bob 40/pause 500/move {{ModId}}_Bob 0 1 2/pause 1000/faceDirection Robin 0/jump Robin 8/emote Robin 16/emote {{ModId}}_Bob 16 true/jump {{ModId}}_Bob 8/faceDirection Robin 2/textAboveHead Robin \"{{i18n:Event_Robin.3}}\"/showFrame Robin 19/pause 500/faceDirection Robin 1/speed Robin 8/emote {{ModId}}_Bob 28 true/advancedMove Robin false 2 0 0 -1 6 0 0 -6 1 0 0 -3 4 0 0 -7 4 150/waitForAllStationary/warp Robin -1000 -1000 true/faceDirection farmer 1/emote farmer 8/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForgottenMine",
+      "Entries": {
+//INTRO
+	"{{ModId}}_EventBobIntro/GameStateQuery PLAYER_HAS_MAIL Host ccCraftsRoom/IsHost": "continue/19 49/farmer 19 53 0 {{ModId}}_Bob 19 45 2/skippable/move farmer 0 -5 0/emote {{ModId}}_Bob 8/speak {{ModId}}_Bob \"{{i18n:Event_Bob.Intro.1}}\"/quickQuestion {{i18n:Event_Bob.Intro.2Q}}#{{i18n:Event_Bob.Intro.2A1}}#{{i18n:Event_Bob.Intro.2A2}}(break)pause 200\\speak {{ModId}}_Bob \"{{i18n:Event_Bob.Intro.3}}\"(break)emote {{ModId}}_Bob 16\\speak {{ModId}}_Bob \"{{i18n:Event_Bob.Intro.4}}\"/pause 500/emote {{ModId}}_Bob 32/pause 800/speak {{ModId}}_Bob\"{{i18n:Event_Bob.Intro.5}}\"/end",
+
+//HEART EVENT 1
+	"{{ModId}}_EventBobIntro/GameStateQuery PLAYER_HAS_MAIL Host ccCraftsRoom/IsHost": "continue/19 49/farmer 19 53 0 {{ModId}}_Bob 19 45 2/skippable/move farmer 0 -5 0/emote {{ModId}}_Bob 8/speak {{ModId}}_Bob \"{{i18n:Event_Bob.Intro.1}}\"/quickQuestion {{i18n:Event_Bob.Intro.2Q}}#{{i18n:Event_Bob.Intro.2A1}}#{{i18n:Event_Bob.Intro.2A2}}(break)pause 200\\speak {{ModId}}_Bob \"{{i18n:Event_Bob.Intro.3}}\"(break)emote {{ModId}}_Bob 16\\speak {{ModId}}_Bob \"{{i18n:Event_Bob.Intro.4}}\"/pause 500/emote {{ModId}}_Bob 32/pause 800/speak {{ModId}}_Bob \"{{i18n:Event_Bob.Intro.5}}\"/end",
+
+//HEART EVENT2
+	"{{ModId}}_EventBobHeart2/SawEvent {{ModId}}_EventBobHeart1/Friendship {{ModId}}_Bob 500/IsHost": "{{ModId}}_OldHouse/8 42/farmer 10 44 0 {{ModId}}_Bob 8 40 2/skippable/emote {{ModId}}_Bob 28/move farmer 0 -4 0/faceDirection farmer 3/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2Heart.1}}\"/pause 800/move {{ModId}}_Bob 0 -4 0 false/faceDirection {{ModId}}_Bob 3/viewport move 0 -3 1000/advancedMove farmer false -2 0 0 -2 4 150/waitForAllStationary/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2Heart.2}}\"/pause 1000/faceDirection {{ModId}}_Bob 2/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2Heart.3}}\"/emote {{ModId}}_Bob 28/pause 800/advancedMove {{ModId}}_Bob false 2 0 0 -2 4 150/waitForAllStationary/warp {{ModId}}_Bob -1000 -1000/playSound doorClose/advancedMove farmer false 0 -3 2 0 0 -1 4 150/waitForAllStationary/warp farmer -1000 -1000/playSound doorClose/globalFade/viewport -2000 -2000/changeToTemporaryMap {{ModId}}_ForgottenMinersHut false/viewport -2000 -2000/warp {{ModId}}_Bob 15 16/faceDirection {{ModId}}_Bob 3/warp farmer 18 19/faceDirection farmer 0/viewport 16 18 true/playMusic {{ModId}}_OldHouse/pause 800/emote {{ModId}}_Bob 12/advancedMove farmer false 0 -2 -1 0 3 150/waitForAllStationary/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2Heart.4}}\"/pause 1000/faceDirection {{ModId}}_Bob 1/quickQuestion {{i18n:Event_Bob.2Heart.5Q}}#{{i18n:Event_Bob.2Heart.5A1}}#{{i18n:Event_Bob.2Heart.5A2}}(break)speak {{ModId}}_Bob \"{{i18n:Event_Bob.2Heart.6}}\"\\Friendship {{ModId}}_Bob 10(break)speak {{ModId}}_Bob \"{{i18n:Event_Bob.2Heart.7}}\"\\Friendship {{ModId}}_Bob 15\\emote {{ModId}}_Bob 32/pause 1000/end",   
+
+//HEART EVENT 3
+	"{{ModId}}_EventBobHeart3/SawEvent {{ModId}}_EventBobHeart2/Time 0900 1800/Friendship {{ModId}}_Bob 750/IsHost": "{{ModId}}_LongWay/19 48/farmer 20 54 0 {{ModId}}_Bob 18 44 2 Wizard 18 46 0/skippable/move farmer 0 -5 0 true/emote farmer 8/speak Wizard \"{{i18n:Event_Bob.3Heart.1.Wizard}}\"/pause 800/faceDirection Wizard 3/emote Wizard 40/pause 800/faceDirection Wizard 0/speak Wizard \"{{i18n:Event_Bob.3Heart.2.Wizard}}\"/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.3Heart.3}}\"/emote {{ModId}}_Bob 8 true/move Wizard 0 3 2 false/pause 1000/faceDirection Wizard 1/faceDirection farmer 3/speak Wizard \"{{i18n:Event_Bob.3Heart.4.Wizard}}\"/pause 1000/faceDirection Wizard 0/faceDirection farmer 0/pause 800/faceDirection Wizard 1/faceDirection farmer 3/speak Wizard \"{{i18n:Event_Bob.3Heart.5.Wizard}}\"/emote farmer 8/pause 500/speak Wizard \"{{i18n:Event_Bob.3Heart.6.Wizard}}\" /pause 500/advancedMove Wizard false 0 1 1 0 0 5 10 0 2 150/pause 3000/emote {{ModId}}_Bob 8 true/emote farmer 8 true/pause 2000/end",
+
+//HEART EVENT 5
+        "{{ModId}}_EventBobHeart5/SawEvent {{ModId}}_EventBobsNewFriends/Time 0900 1600/Friendship {{ModId}}_Bob 1250/IsHost": "{{ModId}}_LongWay/19 48/farmer 18 51 0 {{ModId}}_Bob 18 44 2 Wizard 20 44 3/skippable/animate {{ModId}}_Bob false true 450 24 25 26 25/move farmer 0 -2 0 /speak Wizard \"{{i18n:Event_Bob.5Heart.1.Wizard}}\"/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.5Heart.2}}\"/pause 500/emote Wizard 12 true/speak Wizard \"{{i18n:Event_Bob.5Heart.3.Wizard}}\"/pause 500/emote Wizard 40/pause 500/speak Wizard \"{{i18n:Event_Bob.5Heart.4.Wizard}}\"/stopAnimation {{ModId}}_Bob/pause 500/emote {{ModId}}_Bob 60 true  /speak {{ModId}}_Bob \"{{i18n:Event_Bob.5Heart.5}}\"/pause 500 /advancedMove Wizard false 0 11 2 0 2 150/viewport move 0 -3 1000/pause 1000/move farmer 0 -2 0 /waitForAllStationary/warp Wizard -1000 -1000 true/speak {{ModId}}_Bob \"{{i18n:Event_Bob.5Heart.6}}\"/pause 500/emote {{ModId}}_Bob 40 true /faceDirection {{ModId}}_Bob 1/pause 500/faceDirection {{ModId}}_Bob 2/pause 500/emote {{ModId}}_Bob 40 true /faceDirection {{ModId}}_Bob 3/pause 500/faceDirection {{ModId}}_Bob 2/speak {{ModId}}_Bob \"{{i18n:Event_Bob.5Heart.7}}\"/emote farmer 8/addSpecialOrder {{ModId}}_Bob/pause 500/end",        
+
+//HEART EVENT 10
+        "{{ModId}}_EventBobHeart10/GameStateQuery PLAYER_VISITED_LOCATION Host {{ModId}}_ForgottenMinersHutRepaired/SawEvent {{ModId}}_EventBobHeart9/Friendship {{ModId}}_Bob 2500/IsHost": "continue/19 23/farmer 19 25 0 {{ModId}}_Bob 23 21 1/skippable/move farmer 0 -4 1/pause 500/faceDirection {{ModId}}_Bob 3/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.1}}\"/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.2}}\"/faceDirection {{ModId}}_Bob 1/emote {{ModId}}_Bob 28 true/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.3}}\" /pause 500/faceDirection {{ModId}}_Bob 3/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.4}}\"/pause 500/emote {{ModId}}_Bob 40/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.5}}\" /emote farmer 8/pause 1000/globalFade/viewport -2000 -2000/changeToTemporaryMap {{ModId}}_ForgottenMinersHutRepaired false/viewport -2000 -2000/playSound doorClose/playMusic echos/warp {{ModId}}_Bob 24 25/faceDirection {{ModId}}_Bob 2/warp farmer 24 23/faceDirection farmer 2/viewport 24 25/advancedMove {{ModId}}_Bob false 0 3 -1 0 4 150/waitForAllStationary/playSound openBox/playSound pickUpItem/advancedMove {{ModId}}_Bob false 1 0 0 -4 4 150/waitForAllStationary/playsound pickUpItem/addCookingRecipe {{ModId}}_DuskberryCheesecake /move {{ModId}}_Bob 0 1 0 false/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.6}}\"/pause 1000/emote {{ModId}}_Bob 60 true/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.7}}\"/pause 500/faceDirection {{ModId}}_Bob 2/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.8}}\"/pause 500/faceDirection {{ModId}}_Bob 1/emote {{ModId}}_Bob 40/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.9}}\"/pause 500/faceDirection {{ModId}}_Bob 0/speak {{ModId}}_Bob \"{{i18n:Event_Bob.10Heart.10}}\"/emote farmer 32/emote {{ModId}}_Bob 32/end"              
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForgottenCatacombs",
+      "Entries": {
+
+//HEART EVENT 4
+	"{{ModId}}_EventBobHeart4/GameStateQuery PLAYER_VISITED_LOCATION Host {{ModId}}_ForgottenSpeakeasy/SawEvent {{ModId}}_EventBobHeart3/Time 0700 1600/Friendship {{ModId}}_Bob 1000/IsHost": "{{ModId}}_OldHouse/55 14/farmer 55 18 0 {{ModId}}_Bob 55 12 0/skippable/move farmer 0 -4 0 true/emote {{ModId}}_Bob 40/pause 1000/faceDirection {{ModId}}_Bob 2/speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.1}}\"/pause 500/faceDirection {{ModId}}_Bob 0/speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.2}}\"/emote {{ModId}}_Bob 12/pause 1000/faceDirection {{ModId}}_Bob 2/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.3}}\"/pause 500/quickQuestion {{i18n:Event_Bob.4Heart.4Q}}#{{i18n:Event_Bob.4Heart.4A1}}#{{i18n:Event_Bob.4Heart.4A2}}(break)emote farmer 28\\pause 500\\speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.5}}\"\\emote {{ModId}}_Bob 12(break)speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.6}}\"\\emote {{ModId}}_Bob 12/shake {{ModId}}_Bob 500/animate {{ModId}}_Bob false true 450 16 17 18 17/pause 2250/emote farmer 8/pause 1350/emote {{ModId}}_Bob 8/stopAnimation {{ModId}}_Bob/animate {{ModId}}_Bob false true 450 20 21 22 21/pause 1000/speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.7}}\"/emote {{ModId}}_Bob 32/pause 800/speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.8}}\"/pause 500/stopAnimation {{ModId}}_Bob/speak {{ModId}}_Bob \"{{i18n:Event_Bob.4Heart.9}}\"/pause 500/emote farmer 32/pause 500/end"             
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForgottenSpeakeasy",
+      "Entries": {
+
+//NEW FRIENDS
+	"{{ModId}}_EventBobsNewFriends/GameStateQuery PLAYER_HAS_MAIL Host {{ModId}}_SidsThanks Received/IsHost": "continue/21 13/farmer 15 10 1 {{ModId}}_Bob 22 10 0/skippable/move farmer 5 0 1 true/pause 1000/faceDirection {{ModId}}_Bob 3/emote {{ModId}}_Bob 32/speak {{ModId}}_Bob \"{{i18n:Event_Bob.NewFriends.1}}\"/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.NewFriends.2}}\"/emote {{ModId}}_Bob 40/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.NewFriends.3}}\"/pause 250/emote farmer 32/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.NewFriends.4}}\"/end"       
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForgottenCavern",
+      "Entries": {
+
+//HEART EVENT 6
+        "{{ModId}}_EventBobHeart6/SawEvent {{ModId}}_EventBobHeart5/Time 0900 1600/Friendship {{ModId}}_Bob 1500/IsHost": "{{ModId}}_RabbitHole/65 49/farmer 52 39 2 {{ModId}}_Bob 57 49 1 Demetrius 69 49 1/skippable/animate Demetrius false true 400 27 27 27 27 27 27 27 27 27 27 27 27 27 27 30 30 30 31 30 31 30 31 30 31 30 31 30 31 30 31 30 31 27 27 27 27 27 27 27 27 30 31 30 31 30 31 30 31 30 31/advancedMove farmer false 0 5 5 0 2 150/waitForAllStationary/emote {{ModId}}_Bob 40 true/faceDirection farmer 2/emote farmer 8/move {{ModId}}_Bob 5 0 1/emote {{ModId}}_Bob 40/move farmer 0 5 2/faceDirection farmer 1/pause 500/move {{ModId}}_Bob 5 0 1/move farmer 5 0 1/pause 500/stopAnimation Demetrius/jump Demetrius 8/faceDirection Demetrius 3/speak {{ModId}}_Bob \"{{i18n:Event_Bob.6Heart.1}}\"/pause 500/speak Demetrius \"{{i18n:Event_Bob.6Heart.2.Demetrius}}\"/emote Demetrius 40/faceDirection Demetrius 1/speak Demetrius \"{{i18n:Event_Bob.6Heart.3.Demetrius}}\"/jump {{ModId}}_Bob 8/speak {{ModId}}_Bob \"{{i18n:Event_Bob.6Heart.4}}\"/pause 500/faceDirection Demetrius 3/speak Demetrius \"{{i18n:Event_Bob.6Heart.5.Demetrius}}\"/pause 1000/emote {{ModId}}_Bob 40/speak {{ModId}}_Bob \"{{i18n:Event_Bob.6Heart.6}}\"/pause 500/speak Demetrius \"{{i18n:Event_Bob.6Heart.7.Demetrius}}\"/pause 500/jump {{ModId}}_Bob 8/emote {{ModId}}_Bob 32 true/speak {{ModId}}_Bob \"{{i18n:Event_Bob.6Heart.8}}\"/pause 500/speak Demetrius \"{{i18n:Event_Bob.6Heart.9.Demetrius}}\"/emote farmer 32/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForgottenOrchard",
+      "Entries": {
+
+//HEART EVENT 7
+        "{{ModId}}_EventBobHeart7/SawEvent {{ModId}}_EventBobHeart6/Time 0610 1600/Friendship {{ModId}}_Bob 1750/IsHost": "continue/36 53/farmer 38 60 0 {{ModId}}_Bob 35 50 0/skippable/advancedMove farmer false 0 -10 -1 0 3 150/waitForAllStationary/faceDirection {{ModId}}_Bob 1/speak {{ModId}}_Bob \"{{i18n:Event_Bob.7Heart.1}}\"/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.7Heart.2}}\"/emote {{ModId}}_Bob 32/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.7Heart.3}}\"/pause 500/faceDirection {{ModId}}_Bob 0/speak {{ModId}}_Bob \"{{i18n:Event_Bob.7Heart.4}}\"/emote {{ModId}}_Bob 40/faceDirection {{ModId}}_Bob 1/speak {{ModId}}_Bob \"{{i18n:Event_Bob.7Heart.5}}\"/pause 500/emote farmer 32/end"     
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForgottenGamesRoom",
+      "Entries": {
+
+//HEART EVENT 8
+        "{{ModId}}_EventBobHeart8/GameStateQuery PLAYER_VISITED_LOCATION Host {{ModId}}_ForgottenGamesRoom/SawEvent {{ModId}}_EventBobHeart7/Time 1000 2200/Friendship {{ModId}}_Bob 2000/IsHost": "continue/21 26/farmer 16 26 0 {{ModId}}_Bob 22 24 0/skippable/advancedMove farmer false 4 0 0 -2 1 150/waitForAllStationary/emote {{ModId}}_Bob 12/playSound cowboy_dead/speak {{ModId}}_Bob \"{{i18n:Event_Bob.8Heart.1}}\"/pause 1000/faceDirection {{ModId}}_Bob 3/speak {{ModId}}_Bob \"{{i18n:Event_Bob.8Heart.2}}\"/emote {{ModId}}_Bob 40/speak {{ModId}}_Bob \"{{i18n:Event_Bob.8Heart.3}}\"/pause 1000/quickQuestion {{i18n:Event_Bob.8Heart.4Q}}#{{i18n:Event_Bob.8Heart.4A1}}#{{i18n:Event_Bob.8Heart.4A2}}#{{i18n:Event_Bob.8Heart.4A3}}(break)speak {{ModId}}_Bob \"{{i18n:Event_Bob.8Heart.5}}\"\\emote {{ModId}}_Bob 32\\Friendship {{ModId}}_Bob 15(break)speak {{ModId}}_Bob \"{{i18n:Event_Bob.8Heart.6}}\"\\Friendship {{ModId}}_Bob 5(break)speak {{ModId}}_Bob \"{{i18n:Event_Bob.8Heart.7}}\"/pause 800/speak {{ModId}}_Bob \"{{i18n:Event_Bob.8Heart.8}}\"/emote farmer 32/faceDirection {{ModId}}_Bob 0 true/faceDirection farmer 0/emote {{ModId}}_Bob 52 true/emote farmer 52/playMusic Cowboy_OVERWORLD/pause 3500/end"  
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/WizardHouse",
+      "Entries": {
+
+//HEART EVENT 9
+        "{{ModId}}_EventBobHeart9/SawEvent {{ModId}}_EventBobHeart8/Time 0900 1800/Friendship {{ModId}}_Bob 2250/IsHost": "{{ModId}}_LongWay/4 21/farmer 8 24 0 {{ModId}}_Bob 5 17 3 Wizard 3 17 1/skippable/advancedMove farmer false 0 -3 -2 0 4 150/pause 1000/speak {{ModId}}_Bob \"{{i18n:Event_Bob.9Heart.1}}\"/pause 500/speak Wizard \"{{i18n:Event_Bob.9Heart.2.Wizard}}\"/pause 500/emote {{ModId}}_Bob 28/speak {{ModId}}_Bob \"{{i18n:Event_Bob.9Heart.3}}\"/pause 500/speak Wizard \"{{i18n:Event_Bob.9Heart.4.Wizard}}\"/pause 500/emote {{ModId}}_Bob 60/speak Wizard \"{{i18n:Event_Bob.9Heart.5.Wizard}}\"/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.9Heart.6}}\"/pause 500/emote Wizard 12/speak Wizard \"{{i18n:Event_Bob.9Heart.7.Wizard}}\"/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.9Heart.8}}\"/pause 500/advancedMove {{ModId}}_Bob false 1 0 0 2 2 150/waitForAllStationary/emote {{ModId}}_Bob 16/speak {{ModId}}_Bob \"{{i18n:Event_Bob.9Heart.9}}\"/pause 500/advancedMove {{ModId}}_Bob false 2 0 0 5 2 150/waitForAllStationary/faceDirection Wizard 2/pause 800/warp {{ModId}}_Bob -1000 -1000/playSound doorClose/advancedMove farmer false 0 -4 -1 0 3 150/waitForAllStationary/faceDirection Wizard 1/speak Wizard \"{{i18n:Event_Bob.9Heart.10.Wizard}}\"/faceDirection Wizard 2/end"     
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Azathii.ForgottenWoods_ForgottenSmallCrypt",
+      "Entries": {
+
+//BONUS EVENT 1
+	"{{ModId}}_EventBobWoodsBonus1/SawEvent {{ModId}}_EventBobHeart6/Time 0610 1800/IsHost": "{{ModId}}_OldHouse/16 22/farmer 10 20 1 {{ModId}}_Bob 18 20 0/skippable/move farmer 6 0 1/emote {{ModId}}_Bob 28/pause 500/faceDirection {{ModId}}_Bob 3/speak {{ModId}}_Bob \"{{i18n:Event_Bob.1WoodsBonus.1}}\"/emote {{ModId}}_Bob 40/pause 1000/speak {{ModId}}_Bob \"{{i18n:Event_Bob.1WoodsBonus.2}}\"/pause 500/faceDirection {{ModId}}_Bob 0/speak {{ModId}}_Bob \"{{i18n:Event_Bob.1WoodsBonus.3}}\"/pause 1000/emote {{ModId}}_Bob 16/pause 500/speak {{ModId}}_Bob \"{{i18n:Event_Bob.1WoodsBonus.4}}\"/pause 500/faceDirection {{ModId}}_Bob 3/speak {{ModId}}_Bob \"{{i18n:Event_Bob.1WoodsBonus.5}}\"/speed {{ModId}}_Bob 3/advancedMove {{ModId}}_Bob false 4 0 0 -10 2 150/waitForAllStationary/warp {{ModId}}_Bob -1000 -1000/move farmer 2 0 0/emote farmer 28/end"
+      },
+      "When": {
+        "HasMod |contains=Azathii.ForgottenWoods": true,
+        "HasFlag: hostPlayer |contains={{ModId}}_BobHomeComplete": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Azathii.ForgottenWoods_ForgottenPeak",
+      "Entries": {
+
+//BONUS EVENT 2
+        "{{ModId}}_EventBobWoodsBonus2/GameStateQuery WEATHER Here Sun/SawEvent {{ModId}}_EventBobHeart10/Time 0610 1500/IsHost": "continue/32 27/farmer 25 26 0 {{ModId}}_Bob 32 24 0/skippable/move farmer 7 0 1/faceDirection farmer 0/pause 1000/faceDirection {{ModId}}_Bob 2/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2WoodsBonus.1}}\"/faceDirection {{ModId}}_Bob 0/emote {{ModId}}_Bob 20 true/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2WoodsBonus.2}}\"/pause 1000/emote {{ModId}}_Bob 40/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2WoodsBonus.3}}\"/faceDirection {{ModId}}_Bob 2/speak {{ModId}}_Bob \"{{i18n:Event_Bob.2WoodsBonus.4}}\"/pause 500/faceDirection {{ModId}}_Bob 0/advancedMove farmer false 2 0 0 -2 4 150/waitForAllStationary/emote farmer 32 true/emote {{ModId}}_Bob 32/end" 
+      },
+      "When": {
+        "HasMod |contains=Azathii.ForgottenWoods": true
+      }
+    }
+  ]
+}

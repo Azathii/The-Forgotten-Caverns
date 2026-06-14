@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="44" nextobjectid="65">
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="353" name="z_Azathii_Catacombs" tilewidth="16" tileheight="16" tilecount="1650" columns="25">
+  <image source="Azathii_Catacombs.png" width="400" height="1056"/>
+  <tile id="276">
+   <animation>
+    <frame tileid="276" duration="150"/>
+    <frame tileid="279" duration="150"/>
+    <frame tileid="281" duration="150"/>
+    <frame tileid="283" duration="150"/>
+    <frame tileid="285" duration="150"/>
+    <frame tileid="287" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="277">
+   <animation>
+    <frame tileid="277" duration="150"/>
+    <frame tileid="280" duration="150"/>
+    <frame tileid="282" duration="150"/>
+    <frame tileid="284" duration="150"/>
+    <frame tileid="286" duration="150"/>
+    <frame tileid="288" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="301">
+   <animation>
+    <frame tileid="301" duration="150"/>
+    <frame tileid="304" duration="150"/>
+    <frame tileid="306" duration="150"/>
+    <frame tileid="308" duration="150"/>
+    <frame tileid="310" duration="150"/>
+    <frame tileid="312" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="302">
+   <animation>
+    <frame tileid="302" duration="150"/>
+    <frame tileid="305" duration="150"/>
+    <frame tileid="307" duration="150"/>
+    <frame tileid="309" duration="150"/>
+    <frame tileid="311" duration="150"/>
+    <frame tileid="313" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="331">
+   <animation>
+    <frame tileid="331" duration="150"/>
+    <frame tileid="332" duration="150"/>
+    <frame tileid="333" duration="150"/>
+    <frame tileid="334" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="333">
+   <animation>
+    <frame tileid="333" duration="150"/>
+    <frame tileid="334" duration="150"/>
+    <frame tileid="331" duration="150"/>
+    <frame tileid="332" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="335">
+   <animation>
+    <frame tileid="335" duration="150"/>
+    <frame tileid="336" duration="150"/>
+    <frame tileid="337" duration="150"/>
+    <frame tileid="338" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="337">
+   <animation>
+    <frame tileid="337" duration="150"/>
+    <frame tileid="338" duration="150"/>
+    <frame tileid="335" duration="150"/>
+    <frame tileid="336" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="356">
+   <animation>
+    <frame tileid="356" duration="150"/>
+    <frame tileid="357" duration="150"/>
+    <frame tileid="358" duration="150"/>
+    <frame tileid="359" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="358">
+   <animation>
+    <frame tileid="358" duration="150"/>
+    <frame tileid="359" duration="150"/>
+    <frame tileid="356" duration="150"/>
+    <frame tileid="357" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="360">
+   <animation>
+    <frame tileid="360" duration="150"/>
+    <frame tileid="361" duration="150"/>
+    <frame tileid="362" duration="150"/>
+    <frame tileid="363" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="362">
+   <animation>
+    <frame tileid="362" duration="150"/>
+    <frame tileid="363" duration="150"/>
+    <frame tileid="360" duration="150"/>
+    <frame tileid="361" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1138">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="1226">
+   <animation>
+    <frame tileid="1226" duration="150"/>
+    <frame tileid="1227" duration="150"/>
+    <frame tileid="1228" duration="150"/>
+    <frame tileid="1229" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1228">
+   <animation>
+    <frame tileid="1228" duration="150"/>
+    <frame tileid="1229" duration="150"/>
+    <frame tileid="1226" duration="150"/>
+    <frame tileid="1227" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2003" name="z_Azathii_FCHouse" tilewidth="16" tileheight="16" tilecount="855" columns="15">
+  <image source="Azathii_FCHouse.png" width="240" height="912"/>
+  <tile id="189">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="190">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="420">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="421">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="422">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="423">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="424">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="425">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="426">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="435">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="436">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="437">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="438">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="439">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="440">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="441">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="450">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="451">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="452">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="453">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="454">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="455">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="456">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="465">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="466">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="467">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="468">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="469">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="470">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="471">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="480">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="481">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="482">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="483">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="484">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="485">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="486">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="495">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="496">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="497">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="498">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="499">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="500">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="501">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="2">
+  <data encoding="csv">
+0,0,0,
+2207,2208,2207
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="3" height="2">
+  <data encoding="csv">
+2203,2203,2203,
+2219,2219,2219
+</data>
+ </layer>
+ <layer id="11" name="Buildings2" width="3" height="2">
+  <data encoding="csv">
+1892,0,1893,
+2467,2467,2467
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="27" name="Buildings2"/>
+</map>

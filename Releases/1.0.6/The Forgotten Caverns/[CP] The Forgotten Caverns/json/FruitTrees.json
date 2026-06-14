@@ -1,0 +1,139 @@
+{
+  "Changes": [
+    { 
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Lemon, Mods/{{ModId}}/KeyLime, Mods/{{ModId}}/LemonSapling, Mods/{{ModId}}/KeyLimeSapling",
+      "FromFile": "assets/Items/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_KeyLime": {
+          "Name": "{{ModId}}_KeyLime",
+          "DisplayName": "{{i18n:Object_KeyLime.name}}",
+          "Description": "{{i18n:Object_KeyLime.description}}",
+          "Type": "Fruit",
+          "Category": -79,
+          "Price": 110,
+          "Texture": "Mods/{{ModId}}/KeyLime",
+          "SpriteIndex": 0,
+          "Edibility": 25,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_lime",
+            "fruit_item",
+            "fruit_tree_item",
+            "season_fall"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_Lemon": {
+          "Name": "{{ModId}}_Lemon",
+          "DisplayName": "{{i18n:Object_Lemon.name}}",
+          "Description": "{{i18n:Object_Lemon.description}}",
+          "Type": "Fruit",
+          "Category": -79,
+          "Price": 105,
+          "Texture": "Mods/{{ModId}}/Lemon",
+          "SpriteIndex": 0,
+          "Edibility": 20,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_yellow",
+            "fruit_item",
+            "fruit_tree_item",
+            "season_summer"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_KeyLimeSapling": {
+          "Name": "{{ModId}}_KeyLimeSapling",
+          "DisplayName": "{{i18n:Object_KeyLimeSapling.name}}",
+          "Description": "{{i18n:Object_KeyLimeSapling.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Price": 1500,
+          "Texture": "Mods/{{ModId}}/KeyLimeSapling",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": null,
+          "CustomFields": null
+        },
+        "{{ModId}}_LemonSapling": {
+          "Name": "{{ModId}}_LemonSapling",
+          "DisplayName": "{{i18n:Object_LemonSapling.name}}",
+          "Description": "{{i18n:Object_LemonSapling.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Price": 1500,
+          "Texture": "Mods/{{ModId}}/LemonSapling",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": null,
+          "CustomFields": null
+        }
+      }
+    },  
+    { 
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Azathii_FruitTrees",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FruitTrees",
+      "Entries": {
+        "{{ModId}}_KeyLimeSapling": {
+          "DisplayName": "{{i18n:Object_KeyLime.name}}",
+          "Seasons": [ "Fall" ],
+          "Fruit": [
+            {
+              "Id": "{{ModId}}_KeyLime",
+              "ItemId": "{{ModId}}_KeyLime"
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/Azathii_FruitTrees",
+          "TextureSpriteRow": 0
+        },
+        "{{ModId}}_LemonSapling": {
+          "DisplayName": "{{i18n:Object_Lemon.name}}",
+          "Seasons": [ "Summer" ],
+          "Fruit": [
+            {
+              "Id": "{{ModId}}_Lemon",
+              "ItemId": "{{ModId}}_Lemon"
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/Azathii_FruitTrees",
+          "TextureSpriteRow": 1
+        }
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/Azathii_FruitTrees",
+      "FromFile": "assets/Tilesheets/Azathii_FruitTrees_{{Recolour}}.png",
+      "ToArea": {"X": 0, "Y": 0, "Width": 432, "Height": 160},
+      "PatchMode": "Replace"      
+    }
+  ]
+}

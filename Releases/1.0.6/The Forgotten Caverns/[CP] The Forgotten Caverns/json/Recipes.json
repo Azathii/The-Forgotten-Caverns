@@ -1,0 +1,19 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "{{ModId}}_CavernLunch": "{{ModId}}_CavernSpinach 1 {{ModId}}_MidnightEntoloma 1 192 1 247 1/5501 5501/{{ModId}}_CavernLunch/null/{{i18n:Object_CavernLunch.name}}",
+        "{{ModId}}_FriedFangtooth": "{{ModId}}_ForgottenFangtooth 1 {{ModId}}_Lemon 1 246 1 247 1/5501 5501/{{ModId}}_FriedFangtooth/null/{{i18n:Object_FriedFangtooth.name}}",
+        "{{ModId}}_CreamedCavernSpinach": "{{ModId}}_CavernSpinach 1 248 1 424 1 -6 1 /5501 5501/{{ModId}}_CreamedCavernSpinach/null/{{i18n:Object_CreamedCavernSpinach.name}}",
+        "{{ModId}}_Lemonade": "{{ModId}}_Lemon 3 245 1/5501 5501/{{ModId}}_Lemonade/null/{{i18n:Object_Lemonade.name}}",
+        "{{ModId}}_TropicalTwist": "{{ModId}}_KeyLime 2 88 1 245 1/5501 5501/{{ModId}}_TropicalTwist/null/{{i18n:Object_TropicalTwist.name}}",
+        "{{ModId}}_CitronTart": "{{ModId}}_Lemon 1 245 1 246 1 -5 1/5501 5501/{{ModId}}_CitronTart/null/{{i18n:Object_CitronTart.name}}",
+        "{{ModId}}_KeyLimePie": "{{ModId}}_KeyLime 1 245 1 246 1 -5 1/5501 5501/{{ModId}}_KeyLimePie/null/{{i18n:Object_KeyLimePie.name}}",
+        "{{ModId}}_LemonDrizzleCake": "{{ModId}}_Lemon 2 245 1 246 1 -5 1/5501 5501/{{ModId}}_LemonDrizzleCake/null/{{i18n:Object_LemonDrizzleCake.name}}",
+        "{{ModId}}_DuskberryCheesecake": "{{ModId}}_Duskberry 2 426 1 -6 1 -5 1 /5501 5501/{{ModId}}_DuskberryCheesecake/null/{{i18n:Object_DuskberryCheesecake.name}}"
+      }
+    }
+  ]
+}

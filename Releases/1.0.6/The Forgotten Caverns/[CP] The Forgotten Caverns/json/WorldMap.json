@@ -1,0 +1,623 @@
+{
+  "Changes": [
+    { 
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/WorldMap_Cavern, Mods/{{ModId}}/WorldMap_Orchard, Mods/{{ModId}}/WorldMap_HotSprings, Mods/{{ModId}}/WorldMap_Catacombs",
+      "FromFile": "assets/Loose/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/WorldMap",
+      "Entries": {
+        "{{ModId}}_ForgottenCavern": {
+          "BaseTexture": [
+            {
+              "Id": "{{ModId}}_ForgottenCavern",
+              "Texture": "Mods/{{ModId}}/WorldMap_Cavern",
+              "SourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 115,
+                "Height": 120
+              }
+            }
+          ],
+          "MapAreas": [
+            {
+              "Id": "{{ModId}}_ForgottenCavern",
+              "PixelArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 115,
+                "Height": 120
+              },
+              "ScrollText": "{{i18n:LocDisplay_Cavern.name}}",
+              "WorldPositions": [
+                {
+                  "Id": "{{ModId}}_ForgottenCavern",
+                  "LocationName": "{{ModId}}_ForgottenCavern",
+                  "MapPixelArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 115,
+                    "Height": 120
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenTravelHub",
+                  "LocationName": "{{ModId}}_ForgottenTravelHub",
+                  "MapPixelArea": {
+                    "X": 103,
+                    "Y": 20,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenSpellRoom",
+                  "LocationName": "{{ModId}}_ForgottenSpellRoom",
+                  "MapPixelArea": {
+                    "X": 103,
+                    "Y": 20,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenCottage",
+                  "LocationName": "{{ModId}}_ForgottenCottage",
+                  "MapPixelArea": {
+                    "X": 38,
+                    "Y": 8,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenCottageBedroom",
+                  "LocationName": "{{ModId}}_ForgottenCottageBedroom",
+                  "MapPixelArea": {
+                    "X": 38,
+                    "Y": 8,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenCottageBasement",
+                  "LocationName": "{{ModId}}_ForgottenCottageBasement",
+                  "MapPixelArea": {
+                    "X": 38,
+                    "Y": 8,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                }
+              ],
+              "Tooltips": [
+                {
+                  "Id": "{{ModId}}_MapFarmCaveEnt",
+                  "Text": "{{i18n:WM_Ent.FarmCave}}",
+                  "PixelArea": {
+                    "X": 108,
+                    "Y": 18,
+                    "Width": 3,
+                    "Height": 3
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapTravelEnt",
+                  "DownNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCaveToHotS"
+                },
+                {
+                  "Id": "{{ModId}}_MapTravelEnt",
+                  "Text": "{{i18n:WM_Ent.Travel}}",
+                  "PixelArea": {
+                    "X": 102,
+                    "Y": 18,
+                    "Width": 3,
+                    "Height": 3
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCottage",
+                  "RightNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapFarmCaveEnt",
+                  "DownNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCaveToHotS"
+                },
+                {
+                  "Id": "{{ModId}}_MapCottage",
+                  "Text": "{{i18n:WM_Cottage}}",
+                  "PixelArea": {
+                    "X": 35,
+                    "Y": 3,
+                    "Width": 7,
+                    "Height": 7
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapOrchardEnt",
+                  "RightNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapTravelEnt",
+                  "DownNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCaveFish"
+                },
+                {
+                  "Id": "{{ModId}}_MapCaveFish",
+                  "Text": "{{i18n:WM_Fishing}}",
+                  "PixelArea": {
+                    "X": 29,
+                    "Y": 44,
+                    "Width": 3,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapOrchardEnt",
+                  "RightNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapTravelEnt",
+                  "UpNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCottage",
+                  "DownNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCaveToHotS"
+                },
+                {
+                  "Id": "{{ModId}}_MapOrchardEnt",
+                  "Text": "{{i18n:WM_Ent.Orchard}}",
+                  "PixelArea": {
+                    "X": 22,
+                    "Y": 11,
+                    "Width": 3,
+                    "Height": 3
+                  },
+                  "RightNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCottage",
+                  "DownNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCaveFish"
+                },
+                {
+                  "Id": "{{ModId}}_MapCaveToHotS",
+                  "Text": "{{i18n:WM_Ent.HotSprings}}",
+                  "PixelArea": {
+                    "X": 17,
+                    "Y": 116,
+                    "Width": 3,
+                    "Height": 3
+                  },
+                  "RightNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapFarmCaveEnt",
+                  "UpNeighbor": "{{ModId}}_ForgottenCavern/{{ModId}}_MapCaveFish"
+                }
+              ]
+            }
+          ]
+        },        
+        "{{ModId}}_ForgottenOrchard": {
+          "BaseTexture": [
+            {
+              "Id": "{{ModId}}_ForgottenOrchard",
+              "Texture": "Mods/{{ModId}}/WorldMap_Orchard",
+              "SourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 60,
+                "Height": 80
+              }
+            }
+          ], 
+          "MapAreas": [
+            {
+              "Id": "{{ModId}}_ForgottenOrchard",
+              "PixelArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 60,
+                "Height": 80
+              },                 
+              "ScrollText": "{{i18n:LocDisplay_Orchard.name}}",
+              "WorldPositions": [
+                {
+                  "Id": "{{ModId}}_ForgottenOrchard",
+                  "LocationName": "{{ModId}}_ForgottenOrchard",
+                  "MapPixelArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 60,
+                    "Height": 80
+                  }
+                }
+              ],
+              "Tooltips": [
+                {
+                  "Id": "{{ModId}}_MapCaveEnt",
+                  "Text": "{{i18n:WM_Ent.Cavern}}",
+                  "PixelArea": {
+                    "X": 26,
+                    "Y": 76,
+                    "Width": 3,
+                    "Height": 3
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenOrchard/{{ModId}}_MapOrchHotTub",
+                  "RightNeighbor": "{{ModId}}_ForgottenOrchard/{{ModId}}_MapOrchWarp"
+                },
+                {
+                  "Id": "{{ModId}}_MapOrchWarp",
+                  "Text": "{{i18n:WM_Warp}}",
+                  "PixelArea": {
+                    "X": 51,
+                    "Y": 46,
+                    "Width": 1,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenOrchard/{{ModId}}_MapOrchHotTub",
+                  "DownNeighbor": "{{ModId}}_ForgottenOrchard/{{ModId}}_MapCaveEnt"
+                },
+                {
+                  "Id": "{{ModId}}_MapOrchHotTub",
+                  "Text": "{{i18n:WM_HotTub}}",
+                  "PixelArea": {
+                    "X": 10,
+                    "Y": 32,
+                    "Width": 5,
+                    "Height": 4
+                  },
+                  "RightNeighbor": "{{ModId}}_ForgottenOrchard/{{ModId}}_MapOrchWarp",
+                  "DownNeighbor": "{{ModId}}_ForgottenOrchard/{{ModId}}_MapCaveEnt"
+                }
+              ]
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenHotSprings": {
+          "BaseTexture": [
+            {
+              "Id": "{{ModId}}_ForgottenHotSprings",
+              "Texture": "Mods/{{ModId}}/WorldMap_HotSprings",
+              "SourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 110,
+                "Height": 120
+              }
+            }
+          ], 
+          "MapAreas": [
+            {
+              "Id": "{{ModId}}_ForgottenHotSprings",
+              "PixelArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 110,
+                "Height": 120
+              },                 
+              "ScrollText": "{{i18n:LocDisplay_HotSprings.name}}",
+              "WorldPositions": [
+                {
+                  "Id": "{{ModId}}_ForgottenHotSprings",
+                  "LocationName": "{{ModId}}_ForgottenHotSprings",
+                  "MapPixelArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 110,
+                    "Height": 120
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenMine",
+                  "LocationName": "{{ModId}}_ForgottenMine",
+                  "MapPixelArea": {
+                    "X": 91,
+                    "Y": 20,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenMinersHut",
+                  "LocationName": "{{ModId}}_ForgottenMinersHut",
+                  "MapPixelArea": {
+                    "X": 91,
+                    "Y": 20,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenMinersHutRepaired",
+                  "LocationName": "{{ModId}}_ForgottenMinersHutRepaired",
+                  "MapPixelArea": {
+                    "X": 91,
+                    "Y": 20,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenRecyclingRoom",
+                  "LocationName": "{{ModId}}_ForgottenRecyclingRoom",
+                  "MapPixelArea": {
+                    "X": 91,
+                    "Y": 20,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenGrotto",
+                  "LocationName": "{{ModId}}_ForgottenGrotto",
+                  "MapPixelArea": {
+                    "X": 65,
+                    "Y": 66,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenSanctum",
+                  "LocationName": "{{ModId}}_ForgottenSanctum",
+                  "MapPixelArea": {
+                    "X": 91,
+                    "Y": 20,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                }
+              ],
+              "Tooltips": [
+                {
+                  "Id": "{{ModId}}_MapHSCaveEnt",
+                  "Text": "{{i18n:WM_Ent.Cavern}}",
+                  "PixelArea": {
+                    "X": 12,
+                    "Y": 4,
+                    "Width": 3,
+                    "Height": 3
+                  },
+                  "RightNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapMineEnt",
+                  "DownNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapWShrine2"
+                },
+                {
+                  "Id": "{{ModId}}_MapMineEnt",
+                  "Text": "{{i18n:WM_Ent.Mine}}",
+                  "PixelArea": {
+                    "X": 91,
+                    "Y": 18,
+                    "Width": 1,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapHSCaveEnt",
+                  "RightNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapHSWarp",
+                  "DownNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapWShrine1"
+                },
+                {
+                  "Id": "{{ModId}}_MapHSWarp",
+                  "Text": "{{i18n:WM_Warp}}",
+                  "PixelArea": {
+                    "X": 96,
+                    "Y": 18,
+                    "Width": 1,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapMineEnt",
+                  "DownNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapCatEnt"
+                },
+                {
+                  "Id": "{{ModId}}_MapCatEnt",
+                  "Text": "{{i18n:WM_Ent.Catacombs}}",
+                  "PixelArea": {
+                    "X": 98,
+                    "Y": 90,
+                    "Width": 4,
+                    "Height": 3
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapWShrine1",
+                  "UpNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapHSWarp"
+                },
+                {
+                  "Id": "{{ModId}}_MapWShrine1",
+                  "Text": "{{i18n:WM_Shrine}}",
+                  "PixelArea": {
+                    "X": 45,
+                    "Y": 33,
+                    "Width": 1,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapWShrine2",
+                  "RightNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapMineEnt",
+                  "UpNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapHSCaveEnt",
+                  "DownNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapCatEnt"
+                },
+                {
+                  "Id": "{{ModId}}_MapWShrine2",
+                  "Text": "{{i18n:WM_Shrine}}",
+                  "PixelArea": {
+                    "X": 26,
+                    "Y": 47,
+                    "Width": 1,
+                    "Height": 4
+                  },
+                  "RightNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapWShrine1",
+                  "UpNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapHSCaveEnt",
+                  "DownNeighbor": "{{ModId}}_ForgottenHotSprings/{{ModId}}_MapCatEnt"
+                }
+              ]
+            }
+          ]
+        },
+        "{{ModId}}_ForgottenCatacombs": {
+          "BaseTexture": [
+            {
+              "Id": "{{ModId}}_ForgottenCatacombs",
+              "Texture": "Mods/{{ModId}}/WorldMap_Catacombs",
+              "SourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 95,
+                "Height": 121
+              }
+            }
+          ],
+          "MapAreas": [
+            {
+              "Id": "{{ModId}}_ForgottenCatacombs",
+              "PixelArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 95,
+                "Height": 121
+              },
+              "ScrollText": "{{i18n:LocDisplay_Catacombs.name}}",
+              "WorldPositions": [
+                {
+                  "Id": "{{ModId}}_ForgottenCatacombs",
+                  "LocationName": "{{ModId}}_ForgottenCatacombs",
+                  "MapPixelArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 95,
+                    "Height": 121
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenSpeakeasy",
+                  "LocationName": "{{ModId}}_ForgottenSpeakeasy",
+                  "MapPixelArea": {
+                    "X": 20,
+                    "Y": 52,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenGamesRoom",
+                  "LocationName": "{{ModId}}_ForgottenGamesRoom",
+                  "MapPixelArea": {
+                    "X": 20,
+                    "Y": 52,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                },
+                {
+                  "Id": "{{ModId}}_ForgottenDinoDen",
+                  "LocationName": "{{ModId}}_ForgottenDinoDen",
+                  "MapPixelArea": {
+                    "X": 80,
+                    "Y": 95,
+                    "Width": 0,
+                    "Height": 0
+                  }
+                }
+              ],
+              "Tooltips": [
+                {
+                  "Id": "{{ModId}}_MapHSCatEnt",
+                  "Text": "{{i18n:WM_Ent.HotSprings}}",
+                  "PixelArea": {
+                    "X": 9,
+                    "Y": 103,
+                    "Width": 2,
+                    "Height": 2
+                  },
+                  "RightNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFish",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatAlc"
+                },
+                {
+                  "Id": "{{ModId}}_MapCatAlc",
+                  "Text": "{{i18n:WM_Alcove}}",
+                  "PixelArea": {
+                    "X": 19,
+                    "Y": 51,
+                    "Width": 3,
+                    "Height": 3
+                  },
+                  "RightNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatTree",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFount",
+                  "DownNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapHSCatEnt"
+                },
+                {
+                  "Id": "{{ModId}}_MapCatTree",
+                  "Text": "{{i18n:WM_SpiritTree}}",
+                  "PixelArea": {
+                    "X": 56,
+                    "Y": 55,
+                    "Width": 5,
+                    "Height": 6
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatAlc",
+                  "RightNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatWarp",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFount",
+                  "DownNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFish"
+                },
+                {
+                  "Id": "{{ModId}}_MapCatFount",
+                  "Text": "{{i18n:WM_Fountain}}",
+                  "PixelArea": {
+                    "X": 55,
+                    "Y": 8,
+                    "Width": 2,
+                    "Height": 3
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatAlc",
+                  "RightNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatWarp",
+                  "DownNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatTree"
+                },
+                {
+                  "Id": "{{ModId}}_MapCatFish",
+                  "Text": "{{i18n:WM_Fishing}}",
+                  "PixelArea": {
+                    "X": 59,
+                    "Y": 104,
+                    "Width": 3,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapHSCatEnt",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatWarp"
+                },
+                {
+                  "Id": "{{ModId}}_MapCatWarp",
+                  "Text": "{{i18n:WM_Warp}}",
+                  "PixelArea": {
+                    "X": 90,
+                    "Y": 37,
+                    "Width": 1,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFount",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapFWFalse",
+                  "DownNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFish",
+                  "Condition": "!{{HasMod |contains=Azathii.ForgottenWoods}}"
+                },
+                {
+                  "Id": "{{ModId}}_MapFWFalse",
+                  "Text": "{{i18n:WM_Locked}}",
+                  "PixelArea": {
+                    "X": 82,
+                    "Y": 35,
+                    "Width": 6,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatTree",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFount",
+                  "DownNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatWarp",
+                  "Condition": "!{{HasMod |contains=Azathii.ForgottenWoods}}"
+                },
+                {
+                  "Id": "{{ModId}}_MapCatWarp",
+                  "Text": "{{i18n:WM_Warp}}",
+                  "PixelArea": {
+                    "X": 90,
+                    "Y": 37,
+                    "Width": 1,
+                    "Height": 4
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFount",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapFWTrue",
+                  "DownNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFish",
+                  "Condition": "{{HasMod |contains=Azathii.ForgottenWoods}}"
+                },
+                {
+                  "Id": "{{ModId}}_MapFWTrue",
+                  "Text": "{{i18n:WM_Woods}}",
+                  "PixelArea": {
+                    "X": 83,
+                    "Y": 28,
+                    "Width": 4,
+                    "Height": 3
+                  },
+                  "LeftNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatTree",
+                  "UpNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatFount",
+                  "DownNeighbor": "{{ModId}}_ForgottenCatacombs/{{ModId}}_MapCatWarp",
+                  "Condition": "{{HasMod |contains=Azathii.ForgottenWoods}}"
+                }
+              ]
+            }
+          ]
+        }
+      }     
+    }
+  ]
+}

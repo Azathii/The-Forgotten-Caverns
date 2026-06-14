@@ -1,0 +1,980 @@
+{
+  "Changes": [
+    {
+      "LogName": "DMTE_FoundSpeakeasy",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/emote_Once_On": "16",
+            "DMT/mail_Once_On": "{{ModId}}/FoundSpeakeasy",
+            "DMT/removeQuest_Once_On": "{{ModId}}_QuestClue6"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: currentPlayer |contains={{ModId}}/FoundSpeakeasy": false,
+        "ModMessages": "Disabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundSpeakeasy",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/emote_Once_On": "16",
+            "DMT/message_Once_On": "{{i18n:DMTENewWarp}}",
+            "DMT/mail_Once_On": "{{ModId}}/FoundSpeakeasy",
+            "DMT/removeQuest_Once_On": "{{ModId}}_QuestClue6"
+          }
+        }
+      ],
+      "When": {
+	"HasFlag: currentPlayer |contains={{ModId}}/FoundSpeakeasy": false,
+        "ModMessages": "Enabled"
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_FoundSpeakeasyQuestTrueSFX",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_On": "questcomplete"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/FoundSpeakeasy": false,
+        "HasActiveQuest|contains={{ModId}}_QuestClue6": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SpeakeasyCupboard1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Once_Action": "doorCreak",
+            "DMT/give_Once_Action": "(O)490,5",
+            "DMT/message_Once_Action": "{{i18n:DMTELootTrue}}",
+            "DMT/mail_Once_Action": "{{ModId}}/SpeakeasyCupboardFound"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SpeakeasyCupboardFound": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SpeakeasyCupboard1Found",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 5
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/sound_Action": "doorCreak",
+            "DMT/message_Action": "{{i18n:DMTELootFalse}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/SpeakeasyCupboardFound": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SpeakeasySidBobFalse",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 19,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechSidA}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}/BobsRepairs": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SpeakeasySidBobTrue",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 19,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechSidB}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}/BobsRepairs": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave1}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "1, 15"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave2}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "2, 16"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave3}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "3, 17"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke4",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave4}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "4, 18"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke5",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave5}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "5, 19"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke6",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave6}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "6, 20"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke7",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave7}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "7, 21"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke8",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave8}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "8, 22"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke9",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave9}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "9, 23"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke10",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave10}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "10, 24"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke11",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave11}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "11, 25"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke12",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave12}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "12, 26"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke13",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave13}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "13, 27"
+      }
+    },
+    {
+      "LogName": "DMTE_SpeakeasyDaveJoke14",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechDave14}}"
+          }
+        }
+      ],
+      "When": {
+        "Day": "14, 28"
+      }
+    },
+    {
+      "LogName": "DMTE_PetraQuestSkip",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechPetra.True}}",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestPetraReward",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/PetraChestOpen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=FizzIntro": true,
+        "HasFlag|contains={{ModId}}/PetraStartQuest": false,
+        "HasFlag|contains={{ModId}}/PetraChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_PetraQuestStart",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechPetraA}}",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestPetra",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/PetraStartQuest"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=FizzIntro": false,
+        "HasFlag|contains={{ModId}}/PetraStartQuest": false,
+        "HasFlag|contains={{ModId}}/PetraChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_PetraQuestOngoing",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechPetraA}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=FizzIntro": false,
+        "HasFlag|contains={{ModId}}/PetraStartQuest": true,
+        "HasFlag|contains={{ModId}}/PetraChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_PetraQuestEnd",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechPetraB}}",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestPetra",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestPetraReward",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/PetraChestOpen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=FizzIntro": true,
+        "HasFlag|contains={{ModId}}/PetraStartQuest": true,
+        "HasFlag|contains={{ModId}}/PetraChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_PetraQuestComplete",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechPetraC}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/PetraChestTaken": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenQuestSkip",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechWren.True}}",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestWrenReward",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/WrenChestOpen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=reachedCaldera": true,
+        "HasFlag|contains={{ModId}}/WrenStartQuest": false,
+        "HasFlag|contains={{ModId}}/WrenChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenQuestStart",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechWrenA}}",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestWren",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/WrenStartQuest"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=reachedCaldera": false,
+        "HasFlag|contains={{ModId}}/WrenStartQuest": false,
+        "HasFlag|contains={{ModId}}/WrenChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenQuestOngoing",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechWrenA}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=reachedCaldera": false,
+        "HasFlag|contains={{ModId}}/WrenStartQuest": true,
+        "HasFlag|contains={{ModId}}/WrenChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenQuestEnd",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechWrenB}}",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestWren",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestWrenReward",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/WrenChestOpen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains=reachedCaldera": true,
+        "HasFlag|contains={{ModId}}/WrenStartQuest": true,
+        "HasFlag|contains={{ModId}}/WrenChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_WrenQuestComplete",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechWrenC}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/WrenChestTaken": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlQuestStart",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechEarlA}}",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestEarl",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/EarlStartQuest"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlStartQuest": false,
+        "HasFlag|contains={{ModId}}/EarlChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlQuestOngoing",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechEarlA}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlStartQuest": true,
+        "HasFlag|contains={{ModId}}/EarlsSpicesFound": false,
+        "HasFlag|contains={{ModId}}/EarlChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlQuestEnd",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Once_Action": "(O){{ModId}}_EarlsSpices",
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechEarlB}}",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestEarl",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestEarlReward",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/EarlChestOpen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlStartQuest": true,
+        "HasFlag|contains={{ModId}}/EarlsSpicesFound": true,
+        "HasFlag|contains={{ModId}}/EarlChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EarlQuestComplete",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 25,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechEarlC}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EarlChestTaken": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarQuestStart",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechEdgarA}}",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestEdgar",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/EdgarStartQuest"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarStartQuest": false,
+        "HasFlag|contains={{ModId}}/EdgarChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarQuestOngoing",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechEdgarA}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarStartQuest": true,
+        "HasFlag|contains={{ModId}}/EdgarsInkFound": false,
+        "HasFlag|contains={{ModId}}/EdgarChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarQuestEnd",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Once_Action": "(O){{ModId}}_EdgarsInk",
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechEdgarB}}",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestEdgar",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestEdgarReward",
+            "DMT/mail_Once_Action": "{{ModId}}/EdgarChestOpen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarStartQuest": true,
+        "HasFlag|contains={{ModId}}/EdgarsInkFound": true,
+        "HasFlag|contains={{ModId}}/EdgarChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_EdgarQuestComplete",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechEdgarC}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/EdgarChestTaken": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainQuestStart",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechCaptainA}}",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestCaptain",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/mail_Once_Action": "{{ModId}}/CaptainStartQuest"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainStartQuest": false,
+        "HasFlag|contains={{ModId}}/CaptainChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainQuestOngoing",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechCaptainA}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainStartQuest": true,
+        "HasFlag|contains={{ModId}}/CaptainsLocketFound": false,
+        "HasFlag|contains={{ModId}}/CaptainChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainQuestEnd",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/take_Once_Action": "(O){{ModId}}_CaptainsLocket",
+            "DMT/message_Once_Action": "{{i18n:DMTESpeakeasySpeechCaptainB}}",
+            "DMT/sound_Once_Action": "jingle1",
+            "DMT/removeQuest_Once_Action": "{{ModId}}_QuestCaptain",
+            "DMT/addQuest_Once_Action": "{{ModId}}_QuestCaptainReward",
+            "DMT/mail_Once_Action": "{{ModId}}/CaptainChestOpen"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainStartQuest": true,
+        "HasFlag|contains={{ModId}}/CaptainsLocketFound": true,
+        "HasFlag|contains={{ModId}}/CaptainChestTaken": false
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "DMTE_CaptainQuestComplete",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForgottenSpeakeasy",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_Action": "{{i18n:DMTESpeakeasySpeechCaptainC}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag|contains={{ModId}}/CaptainChestTaken": true
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}

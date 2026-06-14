@@ -1,0 +1,22 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Minecarts",
+      "TargetField": [ "Default", "Destinations" ],
+      "Entries": {
+        "{{ModId}}_ForgottenTravelHubMinecart": {
+          "Id": "{{ModId}}_ForgottenTravelHubMinecart",
+          "DisplayName": "{{i18n:TravelHubMinecart}}",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModId}}_EventDemetriusDiscovery",
+          "TargetLocation": "{{ModId}}_ForgottenTravelHub",
+          "TargetTile": {
+            "X": 17,
+            "Y": 8
+          },
+          "TargetDirection": "down"
+        }
+      }
+    }
+  ]
+}
